@@ -228,7 +228,7 @@ ul, ol {
 	border-top: none;
 }
 .menu-btn {
-    background: #000000 none repeat scroll 0 0;
+    background: rgb(205, 0, 80) none repeat scroll 0 0;
     color: #fff;
     cursor: pointer;
     height: 30px;

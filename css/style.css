@@ -314,7 +314,7 @@ ul, ol {
 }
 .bottom-slide {
     color: #fff;
-    font-family: open sans;
+    font-family:inherit;
 	line-height: 1.7;
     font-size: 13px;
     letter-spacing: 2px;

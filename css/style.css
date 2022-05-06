@@ -853,7 +853,7 @@ background:transparent;
 }
 .go-btn:hover {
     background: transparent none repeat scroll 0 0;
-    color: #e3451e;
+    color: rgb(205, 0, 80);
 }
 .work-border{
 	border-bottom:1px solid #eee;
@@ -922,7 +922,7 @@ input:focus, textarea:focus {
 }
 #form-wrapper #MyContactForm .error {
     bottom: 12px;
-    color: #FF0000;
+    color: rgb(205, 0, 80);
     font-family: inherit;
     font-size: 12px;
     font-weight: normal;
@@ -935,8 +935,8 @@ input:focus, textarea:focus {
     width: auto;
 }
 .contact-btn {
-    background: #e3451e none repeat scroll 0 0;
-    border: 2px solid #e3451e;
+    background: rgb(205, 0, 80) none repeat scroll 0 0;
+    border: 2px solid rgb(205, 0, 80);
     color: #fff;
     display: inline-block;
     font-family: rubik;
@@ -949,7 +949,7 @@ input:focus, textarea:focus {
 
 .contact-btn:hover {
 	background: transparent;
-	color: #e3451e;
+	color: rgb(205, 0, 80);
 }
 #MyContactForm p {
 	position: relative;
@@ -961,7 +961,7 @@ input:focus, textarea:focus {
 }
 
 .contact-box .sub-title{
-	color:#000;
+	color:rgb(205, 0, 80);
 }
 
 /*-----------------------------FOOTER SECTION----------------------------------*/
@@ -1242,7 +1242,7 @@ input:focus, textarea:focus {
 	-ms-transition: all 0.3s ease 0s;
 }
 
-.com-btn:hover{background:transparent ;color:#e3451e;border-color:#e3451e ;}
+.com-btn:hover{background:transparent ;color:rgb(205, 0, 80);border-color:rgb(205, 0, 80);}
 .comment-top > span {
     display: block;
     font-size: 12px;

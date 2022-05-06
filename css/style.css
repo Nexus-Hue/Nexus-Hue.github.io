@@ -828,7 +828,7 @@ background:transparent;
 }
 .go-btn {
     background: rgb(205, 0, 80) none repeat scroll 0 0;
-    border: 2px solid #e3451e;
+    border: 2px solid rgb(205, 0, 80);
     color: #fff;
     display: inline-block;
     font-family: rubik;
@@ -1009,7 +1009,7 @@ input:focus, textarea:focus {
 }
 .blog-slider .slide-nav {
     background: rgb(205, 0, 80) none repeat scroll 0 0;
-    border: 3px solid rgb(205, 0, 80);
+    border: 3px rgb(205, 0, 80);
     border-radius: 100px;
     bottom: 20px;
     color: #fff;
@@ -1225,7 +1225,7 @@ input:focus, textarea:focus {
 }
 .com-btn {
     background:rgb(205, 0, 80) none repeat scroll 0 0;
-    border: 2px solid #e3451e;
+    border: 2px solid rgb(205, 0, 80);
     color: #fff;
     display: inline-block;
     font-family: rubik;

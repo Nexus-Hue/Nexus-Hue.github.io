@@ -1310,8 +1310,8 @@ footer {
 }
 .hero-section-version1 .sfot-element1 {
   position: absolute;
-  top: 715px;
-  right: 87%;
+  top: 880px;
+  right: 88%;
   animation: zomin 5s linear infinite;
   z-index: -1;
 }

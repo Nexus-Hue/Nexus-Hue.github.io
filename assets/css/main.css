@@ -1553,6 +1553,9 @@ footer {
 }
 .hero-v1-content .banner-quickly-thumb img {
   border-radius: 50px;
+  width: 100%; 
+  max-width: 1584px; 
+  height: auto; 
 }
 .hero-v1-content .hero-arrow {
   width: 150px;

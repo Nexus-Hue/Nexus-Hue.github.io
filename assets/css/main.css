@@ -125,7 +125,7 @@ a {
   text-decoration: none;
   outline: none !important;
   cursor: pointer;
-  color: var(--white);
+  color: var(--border1);
   transition: all 0.4s ease-in-out;
 }
 
@@ -4821,7 +4821,7 @@ footer {
 }
 .footer-widgets-wrapper .single-footer-widget .address-list li span {
   font-weight: 700;
-  color: var(--white);
+  color: var(--red);
   display: inline-block;
   font-family: "Inter", sans-serif;
 }

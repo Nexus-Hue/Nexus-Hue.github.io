@@ -36,8 +36,83 @@ Version: 1.0.0
   --bspan: #ababab;
 }
 
+
 /* -----------------------
-    Template Default Fonts
+     Expandable Lists
+ ------------------------- */
+ .expandable-list {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.expandable-list .expandable-item {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.expandable-list input[type="checkbox"] {
+  display: none;
+}
+
+.expandable-list .title-bar {
+  background-color: #FF006A;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.expandable-list .title-bar::after {
+  content: "★";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.expandable-list input[type="checkbox"]:checked + .title-bar::after {
+  content: "✰";
+}
+
+.expandable-list .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f9f9f9;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0 0 5px 5px;
+}
+
+.expandable-list input[type="checkbox"]:checked ~ .content {
+  max-height: 1000px; /* Adjust as needed based on content size */
+  transition: max-height 0.5s ease-in;
+}
+
+.expandable-list .content-inner {
+  padding: 15px;
+  color: #0F1C38;
+  font-size: larger;
+}
+
+.expandable-list .pink-star {
+  color: #FF006A;
+  font-weight: bold;
+}
+ /* -----------------------
+     Expandable Lists
+ ------------------------- */
+
+
+/* -----------------------
+     Fonts
  ------------------------- */
 body {
   font-family: "Inter", sans-serif;

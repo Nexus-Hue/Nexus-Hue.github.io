@@ -1384,20 +1384,21 @@ footer {
 }
 .hero-section-version1 .sfot-element1 {
   position: absolute;
-  top: 880px;
+  top: 947px;
   right: 88%;
   animation: zomin 5s linear infinite;
   z-index: -1;
 }
 .hero-section-version1 .sfot-element2 {
   position: absolute;
-  top: 355px;
-  right: 10%;
+  top: 525px;
+  right: 9%;
   width: 64px;
   height: 64px;
   animation: zomin 2s linear infinite;
   z-index: -1;
 }
+
 
 .hero-section-version1 .spilit-socail {
   transform: rotate(90deg);
@@ -1512,8 +1513,10 @@ footer {
     right: 90%;
   }
   .hero-section-version1 .sfot-element2 {
-    right: 3%;
-    top: 197px;
+    right: 2%;
+    top: 250px;
+    width: 30px;
+    height: 30px;
   }
 }
 @media (max-width: 1700px) {
@@ -1751,6 +1754,8 @@ footer {
   position: absolute;
   top: 200px;
   left: 116px;
+  width: 64px;
+  height: 64px;
 }
 .hero-section-version2 .soft-star1 {
   position: absolute;
@@ -1853,6 +1858,8 @@ footer {
 @media (max-width: 1500px) {
   .hero-section-version2 .soft-star2 {
     display: none;
+    width: 64px;
+  height: 64px;
   }
   .hero-section-version2 .banner-v2-thumb .thumb-content {
     max-width: 438px;

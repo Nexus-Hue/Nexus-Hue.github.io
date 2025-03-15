@@ -1756,8 +1756,8 @@ footer {
   position: absolute;
   right: -140px;
   bottom: 0;
-  width: 70px;
-  height: 70px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
 }
 .hero-section-version2 .hero-v2-content {

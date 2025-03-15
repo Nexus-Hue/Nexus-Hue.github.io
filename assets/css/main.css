@@ -79,6 +79,11 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
   content: "✰";
 }
 
+.FooterTypeText {
+  color: #0F1C38;
+  text-align: center;
+}
+ 
 .expandable-list .content {
   max-height: 0;
   overflow: hidden;

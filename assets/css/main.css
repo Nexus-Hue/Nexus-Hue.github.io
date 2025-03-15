@@ -1394,11 +1394,12 @@ footer {
   position: absolute;
   top: 355px;
   right: 10%;
+  width: 64px;
+  height: 64px;
   animation: zomin 2s linear infinite;
   z-index: -1;
-  
- 
 }
+
 .hero-section-version1 .spilit-socail {
   transform: rotate(90deg);
   position: absolute;

@@ -5878,6 +5878,14 @@ footer {
   top: 2px;
   transform: rotateY(-90deg);
 }
+
+.nexusNav-fw {
+  transition: all 0.4s;
+  font-size: 16px !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--white);
+}
 .preloader p {
   font-size: 15px;
   font-weight: 600;

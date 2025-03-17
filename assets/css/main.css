@@ -156,7 +156,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6
+ {
   font-family: "Inter", sans-serif;
   margin: 0px;
   padding: 0;
@@ -199,6 +200,8 @@ h6 {
   font-weight: 600;
   line-height: 145%;
 }
+
+
 
 a {
   text-decoration: none;

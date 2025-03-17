@@ -4151,6 +4151,7 @@ footer {
   transition: all 0.4s;
   border-radius: 8px;
   border: 1px solid var(--border1);
+  background-color:var(--theme);
 }
 .accordion-single .header-area {
   font-size: 20px;
@@ -4180,6 +4181,7 @@ footer {
   height: 36px;
   font-size: 16px;
   background: var(--bg1);
+  
 }
 
 .header-area .accordion-btn::after {
@@ -4200,20 +4202,22 @@ footer {
 }
 
 .faq .header-area button::before {
-  content: "";
-  background-color: var(--bg2);
+  content: " ⁺☾⁺₊✧";
+  background-color: var(--theme);
   width: 38px;
   min-width: 38px;
   height: 38px;
   transition: all 0.4s;
+  font-weight: 999;
+  line-height: 2px; 
 }
 
 .faq .header-area button::after {
-  content: "\f101";
+  content: "\f005";
   font-family: "FontAwesome";
   font-size: 20px;
   transform: rotate(0deg);
-  transition: all 0.5s;
+  transition: all 0.4s;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -4222,6 +4226,7 @@ footer {
   width: 38px;
   min-width: 38px;
   height: 38px;
+
 }
 @media (max-width: 500px) {
   .faq .header-area button::after {
@@ -4234,14 +4239,14 @@ footer {
 }
 
 .faq .active button {
-  color: var(--theme);
+  color: var(--white);
 }
 
 .faq .active button::after {
   font-family: "FontAwesome";
-  transform: rotate(90deg);
+  transform: rotate(360deg);
   font-weight: 700;
-  color: var(--theme);
+  color: var(--bg2);
 }
 
 .service-tabing-wrap .images-remove-area {

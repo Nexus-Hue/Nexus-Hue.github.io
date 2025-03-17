@@ -5455,6 +5455,7 @@ footer {
   }
   .header-section .main-navbar .custom-nav .menu-item {
     position: relative;
+   
   }
   .header-section .main-navbar .custom-nav .menu-item:hover > .sub-menu {
     opacity: 1;

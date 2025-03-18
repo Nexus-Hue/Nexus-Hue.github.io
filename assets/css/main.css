@@ -35,6 +35,10 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
   --bspan: #ababab;
 }
 
+.FooterTypeText {
+  color: #0F1C38;
+  text-align: center;
+}
 
 /* -----------------------
      
@@ -78,10 +82,7 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
   content: "✰";
 }
 
-.FooterTypeText {
-  color: #0F1C38;
-  text-align: center;
-}
+
  
 .expandable-list .content {
   max-height: 0;
@@ -499,7 +500,7 @@ span {
 }
 
 .pt-space {
-  padding-top: 0px;
+  padding-top: 130px;
 }
 
 .pb-space {
@@ -5725,7 +5726,7 @@ footer {
   width: 1px;
   height: 100%;
   display: block;
-  background: #292929;
+  background: #ff000000;
 }
 
 .line-shape span::before,
@@ -5734,24 +5735,42 @@ footer {
   top: 0;
   left: 0;
   content: "";
-  background: var(--theme);
-  box-shadow: rgba(228, 235, 242, 0.2) 0px 8px 24px;
+  background: var(--bg2);
+  box-shadow: rgb(255, 0, 81) 0px 8px 24px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  clip-path: polygon(51% 8%, 68% 15%, 66% 40%, 60% 78%, 56% 100%, 46% 100%, 42% 84%, 38% 56%, 34% 17%);
+  clip-path: polygon(50% 0%, 
+                   67% 20%, 
+                   75% 40%, 
+                   80% 60%, 
+                   75% 80%, 
+                   50% 100%, 
+                   25% 80%, 
+                   20% 60%, 
+                   25% 40%, 
+                   33% 20%);
 }
 
 .line-shape span::after {
   animation: dscroll 2s linear infinite;
-  width: 2px;
-  height: 24px;
+  width: 15px;
+  height: 20px;
   bottom: 0;
   left: 0;
-  background: var(--theme);
+  background: var(--bg1);
   box-shadow: rgba(228, 235, 242, 0.2) 0px 8px 24px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  clip-path: polygon(51% 8%, 68% 15%, 66% 40%, 60% 78%, 56% 100%, 46% 100%, 42% 84%, 38% 56%, 34% 17%);
+  clip-path: polygon(50% 0%, 
+                   67% 20%, 
+                   75% 40%, 
+                   80% 60%, 
+                   75% 80%, 
+                   50% 100%, 
+                   25% 80%, 
+                   20% 60%, 
+                   25% 40%, 
+                   33% 20%);
 }
 
 .line-shape span:nth-child(2)::after {

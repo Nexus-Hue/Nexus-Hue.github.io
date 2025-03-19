@@ -437,7 +437,7 @@ span {
   color: var(--black);
 }
 
-.blackbgSPONSOR {
+.blackbg {
   background: var(--bg1);
   min-height: 50px; /* Container has at least THIS height */
  
@@ -446,20 +446,10 @@ span {
   overflow: hidden;
 }
 
-/* Desktop view adjustments */
-@media (min-width: 768px) {
-  .blackbgSPONSOR {
-    min-height: 50px; /* Adjust this value to fit your design */
-  }
-}
 
 
-.blackbg {
-  background: var(--bg1);
- 
-  align-content: center;
-  padding: 10px;
-}
+
+
 
 .white-clr {
   color: var(--white);

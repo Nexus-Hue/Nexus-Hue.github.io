@@ -439,9 +439,9 @@ span {
 
 .blackbgSPONSOR {
   background: var(--bg1);
-  max-height: 100%;
+  max-height: 97px;
   align-content: center;
-  padding: 10px;
+ 
   align-items: center;
 }
 

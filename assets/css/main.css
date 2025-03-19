@@ -439,11 +439,20 @@ span {
 
 .blackbgSPONSOR {
   background: var(--bg1);
-  max-height: 97px;
-  align-content: center;
+  min-height: 50px; /* Container has at least THIS height */
  
+  align-content: center;
   align-items: center;
+  overflow: hidden;
 }
+
+/* Desktop view adjustments */
+@media (min-width: 768px) {
+  .blackbgSPONSOR {
+    min-height: 50px; /* Adjust this value to fit your design */
+  }
+}
+
 
 .blackbg {
   background: var(--bg1);

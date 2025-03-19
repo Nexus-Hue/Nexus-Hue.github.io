@@ -439,7 +439,7 @@ span {
 }
 
 .blackbg {
-  background: var(--blackbg);
+  background: var(--bg1);
 }
 
 .white-clr {

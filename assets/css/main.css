@@ -439,11 +439,7 @@ span {
 
 .blackbg {
   background: var(--bg1);
-  min-height: 50px; /* Container has at least THIS height */
- 
-  align-content: center;
-  align-items: center;
-  overflow: hidden;
+  
 }
 
 

@@ -501,10 +501,11 @@ span {
 
 .pt-space {
   padding-top: 130px;
+ 
 }
 
 .pb-space {
-  padding-bottom: 0px;
+  padding-bottom: 130px;
 }
 
 @media (max-width: 1399px) {
@@ -4656,8 +4657,9 @@ footer {
 }
 
 .footer-version-one {
-  background: url(../../assets/img/footer/footer-version1bg.png) no-repeat center center;
+  background: url(../../assets/img/footer/) no-repeat center center;
   background-size: cover;
+  background-color: #0F1C38;
 }
 
 @media (max-width: 1399px) {

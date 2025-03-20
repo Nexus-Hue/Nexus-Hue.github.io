@@ -6088,7 +6088,7 @@ footer {
 .brand-wrapper {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 60px 0;
+ 
 }
 
 .counter-items {
@@ -7966,6 +7966,7 @@ input.main-search-input::placeholder {
   opacity: 1;
  line-height: 0px;
  height: 100%;
+ 
  }
 
  

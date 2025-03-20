@@ -1,4 +1,5 @@
 /*
+Theme Name: Nexus Hue
 Author: Nexus✰Hue
 Author URI: www.nexushue.com
 Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
@@ -438,17 +439,8 @@ span {
 }
 
 .blackbg {
-  background: var(--bg1);
-  
-}
-
-
-.blackbg2 {
   background: var(--blackbg);
-  
 }
-
-
 
 .white-clr {
   color: var(--white);
@@ -509,11 +501,10 @@ span {
 
 .pt-space {
   padding-top: 130px;
- 
 }
 
 .pb-space {
-  padding-bottom: 130px;
+  padding-bottom: 0px;
 }
 
 @media (max-width: 1399px) {
@@ -4665,9 +4656,8 @@ footer {
 }
 
 .footer-version-one {
-  background: url(../../assets/img/footer/) no-repeat center center;
+  background: url(../../assets/img/footer/footer-version1bg.png) no-repeat center center;
   background-size: cover;
-  background-color: #0F1C38;
 }
 
 @media (max-width: 1399px) {
@@ -7964,11 +7954,7 @@ input.main-search-input::placeholder {
 .sponsor-wrap .swiper-slide.swiper-slide-active .brand-image {
   filter: initial;
   opacity: 1;
- line-height: 0px;
- height: 100%;
- }
-
- 
+}
 
 .array-button {
   display: flex;
@@ -8265,7 +8251,7 @@ input.main-search-input::placeholder {
 
 
 .watch-version01 {
-  background: url(../img/team/) no-repeat center center;
+  background: url(../img/team/test.webp) no-repeat center center;
   background-size: cover;
   padding: 300px 5px;
   background-attachment: fixed;

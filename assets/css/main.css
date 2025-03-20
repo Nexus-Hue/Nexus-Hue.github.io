@@ -1,4 +1,5 @@
 /*
+Theme Name: Nexus Hue
 Author: Nexus✰Hue
 Author URI: www.nexushue.com
 Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
@@ -34,13 +35,10 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
   --bspan: #ababab;
 }
 
-.FooterTypeText {
-  color: #0F1C38;
-  text-align: center;
-}
 
 /* -----------------------
-     
+     Expandable Lists
+ ------------------------- */
  .expandable-list {
   width: 100%;
   margin-bottom: 20px;
@@ -81,7 +79,10 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
   content: "✰";
 }
 
-
+.FooterTypeText {
+  color: #0F1C38;
+  text-align: center;
+}
  
 .expandable-list .content {
   max-height: 0;
@@ -95,7 +96,7 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
 }
 
 .expandable-list input[type="checkbox"]:checked ~ .content {
-  max-height: 1000px; /* Adjust as needed based on content size 
+  max-height: 1000px; /* Adjust as needed based on content size */
   transition: max-height 0.5s ease-in;
 }
 
@@ -438,17 +439,8 @@ span {
 }
 
 .blackbg {
-  background: var(--bg1);
-  
-}
-
-
-.blackbg2 {
   background: var(--blackbg);
-  
 }
-
-
 
 .white-clr {
   color: var(--white);
@@ -509,7 +501,6 @@ span {
 
 .pt-space {
   padding-top: 130px;
- 
 }
 
 .pb-space {
@@ -4160,7 +4151,6 @@ footer {
   transition: all 0.4s;
   border-radius: 8px;
   border: 1px solid var(--border1);
-  background-color:var(--theme);
 }
 .accordion-single .header-area {
   font-size: 20px;
@@ -4190,7 +4180,6 @@ footer {
   height: 36px;
   font-size: 16px;
   background: var(--bg1);
-  
 }
 
 .header-area .accordion-btn::after {
@@ -4211,22 +4200,20 @@ footer {
 }
 
 .faq .header-area button::before {
-  content: " ⁺☾⁺₊✧";
-  background-color: var(--theme);
+  content: "";
+  background-color: var(--bg2);
   width: 38px;
   min-width: 38px;
   height: 38px;
   transition: all 0.4s;
-  font-weight: 999;
-  line-height: 2px; 
 }
 
 .faq .header-area button::after {
-  content: "\f005";
+  content: "\f101";
   font-family: "FontAwesome";
   font-size: 20px;
   transform: rotate(0deg);
-  transition: all 0.4s;
+  transition: all 0.5s;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -4235,7 +4222,6 @@ footer {
   width: 38px;
   min-width: 38px;
   height: 38px;
-
 }
 @media (max-width: 500px) {
   .faq .header-area button::after {
@@ -4248,14 +4234,14 @@ footer {
 }
 
 .faq .active button {
-  color: var(--white);
+  color: var(--theme);
 }
 
 .faq .active button::after {
   font-family: "FontAwesome";
-  transform: rotate(360deg);
+  transform: rotate(90deg);
   font-weight: 700;
-  color: var(--bg2);
+  color: var(--theme);
 }
 
 .service-tabing-wrap .images-remove-area {
@@ -4665,9 +4651,8 @@ footer {
 }
 
 .footer-version-one {
-  background: url(../../assets/img/footer/) no-repeat center center;
+  background: url(../../assets/img/footer/footer-version1bg.png) no-repeat center center;
   background-size: cover;
-  background-color: #0F1C38;
 }
 
 @media (max-width: 1399px) {
@@ -5736,7 +5721,7 @@ footer {
   width: 1px;
   height: 100%;
   display: block;
-  background: #ff000000;
+  background: #292929;
 }
 
 .line-shape span::before,
@@ -5745,42 +5730,24 @@ footer {
   top: 0;
   left: 0;
   content: "";
-  background: var(--bg2);
-  box-shadow: rgb(255, 0, 81) 0px 8px 24px;
+  background: var(--theme);
+  box-shadow: rgba(228, 235, 242, 0.2) 0px 8px 24px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  clip-path: polygon(50% 0%, 
-                   67% 20%, 
-                   75% 40%, 
-                   80% 60%, 
-                   75% 80%, 
-                   50% 100%, 
-                   25% 80%, 
-                   20% 60%, 
-                   25% 40%, 
-                   33% 20%);
+  clip-path: polygon(51% 8%, 68% 15%, 66% 40%, 60% 78%, 56% 100%, 46% 100%, 42% 84%, 38% 56%, 34% 17%);
 }
 
 .line-shape span::after {
   animation: dscroll 2s linear infinite;
-  width: 15px;
-  height: 20px;
+  width: 2px;
+  height: 24px;
   bottom: 0;
   left: 0;
-  background: var(--bg1);
+  background: var(--theme);
   box-shadow: rgba(228, 235, 242, 0.2) 0px 8px 24px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  clip-path: polygon(50% 0%, 
-                   67% 20%, 
-                   75% 40%, 
-                   80% 60%, 
-                   75% 80%, 
-                   50% 100%, 
-                   25% 80%, 
-                   20% 60%, 
-                   25% 40%, 
-                   33% 20%);
+  clip-path: polygon(51% 8%, 68% 15%, 66% 40%, 60% 78%, 56% 100%, 46% 100%, 42% 84%, 38% 56%, 34% 17%);
 }
 
 .line-shape span:nth-child(2)::after {
@@ -7964,11 +7931,7 @@ input.main-search-input::placeholder {
 .sponsor-wrap .swiper-slide.swiper-slide-active .brand-image {
   filter: initial;
   opacity: 1;
- line-height: 0px;
- height: 100%;
- }
-
- 
+}
 
 .array-button {
   display: flex;
@@ -8265,7 +8228,7 @@ input.main-search-input::placeholder {
 
 
 .watch-version01 {
-  background: url(../img/team/RedSEA_TEST.webp) no-repeat center center;
+  background: url(../img/team/test.webp) no-repeat center center;
   background-size: cover;
   padding: 300px 5px;
   background-attachment: fixed;

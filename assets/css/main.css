@@ -8303,7 +8303,9 @@ input.main-search-input::placeholder {
   .watch-version01 {
    
     background-size: cover;
-    min-width:420px;
+    background-position: center 20%; /* Adjusts the vertical positioning */
+    transform: scale(1); /* Reduces the zoom level */
+    transform-origin: center center;
   }
 }
 

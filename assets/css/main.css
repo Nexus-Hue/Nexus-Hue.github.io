@@ -7964,10 +7964,8 @@ input.main-search-input::placeholder {
 .sponsor-wrap .swiper-slide.swiper-slide-active .brand-image {
   filter: initial;
   opacity: 1;
- line-height: 0px;
- height: 100%;
-  }
 
+  
 
 
 .array-button {

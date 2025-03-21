@@ -8303,6 +8303,12 @@ input.main-search-input::placeholder {
   }
 }
 
+@media (max-width: 390px) and (max-height: 844px) {
+  .watch-version01 {
+    padding: 140px 4px;
+  }
+}
+
 
 
 

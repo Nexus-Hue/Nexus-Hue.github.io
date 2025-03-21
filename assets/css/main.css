@@ -8270,6 +8270,8 @@ input.main-search-input::placeholder {
   background-size: cover;
   padding: 300px 5px;
   background-attachment: fixed;
+  max-height: 100%;
+      width: auto;
 }
 .watch-version01 .video-popup .icons {
   width: 122px;
@@ -8307,8 +8309,8 @@ input.main-search-input::placeholder {
   .watch-version01 {
     padding: 140px 4px;
 
-      max-width: 100%;
-      height: auto;
+      max-height: 100%;
+      width: auto;
   }
   }
 

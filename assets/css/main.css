@@ -8301,69 +8301,11 @@ input.main-search-input::placeholder {
 }
 @media (max-width: 575px) {
   .watch-version01 {
-    padding: 140px 4px;
+    padding: 180px 4px;
   }
 }
 
-* iPhone 13 Pro, iPhone 12 Pro, iPhone 11 Pro (390 x 844) */
-@media only screen and (device-width: 390px) and (device-height: 844px), 
-       only screen and (width: 390px) and (height: 844px) {
-  .watch-version01 {
-    padding: 120px 4px;
-    background-size: cover;
-    background-position: center center;
-  }
-}
 
-/* iPhone 13, iPhone 12, iPhone 11 (390 x 844) - same as Pro models but added for clarity */
-@media only screen and (device-width: 390px) and (device-height: 844px), 
-       only screen and (width: 390px) and (height: 844px) {
-  .watch-version01 {
-    padding: 120px 4px;
-    background-size: cover;
-    background-position: center center;
-  }
-}
-
-/* iPhone 13 Pro Max, iPhone 12 Pro Max (428 x 926) */
-@media only screen and (device-width: 428px) and (device-height: 926px),
-       only screen and (width: 428px) and (height: 926px) {
-  .watch-version01 {
-    padding: 130px 4px;
-    background-size: cover;
-    background-position: center center;
-  }
-}
-
-/* iPhone 13 mini, iPhone 12 mini (375 x 812) */
-@media only screen and (device-width: 375px) and (device-height: 812px),
-       only screen and (width: 375px) and (height: 812px) {
-  .watch-version01 {
-    padding: 110px 4px;
-    background-size: cover;
-    background-position: center center;
-  }
-}
-
-/* iPhone SE, iPhone 8, iPhone 7, iPhone 6s (375 x 667) */
-@media only screen and (device-width: 375px) and (device-height: 667px),
-       only screen and (width: 375px) and (height: 667px) {
-  .watch-version01 {
-    padding: 100px 4px;
-    background-size: cover;
-    background-position: center center;
-  }
-}
-
-/* For all mobile devices in landscape orientation */
-@media only screen and (max-width: 926px) and (orientation: landscape) {
-  .watch-version01 {
-    padding: 100px 4px;
-    background-size: cover;
-    background-position: center center;
-    min-height: 250px;
-  }
-}
 
 
 

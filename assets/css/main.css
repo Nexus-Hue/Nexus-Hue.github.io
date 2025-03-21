@@ -7966,10 +7966,9 @@ input.main-search-input::placeholder {
   opacity: 1;
  line-height: 0px;
  height: 100%;
- 
- }
+  }
 
- 
+
 
 .array-button {
   display: flex;

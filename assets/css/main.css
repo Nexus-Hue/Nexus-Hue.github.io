@@ -4699,10 +4699,10 @@ footer {
   color: var(--theme) !important;
 }
 .flink-items:hover .ani-icons {
-  transform: rotate(180deg);
+  transform: rotate(197deg);
 }
 .flink-items:hover .ani-icons i {
-  color: var(--theme) !important;
+  color: var(--bg2) !important;
 }
 
 .foote-formv1 {

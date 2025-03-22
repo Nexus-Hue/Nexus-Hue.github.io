@@ -448,6 +448,14 @@ span {
   
 }
 
+.blackbg333 {
+  background: linear-gradient(to bottom, 
+                white 0%, 
+                white 50%, 
+                var(--blackbg) 50%, 
+                var(--blackbg) 100%);
+}
+
 
 
 .white-clr {

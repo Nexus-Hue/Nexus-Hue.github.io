@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    
+    <!-- Include your website's CSS here to maintain consistent styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .search-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-results {
+            padding: 20px 0;
+        }
+        .result-item {
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .result-item h3 {
+            margin-top: 0;
+        }
+        .result-item a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .result-item a:hover {
+            text-decoration: underline;
+        }
+        .no-results {
+            padding: 20px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Include your website's header here -->
+    
+    <div class="search-container">
+        <h1>Search Results</h1>
+        
+        <form id="search-form">
+            <input type="text" id="search-input" class="search-bar" placeholder="Search..." />
+        </form>
+        
+        <div id="search-results" class="search-results">
+            <!-- Search results will be displayed here -->
+            <div class="loading">Searching...</div>
+        </div>
+    </div>
+    
+    <!-- Include your website's footer here -->
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Function to get query parameters from the URL
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        
+        // Data structure to store your website's pages
+        // You'll need to populate this with your actual pages
+        const websitePages = [
+            {
+                title: "Home",
+                url: "/",
+                content: "Nexus Hue | Creative agency specializing in Differentiation | Artist based in Fresno Ca"
+            },
+            {
+                title: "About Nexus Hue",
+                url: "/about",
+                content: " What is a Nexus Hue? | How Nexus Hue Helps Businesses Stand Out | Fresno Creative Agency"
+            },
+            {
+                title: "Services",
+                url: "/services",
+                content: " What does  Nexus Hue do? | How Nexus Hue Helps | Fresno Creative Agency"
+            },
+            {
+                title: "Contact",
+                url: "/contact",
+                content: "Get in touch with Nexus Hue contact form, email, or phone."
+            },
+            // Add more pages as needed
+        ];
+        
+        $(document).ready(function() {
+            const query = getQueryParameter('q');
+            const resultsContainer = $('#search-results');
+            
+            if (query) {
+                // Display the search query in the input field
+                $('#search-input').val(query);
+                
+                // Perform search
+                performSearch(query);
+            } else {
+                resultsContainer.html('<div class="no-results">Please enter a search term.</div>');
+            }
+            
+            // Handle new searches
+            $('#search-form').on('submit', function(e) {
+                e.preventDefault();
+                const newQuery = $('#search-input').val().trim();
+                if (newQuery) {
+                    window.location.href = '/search.html?q=' + encodeURIComponent(newQuery);
+                }
+            });
+        });
+        
+        function performSearch(query) {
+            const resultsContainer = $('#search-results');
+            const searchTerms = query.toLowerCase().split(' ');
+            
+            // Filter pages based on the search query
+            const results = websitePages.filter(page => {
+                const contentLower = page.title.toLowerCase() + ' ' + page.content.toLowerCase();
+                // Check if any of the search terms are found in the content
+                return searchTerms.some(term => contentLower.includes(term));
+            });
+            
+            // Display results
+            if (results.length > 0) {
+                let resultsHTML = '';
+                
+                results.forEach(page => {
+                    resultsHTML += `
+                        <div class="result-item">
+                            <h3><a href="${page.url}">${page.title}</a></h3>
+                            <p>${highlightSearchTerms(page.content, searchTerms)}</p>
+                        </div>
+                    `;
+                });
+                
+                resultsContainer.html(resultsHTML);
+            } else {
+                resultsContainer.html('<div class="no-results">No results found for "' + query + '".</div>');
+            }
+        }
+        
+        // Function to highlight search terms in the content
+        function highlightSearchTerms(content, searchTerms) {
+            let highlightedContent = content;
+            
+            searchTerms.forEach(term => {
+                if (term.length > 2) { // Only highlight terms with more than 2 characters
+                    const regex = new RegExp('(' + term + ')', 'gi');
+                    highlightedContent = highlightedContent.replace(regex, '<strong>$1</strong>');
+                }
+            });
+            
+            return highlightedContent;
+        }
+    </script>
+</body>
+</html>

@@ -206,7 +206,7 @@ a {
   text-decoration: none;
   outline: none !important;
   cursor: pointer;
-  color: var(--border1);
+  color: var(--bg2);
   transition: all 0.4s ease-in-out;
 }
 
@@ -450,8 +450,8 @@ span {
 
 .blackbg333 {
   background: linear-gradient(to bottom, 
-                white 0%, 
-                white 50%, 
+                var(--bg1) 0%, 
+                var(--bg1) 50%, 
                 var(--blackbg) 50%, 
                 var(--blackbg) 100%);
 }
@@ -491,7 +491,7 @@ span {
 }
 
 .bnbg {
-  background: var(--bnbg);
+  background: var(--bg1);
 }
 
 .themebg {
@@ -1432,7 +1432,7 @@ footer {
   top: 60%;
 }
 .hero-section-version1 .spilit-socail a {
-  color: var(--spantext);
+  color: var(--bnbg);
 
   font-size: 20px;
 }
@@ -1528,7 +1528,7 @@ footer {
   top: 60%;
 }
 .hero-section-version1 .spilit-contact a {
-  color: var(--spantext);
+  color: var(--bg2);
 
   font-size: 20px;
 }
@@ -1612,7 +1612,7 @@ footer {
 }
 .hero-v1-content h1 .designers {
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--theme);
+  -webkit-text-stroke-color: var(--bg2);
   color: transparent;
   transition: all 0.5s;
   position: relative;
@@ -1620,12 +1620,12 @@ footer {
 .hero-v1-content h1 .designers::before {
   content: attr(data-text);
   position: absolute;
-  color: var(--theme);
+  color: var(--bg2);
   width: 0px;
   overflow: hidden;
   animation: pulse-width 3s ease-in infinite;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--theme);
+  -webkit-text-stroke-color: var(--bg2);
 }
 @keyframes pulse-width {
   50% {
@@ -1651,11 +1651,11 @@ footer {
   object-fit: contain;
 }
 .hero-v1-content .banner-quickly-thumb {
-  border-radius: 60px;
-  border: 0px solid #FF006A;
+  border-radius: 300px;
+  border: 4px solid aliceblue;
 }
 .hero-v1-content .banner-quickly-thumb img {
-  border-radius: 50px;
+  border-radius: 1000px;
   width: 100%; 
     max-width: 1584px; 
     height: auto; 
@@ -5352,6 +5352,7 @@ footer {
   z-index: 100;
   z-index: 999;
 }
+
 .header-section .brand-logo {
   max-width: 265px;
 }
@@ -5470,7 +5471,7 @@ footer {
     background: var(--bg1);
     z-index: 10;
     pointer-events: none;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
   }
   .header-section .main-navbar .custom-nav .sub-menu .sub-menu {
     border-left: 2px solid var(--p1);
@@ -5618,7 +5619,7 @@ footer {
   top: 0px;
   z-index: 999;
   width: 100%;
-  background: var(--bg1);
+  background: var(--bg);
 }
 
 .home2-border {

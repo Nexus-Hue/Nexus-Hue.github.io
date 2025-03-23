@@ -35,7 +35,7 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
 }
 
 .FooterTypeText {
-  color: #0F1C38;
+  color:#ffffff;
   text-align: center;
 }
 
@@ -479,7 +479,7 @@ span {
 }
 
 .bg2-clr {
-  background: var(--bg2) !important;
+  background: var(--bg1) !important;
 }
 
 .bg7-clr {
@@ -992,7 +992,7 @@ footer {
 }
 .about-wrapper-2 .about-header-items .counter-area .counter-item h2 {
   -webkit-text-stroke: 1px #FF006A;
-  -webkit-text-fill-color: #FF006A;
+  -webkit-text-fill-color: var(--white);
   margin-bottom: 5px;
   font-size: 55px;
   font-weight: 700;
@@ -2677,8 +2677,9 @@ footer {
 }
 
 .news-standard-wrapper .news-standard-items {
-  border: 1px solid #454750;
+  border: 7px solid var(--bg2);
   padding: 30px;
+  background-color: var(--blackbg);
 }
 .news-standard-wrapper .news-standard-items:not(:last-child) {
   margin-bottom: 20px;
@@ -2727,7 +2728,7 @@ footer {
   width: 7px;
   height: 7px;
   border-radius: 7px;
-  background-color: var(--theme);
+  background-color: var(--bg1);
 }
 .news-standard-wrapper .news-standard-items .news-content h3 {
   font-weight: bold;
@@ -3046,7 +3047,7 @@ footer {
 .blog-box-item .blog-content .post-list li {
   font-size: 16px;
   font-weight: 500;
-  color: #ABABAB;
+  color: #ffffff;
 }
 .blog-box-item .blog-content .post-list li span {
   color: var(--white);
@@ -3056,11 +3057,11 @@ footer {
   font-size: 16px;
   position: relative;
   border-radius: 100px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--bg2);
   padding: 5px 20px;
 }
 .blog-box-item .blog-content h3 a {
-  color: var(--border1);
+  color: var(--bg2);
 }
 .blog-box-item .blog-content h3 a:hover {
   color: var(--theme);
@@ -3079,7 +3080,7 @@ footer {
   transition: all 0.4s ease-in-out;
 }
 .blog-box-item .blog-image::before {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--bg1);
   bottom: 0;
   content: "";
   left: 50%;
@@ -3740,7 +3741,7 @@ footer {
 
 .main-sidebar .single-sidebar-widget {
   padding: 40px 30px;
-  background-color: #1D1D1D;
+  background-color: var(--blackbg);
   margin-bottom: 30px;
 }
 .main-sidebar .single-sidebar-widget .wid-title {

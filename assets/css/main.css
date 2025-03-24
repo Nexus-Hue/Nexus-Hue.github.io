@@ -3308,10 +3308,11 @@ footer {
   transition: all 0.4s;
   line-height: 1;
   text-transform: capitalize;
+ 
 }
 .radius-btn.style-2 {
   line-height: 1.8;
-  border: 1px solid rgb(69, 71, 80) !important;
+  border: 1px solid rgb(255, 255, 255) !important;
   color: var(--white);
 }
 .radius-btn.style-2 span i {
@@ -8447,6 +8448,8 @@ input.main-search-input::placeholder {
   width: 122px;
   min-width: 122px;
   height: 122px;
+  border: 1.5px solid var(--white);
+ 
 }
 
 .watch-version01 .video-popup .icons i {

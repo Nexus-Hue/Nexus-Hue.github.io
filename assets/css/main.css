@@ -1031,24 +1031,24 @@ footer {
 }
 
 .about-small-stork {
-  width: 297px;
+  max-width: 297px;
 }
 
 
 @media (max-width: 1800px) {
   .about-small-stork {
-    width: 100px;
+    width: 230px;
   }
 }
 @media (max-width: 575px) {
   .about-small-stork {
-    width: 70px;
+    width: 150px;
   }
 }
 @media (max-width: 400px) {
   .about-small-stork {
-    width: 40px;
-    display: none;
+    width: 150px;
+    
   }
 }
 
@@ -6290,8 +6290,8 @@ footer {
 }
 
 .brand-wrapper {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 3px solid #ffffff;
+  
  
 }
 

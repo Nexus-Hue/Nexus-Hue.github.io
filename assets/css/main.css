@@ -5945,11 +5945,11 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  content: "💧";
+  content: "";
   width: 15px;
   height: 25px;
   background: #49BCE6;
-  box-shadow: rgb(255, 0, 81) 0px 8px 24px;
+  box-shadow: #49BCE6 0px 8px 24px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   clip-path: polygon(50% 0%, 
@@ -5970,9 +5970,9 @@ footer {
   height: 25px;
   bottom: 0;
   left: 0;
-  content: "💧";
+  content: "";
   background: #49BCE6;
-  box-shadow: rgba(228, 235, 242, 0.2) 0px 8px 24px;
+  box-shadow: #49BCE6 0px 8px 24px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   clip-path: polygon(50% 0%, 

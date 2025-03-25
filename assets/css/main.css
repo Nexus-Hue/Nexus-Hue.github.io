@@ -1730,6 +1730,59 @@ footer {
     width: 100%;
   }
 }
+.hero-v1-content h1 span {
+  font-size: 100px;
+  line-height: 85px;
+  font-weight: 800;
+}
+.hero-v1-content h1 .text-italic {
+  font-style: italic;
+  font-weight: 500;
+}
+.hero-v1-content h1 .text-storke {
+  -webkit-text-stroke: 1px var(--theme);
+  -webkit-text-fill-color: transparent;
+}
+.hero-v1-content h1 .designers {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--bg2);
+  color: transparent;
+  transition: all 0.5s;
+  position: relative;
+}
+.hero-v1-content h1 .designers::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--bg2);
+  width: 0px;
+  overflow: hidden;
+  animation: pulse-width 3s ease-in infinite;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--bg2);
+}
+
+.designers2 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--bg1);
+  color: transparent;
+  transition: all 0.5s;
+  position: relative;
+}
+.designers2::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--bg1);
+  width: 0px;
+  overflow: hidden;
+  animation: pulse-width 3s ease-in infinite;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--bg1);
+}
+@keyframes pulse-width {
+  50% {
+    width: 100%;
+  }
+}
 .hero-v1-content .video-popup {
   position: relative;
   margin-right: 60px;

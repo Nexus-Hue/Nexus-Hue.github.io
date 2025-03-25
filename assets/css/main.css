@@ -119,6 +119,32 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
   padding: 20px;              /* Add some padding inside the container (adjust as needed) */
   color: white;               /* Optional: Make text inside the container white for contrast */
 }
+
+/* -----------------------
+    SHAREX
+ ------------------------- */
+ 
+
+
+.SHAREXframe{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 350px;
+  position: relative;
+
+   border-radius: 10px;
+}
+
+
+
+/* -----------------------
+    SHAREX
+ ------------------------- */
+
+
 /* -----------------------
      Fonts
  ------------------------- */
@@ -133,6 +159,8 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+
+
 
 ul {
   padding: 0;
@@ -331,6 +359,10 @@ span {
 .slider-button .cmn-prev:hover i {
   color: var(--black);
 }
+
+
+
+
 @media (max-width: 1399px) {
   .slider-button .cmn-next,
   .slider-button .cmn-prev {
@@ -8432,7 +8464,9 @@ input.main-search-input::placeholder {
   }
 }
 
-
+.news-standard-items.hidden {
+  display: none;
+}
 
 
 .watch-version01 {

@@ -1045,12 +1045,7 @@ footer {
     width: 150px;
   }
 }
-@media (max-width: 400px) {
-  .about-small-stork {
-    width: 150px;
-    
-  }
-}
+
 
 .about-wrapper-2 .about-header-items {
   display: flex;
@@ -1755,13 +1750,13 @@ footer {
 }
 .hero-v1-content .banner-quickly-thumb {
   border-radius: 300px;
-  border: 4px solid aliceblue;
+  border: 4px solid var(--white);
 }
 .hero-v1-content .banner-quickly-thumb img {
-  border-radius: 1000px;
+  border-radius: 190px;
   width: 100%; 
-    max-width: 1584px; 
-    height: auto; 
+    max-width: 1442px; 
+    max-height: 360px; 
 }
 .hero-v1-content .hero-arrow {
   width: 150px;
@@ -3197,13 +3192,8 @@ footer {
 }
 
 /* Water reflection  effect */
-.water-item {
-  margin-top: 30px;
-}
 
-.water-item .water-content {
-  margin-bottom: 25px;
-}
+
 
 .water-item .water-content .post-list {
   display: flex;
@@ -3230,9 +3220,7 @@ footer {
   padding: 5px 20px;
 }
 
-.water-item .water-content h3 a {
-  color: var(--bg2);
-}
+
 
 .water-item .water-content h3 a:hover {
   color: var(--theme);
@@ -3249,8 +3237,7 @@ footer {
 }
 
 .water-item .water-image img {
-  width: 100%;
-  height: 100%;
+  
   transition: all 0.4s ease-in-out;
 }
 
@@ -3278,6 +3265,16 @@ footer {
   opacity: 0;
   transition: all 500ms linear;
 }
+
+@media (max-width: 400px) {
+  .water-image {
+   
+        max-width: 320px; /* Limit container width to 400px */
+        margin: 0 auto; /* Center the container horizontally */
+  }
+}
+
+
 /* Water reflection  effect */
 
 .blog-box-item:hover .blog-image img {
@@ -3402,6 +3399,7 @@ footer {
     padding: 10px 20px;
   }
 }
+
 @media (max-width: 1199px) {
   .touch-btn {
     padding: 9px 14px;

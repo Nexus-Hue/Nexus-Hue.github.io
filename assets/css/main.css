@@ -1040,9 +1040,9 @@ footer {
     width: 230px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 600px) {
   .about-small-stork {
-    width: 169px;
+    width: 150px;
   }
 }
 

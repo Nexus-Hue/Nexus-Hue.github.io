@@ -4,56 +4,62 @@
 <!--<< Header Area >>-->
 
 <head>
-    <!-- == Meta Tags == -->
+    <!-- Essential Meta Tags First -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Keywords -->
-    <meta name="keywords" content="Nexus Hue, Fresno creative agency, custom web design, unique branding, handmade websites, B2B , artist, ad agency, brand differentiation, advertising, Artist from Fresno, Kevin Robles California">
-    <!-- Description -->
+    <title>Nexus Hue | Creative agency specializing in Differentiation | Artist based in Fresno Ca</title>
     <meta name="description" content="Nexus Hue | A Fresno-based creative agency helping SMEs stand out with handmade websites, unique branding, and strategic advertising. Nexus Hue harmonizes all elements of your brand to rise above the content flood">
-    <!-- == Page title == -->
-    <title> Nexus Hue | Creative agency specializing in Differentiation | Artist based in Fresno Ca </title>
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://www.nexushue.com">
-    <!-- robots -->
-    <meta name="algolia-site-verification"  content="E0BEB29039522F25" />
-    <!-- Open Graph Tags -->
+
+    <!-- SEO Tags -->
+    <meta name="keywords" content="Nexus Hue, Fresno creative agency, custom web design, unique branding, handmade websites, B2B , artist, ad agency, brand differentiation, advertising, Artist from Fresno, Kevin Robles California">
+    <meta name="algolia-site-verification" content="E0BEB29039522F25"/>
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="assets/img/banner/13.webp" as="image" fetchpriority="high">
+
+    <!-- Critical CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Deferred Non-Critical CSS -->
+    <link rel="stylesheet" href="assets/css/aos.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/nice-select.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/swiper.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/all.min.css" media="print" onload="this.media='all'">
+
+    <!-- Fallback for CSS if JavaScript is disabled -->
+    <noscript>
+        <link rel="stylesheet" href="assets/css/aos.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <link rel="stylesheet" href="assets/css/swiper.min.css">
+        <link rel="stylesheet" href="assets/css/all.min.css">
+    </noscript>
+
+    <!-- Preload Secondary Images -->
+    <link rel="preload" href="assets/img/StaticShih/TransparentCloud.webp" as="image">
+    <link rel="preload" href="assets/img/StaticShih/2BoltCloud.webp" as="image">
+    <link rel="preload" href="assets/img/StaticShih/3boltCloud.webp" as="image">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/XICON.png" type="image/x-icon">
+
+    <!-- Social Media Tags -->
     <meta property="og:title" content="Nexus✰Hue | Artist Specializing in Differentiation | Based Fresno Artist">
     <meta property="og:description" content="Helping businesses Standing Out Where Others Blend In! Using handmade websites, unique branding, and strategic advertising by Fresno's Artist Nexus✰Hue">
     <meta property="og:image" content="assets/img/banner/13.webp">
     <meta property="og:url" content="https://www.nexushue.com">
     <meta property="og:type" content="website">
+
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Nexus✰Hue | Unique Branding, hand made websites and strategic advertising">
-    <meta name="twitter:description" content="Handmade websites, unique branding, and strategic advertising that help SMEs stand out where others blend in. ">
+    <meta name="twitter:description" content="Handmade websites, unique branding, and strategic advertising that help SMEs stand out where others blend in.">
     <meta name="twitter:image" content="assets/img/banner/13.webp">
-    <!-- Favicon/x-icon -->
-    <link rel="shortcut icon" href="assets/img/XICON.png" type="image/x-icon">
-    <!-- Bootstrap Min 5.2.3 Css-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Fontawsome Icons Css-->
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <!-- Magnifiq Popup Css -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <!-- Nice Select Css -->
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <!-- Swiper Slider Css -->
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
-    <!-- Aos Animation Css -->
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <!-- Main css -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- Swiper SHih -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <!-- Preload Images -->
-    <link rel="preload" href="assets/img/banner/13.webp" as="image">
-    <link rel="preload" href="assets/img/StaticShih/TransparentCloud.webp" as="image">
-    <link rel="preload" href="assets/img/StaticShih/2BoltCloud.webp" as="image">
-    <link rel="preload" href="assets/img/StaticShih/3boltCloud.webp" as="image">
-   
-    
 </head>
 
 <body class="position-relative bg2-clr">
@@ -1179,7 +1185,7 @@
      <!-- js Swiper start -->
     <script src="assets/js/swiper.js" defer></script>
     <!-- Swiper CONTROL Scripts -->
-    <script>document.addEventListener("DOMContentLoaded",function(){new Swiper(".brand-slider",{lazy:{loadPrevNext:!0,loadPrevNextAmount:3},loop:!0,breakpoints:{390:{slidesPerView:1,spaceBetween:15},640:{slidesPerView:2,spaceBetween:20},768:{slidesPerView:2,spaceBetween:50},1024:{slidesPerView:3,spaceBetween:88},1920:{slidesPerView:4,spaceBetween:127}},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}})}),defer;</script>
+    <script>document.addEventListener("DOMContentLoaded",function(){new Swiper(".brand-slider",{lazy:{loadPrevNext:!0,loadPrevNextAmount:4},loop:!0,breakpoints:{390:{slidesPerView:1,spaceBetween:15},640:{slidesPerView:2,spaceBetween:20},768:{slidesPerView:2,spaceBetween:50},1024:{slidesPerView:3,spaceBetween:88},1920:{slidesPerView:4,spaceBetween:127}},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}})}),defer;</script>
     <!-- js Aos Counterup start -->
     <script src="assets/js/jquery.counterup.min.js" defer></script>
     <!-- js Aos Animation start -->

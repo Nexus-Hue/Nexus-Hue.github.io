@@ -52,9 +52,7 @@
     <link rel="preload" href="assets/img/StaticShih/TransparentCloud.webp" as="image">
     <link rel="preload" href="assets/img/StaticShih/2BoltCloud.webp" as="image">
     <link rel="preload" href="assets/img/StaticShih/3boltCloud.webp" as="image">
-    <!-- Preload 2 -->
-    <link rel="preload" href="assets/css/main.css" as="style">
-    <link rel="preload" href="assets/js/main.js" as="script">
+   
     
 </head>
 
@@ -407,12 +405,11 @@
 
                                 <div class="water-image" style="display: flex; justify-content: center; align-items: center; ">
                                     <a href="/bio">
+                                       
                                         <img src="assets/img/about/420.webp" 
                                             alt="Biblically accurate photo of Nexus Hue" 
                                             class="w-100" 
-                                            style="width: 500px; height: 447px; object-fit: contain; ">
-                                        <br>
-                                        <span style="align-items: center; display: flex;">𝙉𝙀𝙓𝙐𝙎☆𝙃𝙐𝙀 𝘽𝙞𝙤𝙜𝙧𝙖𝙥𝙝𝙮</span>
+                                            style="width: 500px; height: 447px; object-fit: contain; ">                                     
                                     </a>
                                 </div>
                                 
@@ -657,6 +654,7 @@
                                             <div class="brand-image2 text-center">
 
                                                 <img class="swiper-lazy" 
+                                                src="assets/img/StaticShih/TheUSA_Poster_lowres.webp"
                                                 data-src="assets/img/StaticShih/TheUSA_Poster.webp" 
                                                 alt="The Boys parody of USA season 47"
                                                 
@@ -670,6 +668,7 @@
                                             <div class="brand-image2 text-center">
                                                 
                                                 <img class="swiper-lazy" 
+                                                src="assets/img/StaticShih/Zucker_lowres.webp"
                                                 data-src="assets/img/StaticShih/Zucker.webp" 
                                                 alt="Mark Zuckerberg just being himself"
                                                 
@@ -683,6 +682,7 @@
                                             <div class="brand-image2 text-center">
 
                                                 <img class="swiper-lazy" 
+                                                src="assets/img/StaticShih/SantaCatrinaSelfie_lowres.webp"
                                                 data-src="assets/img/StaticShih/SantaCatrinaSelfie.webp" 
                                                 alt="Santa Catrina Illustration, Santa Catrina Selfie"
                                                 
@@ -1064,7 +1064,7 @@
             <div class="footer-bottom-version-one d-sm-flex gap-sm-0 gap-4 d-grid align-items-center justify-content-sm-between justify-content-center bg2-clr px-xxl-7 px-6 py-xxl-6 py-xl-6 py-7 mb-xxl-10 mb-lg-9 mb-sm-8 mb-5"
             data-aos="zoom-in-up" data-aos-duration="1600" style="background-color: var(--blackbg) !important;">
            <a href="/" class="footer-logov1 m-sm-0 m-auto" aria-label="Nexus★Hue Home">
-               <img src="assets/img/logo/logo.png" alt="Nexus★Hue Logo" style="width: 100px; height: 32px; object-fit: contain; ">
+               <img src="assets/img/logo/logo.png" alt="Nexus★Hue Logo">
            </a>
            <a href="#mains" class="footer-topscroll d-center themebg" aria-label="Scroll to top">
                <i class="fas fa-arrow-up" aria-hidden="true"></i>
@@ -1087,7 +1087,7 @@
         </div>
         <div class="sub-contact-wrapper d-grid">
             <a href="/" class="side-logo">
-                <img src="assets/img/logo/logo.png" alt="nexus hue logo" style="width: 265px; height: 85px; object-fit: contain; ">
+                <img src="assets/img/logo/logo.png" alt="nexus hue logo" >
             </a>
             <p>
             
@@ -1146,82 +1146,27 @@
 
 
     <!-- js Jquery start -->
-    <script src="assets/js/jquery.js" ></script>
+    <script src="assets/js/jquery.js" defer></script>
     <!-- js Bootstrap start -->
     <script src="assets/js/bootstrap.bundle.min.js" defer></script>
     <!-- js Waypoints start -->
-    <script src="assets/js/jquery.waypoints.js"></script>
+    <script src="assets/js/jquery.waypoints.js" defer></script>
     <!-- js Magnific popup start -->
-    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/magnific-popup.js" defer></script>
     <!-- js Nice Select start -->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-
+    <script src="assets/js/jquery.nice-select.min.js" defer></script>
+     <!-- js Swiper start -->
+    <script src="assets/js/swiper.js" defer></script>
     <!-- Swiper CONTROL Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" ></script>
-    
-    <!-- js Swiper start -->
-    <script src="assets/js/swiper.js"></script>
-    <!-- Swiper CONTROL Scripts -->
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const brandSlider = new Swiper('.brand-slider', {
-            // Lazy Loading Configuration
-            lazy: {
-            loadPrevNext: true,           // Load previous and next images for smoother transitions
-            loadPrevNextAmount: 3         // Amount of slides to load before and after the current slide
-            
-            },
-    
-            // Looping the carousel (infinite loop)
-            loop: true,  
-    
-            // Responsive Breakpoints
-            breakpoints: {
-            390: {
-                slidesPerView: 1,
-                spaceBetween: 15
-            },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 50
-            },
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 88
-            },
-            1920: {
-                slidesPerView: 4,
-                spaceBetween: 127
-            }
-            },
-    
-            // Optional Navigation
-            navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-            }
-        });
-        });
-    </script>
-  
-    <!-- Swiper CONTROL Scripts -->
-
-
+    <script>document.addEventListener("DOMContentLoaded",function(){new Swiper(".brand-slider",{lazy:{loadPrevNext:!0,loadPrevNextAmount:3},loop:!0,breakpoints:{390:{slidesPerView:1,spaceBetween:15},640:{slidesPerView:2,spaceBetween:20},768:{slidesPerView:2,spaceBetween:50},1024:{slidesPerView:3,spaceBetween:88},1920:{slidesPerView:4,spaceBetween:127}},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}})}),defer;</script>
     <!-- js Aos Counterup start -->
-    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js" defer></script>
     <!-- js Aos Animation start -->
-    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/aos.js" defer></script>
     <!-- js Aos Tilt start -->
-    <script src="assets/js/vanilla-tilt.min.js"></script>
+    <script src="assets/js/vanilla-tilt.min.js" defer></script>
     <!-- js Mian start -->
-    <script src="assets/js/main.js"></script>
-   
-
+    <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>

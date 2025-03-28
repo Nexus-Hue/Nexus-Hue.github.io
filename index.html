@@ -47,11 +47,14 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- Swiper SHih -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <!-- El Banner -->
+    <!-- Preload Images -->
     <link rel="preload" href="assets/img/banner/13.webp" as="image">
     <link rel="preload" href="assets/img/StaticShih/TransparentCloud.webp" as="image">
     <link rel="preload" href="assets/img/StaticShih/2BoltCloud.webp" as="image">
     <link rel="preload" href="assets/img/StaticShih/3boltCloud.webp" as="image">
+    <!-- Preload 2 -->
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="assets/js/main.js" as="script">
     
 </head>
 
@@ -122,7 +125,7 @@
                 <div class="d-lg-flex flex-xl-nowrap flex-wrap align-items-center justify-content-lg-between">
                     <div class="d-flex align-items-center justify-content-between">
                         <a href="/" class="brand-logo">
-                            <img class="w-100" src="assets/img/logo/logo.png" alt="logo" style="width: 265px; height: 85px; object-fit: contain; ">
+                            <img class="w-100" src="assets/img/logo/logo.png" alt="logo">
                         </a>
                         <div class="d-flex align-items-center gap-xxl-5 gap-5">
                             <a href="javascript:void(0)" class="search-trigger search-icon d-lg-none d-block">
@@ -313,7 +316,7 @@
                         </div>
 
                         <div class="banner-quickly-thumb w-100" data-aos="zoom-in-up" data-aos-duration="1111">
-                        <img src="assets/img/banner/13.webp" alt="img">
+                        <img src="assets/img/banner/13.webp" alt="Nexus Hue Banner">
                         </div>
                         
 
@@ -353,10 +356,10 @@
 
             <!-- Contact Info -->
 
-        <img src="assets/img/banner/soft-star.webp" alt="img" class="sfot-element1 ">
+        <img src="assets/img/banner/soft-star.webp" alt="Soft Star design element" class="sfot-element1 ">
   
            
-            <img src="assets/img/banner/soft-star.webp" alt="img" class="sfot-element2 " > 
+            <img src="assets/img/banner/soft-star.webp" alt="Soft Star design element" class="sfot-element2 " > 
             
          
           
@@ -756,8 +759,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
+                                   
                                     
 
                                 </div>
@@ -1085,7 +1087,7 @@
         </div>
         <div class="sub-contact-wrapper d-grid">
             <a href="/" class="side-logo">
-                <img src="assets/img/logo/logo.png" alt="img" style="width: 265px; height: 85px; object-fit: contain; ">
+                <img src="assets/img/logo/logo.png" alt="nexus hue logo" style="width: 265px; height: 85px; object-fit: contain; ">
             </a>
             <p>
             
@@ -1144,9 +1146,9 @@
 
 
     <!-- js Jquery start -->
-    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.js" ></script>
     <!-- js Bootstrap start -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
     <!-- js Waypoints start -->
     <script src="assets/js/jquery.waypoints.js"></script>
     <!-- js Magnific popup start -->
@@ -1155,60 +1157,59 @@
     <script src="assets/js/jquery.nice-select.min.js"></script>
 
     <!-- Swiper CONTROL Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" ></script>
+    
     <!-- js Swiper start -->
     <script src="assets/js/swiper.js"></script>
+    <!-- Swiper CONTROL Scripts -->
 
- <!-- Swiper CONTROL Scripts -->
-
- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const brandSlider = new Swiper('.brand-slider', {
-        // Lazy Loading Configuration
-        lazy: {
-          loadPrevNext: true,           // Load previous and next images for smoother transitions
-          loadPrevNextAmount: 3         // Amount of slides to load before and after the current slide
-         
-        },
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const brandSlider = new Swiper('.brand-slider', {
+            // Lazy Loading Configuration
+            lazy: {
+            loadPrevNext: true,           // Load previous and next images for smoother transitions
+            loadPrevNextAmount: 3         // Amount of slides to load before and after the current slide
+            
+            },
+    
+            // Looping the carousel (infinite loop)
+            loop: true,  
+    
+            // Responsive Breakpoints
+            breakpoints: {
+            390: {
+                slidesPerView: 1,
+                spaceBetween: 15
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 50
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 88
+            },
+            1920: {
+                slidesPerView: 4,
+                spaceBetween: 127
+            }
+            },
+    
+            // Optional Navigation
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+            }
+        });
+        });
+    </script>
   
-        // Looping the carousel (infinite loop)
-        loop: true,  
-  
-        // Responsive Breakpoints
-        breakpoints: {
-          390: {
-            slidesPerView: 1,
-            spaceBetween: 15
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 50
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 88
-          },
-          1920: {
-            slidesPerView: 4,
-            spaceBetween: 127
-          }
-        },
-  
-        // Optional Navigation
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        }
-      });
-    });
-  </script>
-  
-<!-- Swiper CONTROL Scripts -->
+    <!-- Swiper CONTROL Scripts -->
 
 
     <!-- js Aos Counterup start -->

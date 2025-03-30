@@ -1442,7 +1442,7 @@ footer {
   font-size: clamp(40px, 10vw, 100px);
   line-height: 1;
   display: inline-block;
-  color:  #cedeff;
+  color:  #cedeff7a;
   z-index: 2;
   letter-spacing: 0px;
 

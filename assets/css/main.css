@@ -1447,11 +1447,11 @@ footer {
   letter-spacing: 0px;
 
   /* Bright things in dark environments usually cast that light, giving off a glow */
-  filter: drop-shadow(7px 11px 0px);
+  filter: drop-shadow(0px 11px 0px);
   
 }
 
-
+/* -----------------------
 
 
 .GlitchLayers {
@@ -1895,6 +1895,9 @@ footer {
   }
 }
 
+
+   
+
 .Glitchy span {
   animation: paths 5s step-end infinite;
 }
@@ -1903,7 +1906,7 @@ footer {
   animation: paths 5s step-end infinite, opacity 5s step-end infinite,
     font 8s step-end infinite, movement 10s step-end infinite;
 }
-
+------------------------- */
 
 .hero-section-version1 {
   padding: 230px 5px 160px;

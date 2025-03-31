@@ -2583,10 +2583,10 @@ footer {
 }
 
 .news-standard-wrapper .news-standard-items {
-  
+  border: #FF006A 7px solid;
   border-radius: 20px;
   padding: 30px;
-  background-color: var(--bg1);
+  background-color: var(--blackbg);
 }
 .news-standard-wrapper .news-standard-items:not(:last-child) {
   margin-bottom: 20px;

@@ -338,7 +338,7 @@ span {
 /*   font-family: 'Pacifico', cursive; */
   font-family: 'Monda', sans-serif;
   font-size:10em;
-  animation:animate 1.5s linear;
+  animation:animate .25s linear;
   animation-iteration-count:2;
 /*   display:table-cell; */
   padding:0px  0px;
@@ -346,8 +346,8 @@ span {
       0px 0px 20px  #fff,
       0px 0px 10px  #fff,
       0px 0px 1px  #fff
-      ;
-}
+      ;}
+      
 .tubelight span:nth-child(1){
   animation-delay:0s;
 }

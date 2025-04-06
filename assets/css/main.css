@@ -32,6 +32,8 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
   --place: #858585;
   --tag: #646464;
   --bspan: #ababab;
+
+ 
 }
 
 .FooterTypeText {
@@ -7189,6 +7191,10 @@ input.main-search-input::placeholder {
     min-height: 40px !important;
   }
 }
+
+
+
+
 
 .team-staft {
   background: url(../../assets/img/team/team-stafbg.png) no-repeat center center;

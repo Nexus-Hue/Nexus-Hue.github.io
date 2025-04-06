@@ -2583,11 +2583,21 @@ footer {
 }
 
 .news-standard-wrapper .news-standard-items {
-  border: #FF006A 7px solid;
+  border: #ffffff 7px solid;
   border-radius: 20px;
   padding: 30px;
   background-color: var(--blackbg);
 }
+
+
+
+@media (max-width: 399px) {
+  .highlight-text  {
+    font-size: clamp(1.3rem, 5vw, 3.5rem);
+  }
+}
+
+
 .news-standard-wrapper .news-standard-items:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -4164,7 +4174,7 @@ footer {
 .accordion-single {
   transition: all 0.4s;
   border-radius: 8px;
-  border: 7px solid var(--bg1);
+  border: 7px solid var(--white);
   background-color:var(--theme);
 }
 .accordion-single .header-area {

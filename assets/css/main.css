@@ -2583,13 +2583,17 @@ footer {
 }
 
 .news-standard-wrapper .news-standard-items {
-  border: #ffffff 7px solid;
+  border: var(--theme) 7px solid;
   border-radius: 20px;
   padding: 30px;
   background-color: var(--blackbg);
 }
 
-
+@media (min-width: 1400px) {
+  .highlight-text  {
+    font-size: clamp(1rem, 2.5vw, 3rem);
+  }
+}
 
 @media (max-width: 399px) {
   .highlight-text  {
@@ -4174,7 +4178,7 @@ footer {
 .accordion-single {
   transition: all 0.4s;
   border-radius: 8px;
-  border: 7px solid var(--white);
+  border: 7px solid var(--theme);
   background-color:var(--theme);
 }
 .accordion-single .header-area {

@@ -1131,8 +1131,8 @@ footer {
   }
 }
 .about-wrapper-2 .about-header-items .counter-area .counter-item h2 {
-  -webkit-text-stroke: 1px #FF006A;
-  -webkit-text-fill-color: var(--bg1);
+  -webkit-text-stroke: 1px var(--white);
+  -webkit-text-fill-color: var(--white);
   margin-bottom: 5px;
   font-size: 55px;
   font-weight: 700;

@@ -7,7 +7,7 @@
     <!-- Essential Meta Tags First -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 𝙉𝙀𝙓𝙐𝙎★𝙃𝙐𝙀 | Artist Specializing in Differentiation | Creative agency founded & fully operated by Artist Nexus Hue Currently based in Fresno Ca</title>
+    <title> 𝙉𝙀𝙓𝙐𝙎★𝙃𝙐𝙀 | Artist Specializing in Differentiation | Creative agency founded by Artist Nexus Hue | Creative agency currently based in Fresno Ca</title>
     <meta name="description" content="Nexus Hue is a Fresno-based creative agency owned and operated by artist Nexus Hue. Making Visual Poetry in Marketing by using handmade websites, unique branding, and Crafting Ads Like Art. Nexus Hue harmonizes all elements of your brand to rise above the content flood. Nexus Hue, Where Art Meets B2B!">
     <link rel="canonical" href="https://www.nexushue.com">
 
@@ -23,6 +23,7 @@
     <!-- Critical CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/starry-sky.css">
 
     <!-- Deferred Non-Critical CSS -->
     <link rel="stylesheet" href="assets/css/aos.css" media="print" onload="this.media='all'">
@@ -293,9 +294,13 @@
         <!-- Custom Line Shape -->
 
         <!-- Hero Section -->
-        <section class="hero-section-version1 bnbg position-relative" >
+        <section class="hero-section-version1 bnbgFade position-relative " >
+            
             <div class="container">
+                <svg id="sky"></svg>
+                <div id="shootingstars"></div>
                 <div class="row g-5">
+                  
                     <div class="hero-v1-content position-relative">
                         <div class="d-flex align-items-sm-center align-items-end justify-content-between mb-xxl-16 mb-xl-14 mb-lg-12 mb-md-10 mb-sm-8 mb-5">
 
@@ -540,7 +545,8 @@
 
                      
 
-                    <div class="container zindex position-relative" style="padding-top: 42px;">
+                    <div class="container zindex position-relative" style="padding-top: 42px;" data-aos="zoom-in-down"
+                    data-aos-duration="1900">
                        
                         <div class="d-flex align-items-end justify-content-between flex-wrap gap-5 mb-xxl-15 mb-xl-12 mb-lg-10 mb-md-10 mb-sm-10 mb-9">
                             <div class="pricing-title">
@@ -689,7 +695,8 @@
                         </div>
                     </div>
 
-                    <div class="container zindex position-relative " style="padding-top: 69px;">
+                    <div class="container zindex position-relative " style="padding-top: 69px;" data-aos="zoom-in-down"
+                    data-aos-duration="1900">
                        
                         <div class="d-flex align-items-end justify-content-between flex-wrap gap-5 mb-xxl-15 mb-xl-12 mb-lg-10 mb-md-10 mb-sm-10 mb-9">
                             <div class="pricing-title">
@@ -884,7 +891,8 @@
                         </div>
                     </div>
                     
-                    <div class="brand-section fix section-padding ">
+                    <div class="brand-section fix section-padding " data-aos="zoom-in-down"
+                    data-aos-duration="1900">
                         <div class="container">
                             <div class="pricing-title">
                                 <h2 class="stitle">
@@ -1443,6 +1451,10 @@
     <script src="assets/js/vanilla-tilt.min.js" defer></script>
     <!-- js Main start -->
     <script src="assets/js/main.js" defer></script>
+     <!-- Anime.js library (must come before your starry sky script) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
+   <!-- Star animation script -->
+  <script src="assets/js/starry-sky.js" defer></script>
 </body>
 
 </html>

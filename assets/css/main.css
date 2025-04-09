@@ -639,6 +639,10 @@ span {
   background: var(--bg1);
 }
 
+.bnbgFade {
+  background: linear-gradient(to bottom, #FF006A 11%, #0F1C38 100%);
+}
+
 .themebg {
   background: var(--theme);
 }

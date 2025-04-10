@@ -6,6 +6,7 @@
   overflow: hidden;
   margin: 0;
   padding: 0;
+  z-index: -9999;
 }
 
 #shootingstars {
@@ -17,6 +18,7 @@
   overflow: hidden;
   transform: translatex(calc(50vw - 50%)) translatey(calc(50vh - 50%))
     rotate(120deg);
+    z-index: -9999;
 }
 
 .wish {
@@ -31,4 +33,5 @@
   background: linear-gradient(-45deg, white, rgba(0, 0, 255, 0));
   filter: drop-shadow(0 0 6px white);
   overflow: hidden;
+  z-index: -9999;
 }

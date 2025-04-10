@@ -1226,11 +1226,11 @@ footer {
 .hero-section-version1,
 .main,
 .container,
-.w-69,
+
 .hero-v1-content,
 .brand-wrapper
  {
-  z-index: 2;
+  z-index: 1;
 }
 
 

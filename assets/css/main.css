@@ -115,11 +115,13 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
      Expandable Lists
  ------------------------- */
 
- .Rounded-content {
-  background-color: #FF006A;  /* Set the background color */
+ .Reading-Card {
+  background-color: #ffffff;  /* Set the background color */
   border-radius: 15px;        /* Add rounded corners (adjust the px value for more/less rounding) */
   padding: 20px;              /* Add some padding inside the container (adjust as needed) */
-  color: white;               /* Optional: Make text inside the container white for contrast */
+  color: white;  
+  border-left: 11px solid var(--theme); 
+          
 }
 
 /* -----------------------

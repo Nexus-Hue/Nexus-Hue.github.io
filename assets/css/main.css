@@ -1227,7 +1227,8 @@ footer {
 .main,
 .container,
 .w-100,
-.hero-v1-content {
+.hero-v1-content,
+.brand-image2 {
   z-index: 1;
 }
 

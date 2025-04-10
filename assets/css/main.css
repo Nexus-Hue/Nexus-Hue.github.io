@@ -1226,10 +1226,12 @@ footer {
 .hero-section-version1,
 .main,
 .container,
-.about-image,
+.w-100,
 .hero-v1-content {
   z-index: 1;
 }
+
+
 .about-wrapper-2 .about-image .video-btn {
   position: absolute;
   top: 50%;

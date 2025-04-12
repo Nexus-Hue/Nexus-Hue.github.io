@@ -6554,6 +6554,7 @@ input.main-search-input::placeholder {
 
 .section-bg {
   background-color: #0F1C38;
+  background-image: url();
 }
 
 .step-working-processwrap {

@@ -5998,6 +5998,8 @@ footer {
   transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
 }
 
+
+
 .pricing-section {
   z-index: 1;
 }
@@ -6559,6 +6561,9 @@ input.main-search-input::placeholder {
 }
 
 /* Sparkle Type SHih CTA */
+
+
+
 
 .section-title-area {
   display: flex;
@@ -8108,6 +8113,24 @@ input.main-search-input::placeholder {
   opacity: 1;
 }
 
+
+.swiper-lazy-preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid transparent;
+  border-top: 4px solid #00f;  /* Adjust color */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 .brand-image2 {
   width: 420px;

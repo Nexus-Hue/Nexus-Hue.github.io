@@ -6435,6 +6435,7 @@ input.main-search-input::placeholder {
   color: var(--theme);
 }
 
+/* Sparkle Type SHih CTA */
 .CTATypeShih {
   background-color: var(--theme);        /* Nexus Hue's red */
   color: #ffffff;                   /* White text */
@@ -6452,7 +6453,7 @@ input.main-search-input::placeholder {
 }
 
 .CTATypeShih:hover {
-  box-shadow: 0 0 25px var(--theme), 0 0 50px var(--theme);
+  box-shadow: 0 0 25px var(--theme), 0 0 100px var(--theme);
   transform: scale(1.27);
 }
 
@@ -6481,7 +6482,7 @@ input.main-search-input::placeholder {
 }
 
 .CTATypeShih:hover::after {
-  content: '';
+  content: '🗲₊⁺𝙃𝘼𝙍𝙈𝙊𝙉𝙄𝙕𝙀 𝘼𝙇𝙇 𝙀𝙇𝙀𝙈𝙀𝙉𝙏𝙎!.⁺₊🗲';
   position: absolute;
   top: 0;
   left: 0;
@@ -6489,7 +6490,7 @@ input.main-search-input::placeholder {
   bottom: 0;
   pointer-events: none;
   opacity: 1;
-  animation: sparkle-explosion 0.8s ease-out forwards;
+  animation: sparkle-explosion 1.27s ease-out forwards;
 }
 
 /* Add multiple sparkle particles */
@@ -6556,6 +6557,8 @@ input.main-search-input::placeholder {
     opacity: 0;
   }
 }
+
+/* Sparkle Type SHih CTA */
 
 .section-title-area {
   display: flex;

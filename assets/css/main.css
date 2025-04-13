@@ -1147,8 +1147,8 @@ footer {
   padding: 0;
   background-color: white;
   position: absolute;
-  background: linear-gradient(-45deg, white, rgba(0, 0, 255, 0));
-  filter: drop-shadow(0 0 6px white);
+  background: linear-gradient(-45deg, #b3ebff, #49BCE6);
+  filter: drop-shadow(0 0 11px #49BCE6);
   overflow: hidden;
   z-index: -9999;
 }
@@ -1156,7 +1156,6 @@ footer {
 .hero-section-version1,
 .main,
 .container,
-
 .hero-v1-content,
 .brand-wrapper
  {

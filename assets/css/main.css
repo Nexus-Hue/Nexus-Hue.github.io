@@ -6436,6 +6436,128 @@ input.main-search-input::placeholder {
   color: var(--theme);
 }
 
+.CTATypeShih {
+  background-color: var(--theme);        /* Nexus Hue's red */
+  color: #ffffff;                   /* White text */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px var(--theme);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: visible; /* Allow sparkles to show outside button */
+}
+
+.CTATypeShih:hover {
+  box-shadow: 0 0 25px var(--theme), 0 0 50px var(--theme);
+  transform: scale(1.27);
+}
+
+/* Sparkle container */
+.CTATypeShih::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.CTATypeShih:hover::before {
+  opacity: 1;
+}
+
+/* Create sparkles */
+.CTATypeShih::after {
+  content: '';
+  opacity: 0;
+  transform: scale(0);
+}
+
+.CTATypeShih:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 1;
+  animation: sparkle-explosion 0.8s ease-out forwards;
+}
+
+/* Add multiple sparkle particles */
+@keyframes sparkle-explosion {
+  0% {
+    background-image: 
+      radial-gradient(circle at 30% 20%, white 0.5%, transparent 2%),
+      radial-gradient(circle at 70% 30%, white 0.5%, transparent 2%),
+      radial-gradient(circle at 40% 80%, white 0.5%, transparent 2%),
+      radial-gradient(circle at 80% 60%, white 0.5%, transparent 2%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  
+  100% {
+    background-image: 
+      radial-gradient(circle at 30% 20%, white 0.2%, transparent 0.8%),
+      radial-gradient(circle at 70% 30%, white 0.2%, transparent 0.8%),
+      radial-gradient(circle at 40% 80%, white 0.2%, transparent 0.8%),
+      radial-gradient(circle at 80% 60%, white 0.2%, transparent 0.8%);
+    background-size: 300% 300%;
+    background-repeat: no-repeat;
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+/* Add individual sparkle elements */
+.sparkle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.CTATypeShih:hover .sparkle {
+  animation: sparkle-fly 0.8s ease-out forwards;
+}
+
+.CTATypeShih .sparkle:nth-child(1) { top: 20%; left: 20%; }
+.CTATypeShih .sparkle:nth-child(2) { top: 30%; left: 80%; animation-delay: 0.1s; }
+.CTATypeShih .sparkle:nth-child(3) { top: 70%; left: 30%; animation-delay: 0.15s; }
+.CTATypeShih .sparkle:nth-child(4) { top: 60%; left: 70%; animation-delay: 0.05s; }
+.CTATypeShih .sparkle:nth-child(5) { top: 40%; left: 50%; animation-delay: 0.2s; }
+.CTATypeShih .sparkle:nth-child(6) { top: 80%; left: 80%; animation-delay: 0.1s; }
+.CTATypeShih .sparkle:nth-child(7) { top: 10%; left: 60%; animation-delay: 0.15s; }
+.CTATypeShih .sparkle:nth-child(8) { top: 50%; left: 10%; animation-delay: 0.05s; }
+
+@keyframes sparkle-fly {
+  0% {
+    transform: scale(0) translate(0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translate(var(--tx), var(--ty)) rotate(180deg);
+    opacity: 0;
+  }
+}
+
 .section-title-area {
   display: flex;
   align-items: center;

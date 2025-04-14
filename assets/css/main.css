@@ -6448,14 +6448,14 @@ input.main-search-input::placeholder {
   font-weight: bold;
   cursor: pointer;
   text-transform: uppercase;
-  box-shadow: 0 0 15px var(--theme);
+  box-shadow: 0 0 30px var(--theme);
   transition: all 0.3s ease-in-out;
   position: relative;
   overflow: visible; /* Allow sparkles to show outside button */
 }
 
 .CTATypeShih:hover {
-  box-shadow: 0 0 25px var(--theme), 0 0 100px var(--theme);
+  box-shadow: 0 0 45px var(--theme), 0 0 100px var(--theme);
   transform: scale(1.27);
 }
 
@@ -6484,7 +6484,7 @@ input.main-search-input::placeholder {
 }
 
 .CTATypeShih:hover::after {
-  content: '🗲₊⁺𝙃𝘼𝙍𝙈𝙊𝙉𝙄𝙕𝙀 𝘼𝙇𝙇 𝙀𝙇𝙀𝙈𝙀𝙉𝙏𝙎!.⁺₊🗲';
+  content: '✧₊⁺.𝙃𝘼𝙍𝙈𝙊𝙉𝙄𝙕𝙀 𝘼𝙇𝙇 𝙀𝙇𝙀𝙈𝙀𝙉𝙏𝙎!.⁺₊✧';
   position: absolute;
   top: 0;
   left: 0;
@@ -6492,7 +6492,7 @@ input.main-search-input::placeholder {
   bottom: 0;
   pointer-events: none;
   opacity: 1;
-  animation: sparkle-explosion 1.27s ease-out forwards;
+  animation: sparkle-explosion 1.97s ease-out forwards;
 }
 
 /* Add multiple sparkle particles */
@@ -6534,8 +6534,8 @@ input.main-search-input::placeholder {
 }
 
 .CTATypeShih:hover .sparkle {
-  animation: sparkle-fly 0.8s ease-out forwards;
-}
+  animation: sparkle-fly 0.97s ease-out forwards;}
+  
 
 .CTATypeShih .sparkle:nth-child(1) { top: 20%; left: 20%; }
 .CTATypeShih .sparkle:nth-child(2) { top: 30%; left: 80%; animation-delay: 0.1s; }

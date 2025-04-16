@@ -484,11 +484,6 @@ span {
 
 
 
-/* Sponsor section setup */
-.sponsor-section {
-  
-  z-index: 2;
-}
 
 /* Spill effect container */
 .spill-effect {
@@ -509,10 +504,10 @@ span {
 /* The images that will spill over */
 .spill-effect .swiper-slide img {
   position: relative;
-  z-index: 10;
+  z-index: 0;
   transform: translateY(-50%); /* Move images up to overlap with hero section */
   
-  transition: transform 0.3s ease;
+  transition: transform 2s ease;
 }
 
 /* Make sure other hero elements stay beneath the spilled images */
@@ -525,7 +520,7 @@ span {
 .spilit-socail,
 .spilit-contact {
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 
@@ -917,36 +912,44 @@ footer {
 .protfolio-solution .protfolio-solutionwrap {
   position: relative;
 }
-.protfolio-solution .protfolio-solutionwrap .swiper-pagination {
-  position: absolute;
-  right: 0;
-  bottom: 76px;
-  text-align: end;
-  left: initial;
-  font-size: 50px;
-  font-weight: 700;
+
+
+
+.blog-swiper .swiper-pagination {
+  margin-top: 32px !important;
+  position: relative;
+ 
 }
-.protfolio-solution .protfolio-solutionwrap .swiper-pagination span {
-  font-size: 50px;
-  font-weight: 700;
+
+
+/* Swiper pagination bullets as stars */
+.swiper-pagination-bullet {
+  width: 1.5em !important;
+  height: 1.5em !important;
+  background: none !important;
+  border-radius: 0 !important;
+  opacity: 1 !important;
+  position: relative;
+  margin: 0 6px !important;
+  font-size: 1.5em;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: none !important;
+  
+ 
 }
-@media (max-width: 1399px) {
-  .protfolio-solution .protfolio-solutionwrap .swiper-pagination {
-    bottom: 50px;
-    font-size: 36px;
-  }
-  .protfolio-solution .protfolio-solutionwrap .swiper-pagination span {
-    font-size: 36px;
-  }
+.swiper-pagination-bullet::before {
+  content: '✦';
+  color: #ffffff; /* Inactive star color */
+  font-size: 1em;
+  display: block;
+  line-height: 1;
+  transition: color 0.3s;
+  font-family: inherit;
 }
-@media (max-width: 991px) {
-  .protfolio-solution .protfolio-solutionwrap .swiper-pagination {
-    bottom: 40px;
-    font-size: 28px;
-  }
-  .protfolio-solution .protfolio-solutionwrap .swiper-pagination span {
-    font-size: 28px;
-  }
+.swiper-pagination-bullet-active::before {
+  color: var(--theme); /* Active star color */
+  text-shadow: 0 0 27px var(--theme);
 }
 
 .protfolio-solution-item .thumb {
@@ -1147,20 +1150,13 @@ footer {
   padding: 0;
   background-color: white;
   position: absolute;
-  background: linear-gradient(-45deg, #b3ebff, #49BCE6);
-  filter: drop-shadow(0 0 11px #49BCE6);
+  background: linear-gradient(-45deg, #ffffff, #00bbff);
+  filter: drop-shadow(0 0 11px #00bbff);
   overflow: hidden;
-  z-index: -9999;
+  z-index: -1;
 }
 
-.hero-section-version1,
-.main,
-.container,
-.hero-v1-content,
-.brand-wrapper
- {
-  z-index: 1;
-}
+
 
 
 .about-wrapper-2 .about-image .video-btn {
@@ -1528,8 +1524,7 @@ footer {
 .hero-section-version1 {
   padding: 200px 5px 160px;
   position: relative;
-  z-index: 1;
-  overflow: visible; /* Allow the images to overflow into this section */
+  z-index: 0;
 }
 .hero-section-version1 .sfot-element1 {
   position: absolute;
@@ -8120,7 +8115,7 @@ input.main-search-input::placeholder {
   left: 50%;
   transform: translate(-50%, -50%);
   border: 4px solid transparent;
-  border-top: 4px solid #00f;  /* Adjust color */
+  border-top: 4px solid var(--theme);  /* Adjust color */
   border-radius: 50%;
   width: 40px;
   height: 40px;

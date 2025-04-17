@@ -73,6 +73,7 @@
 </head>
 
 <body class="position-relative bg2-clr">
+    <div id="lang-announcement" aria-live="polite" style="position:absolute; left:-9999px; height:1px; width:1px; overflow:hidden;"></div>
 
     <!-- Preloader Start -->
     <div id="preloader" class="preloader">
@@ -157,11 +158,52 @@
                         <ul
                             class="custom-nav d-lg-flex d-grid gap-xxl-10 gap-xl-8 gap-lg-5 gap-md-2 gap-2 pt-lg-0 pt-5">
                            
-
+                            <li class="menu-item position-relative">
+                                <a class="fw_500 d-flex gap-2 flink-items " data-i18n="languages">
+                                    <span class="ani-icons">
+                                        <i class="fa fa-star white"></i>
+                                    </span>
+                                    𝙇𝘼𝙉𝙂𝙐𝘼𝙂𝙀𝙎
+                                </a>
+                            
+                                <ul class="sub-menu px-lg-4 py-xxl-3 py-2">
+                                    <!-- Spanish Button -->
+                                    <li class="menu-link py-1">
+                                        <a href="/" class=" fw_500 d-flex gap-2 flink-items " data-i18n="english">
+                                            <span class="ani-icons">
+                                                <i class="fa fa-star white"></i>
+                                            </span>
+                                            𝑬𝙉𝑮𝙇𝑰𝙎𝑯
+                                        </a>
+                                    </li>
+                                    <li class="menu-link py-1">
+                                        <a href="#" class="lang-switch fw_500 d-flex gap-2 flink-items " data-lang="es" data-i18n="spanish">
+                                            <span class="ani-icons">
+                                                <i class="fa fa-star white"></i>
+                                            </span>
+                                            𝙀𝙎𝙋𝘼𝙉̃𝙊𝙇
+                                        </a>
+                                    </li>
+                            
+                                    <!-- Japanese Button -->
+                                    <li class="menu-link py-1">
+                                        <a href="#" class="lang-switch fw_500 d-flex gap-2 flink-items lang-" data-lang="ja" data-i18n="japanese">
+                                            <span class="ani-icons">
+                                                <i class="fa fa-star white"></i>
+                                            </span>
+                                            日本語
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            
+                            
+                           
                             <li class="menu-item position-relative">
 
                                
-                                <a href="/contact" class="fw_500 d-flex  gap-2 flink-items">
+                                <a href="/contact" class="fw_500 d-flex  gap-2 flink-items" data-i18n="contact-info">
                                     <span class="ani-icons">
                                     <i class="fa fa-star white"></i>
                                 </span>
@@ -172,7 +214,7 @@
                                 <ul class="sub-menu px-lg-4 py-xxl-3 py-2">
                                     
                                     <li class="menu-link py-1">
-                                        <a href="mailto:Kevin@NexusHue.com" class="fw_500 d-flex  gap-2 flink-items">
+                                        <a href="mailto:Kevin@NexusHue.com" class="fw_500 d-flex  gap-2 flink-items" data-i18n="contact-email">
                                             <span class="ani-icons">
                                             <i class="fa fa-star white"></i>
                                         </span>
@@ -181,7 +223,7 @@
                                     </li>
 
                                     <li class="menu-link py-1">
-                                        <a href="tel:+15594958004" class="fw_500 d-flex  gap-2 flink-items">
+                                        <a href="tel:+15594958004" class="fw_500 d-flex  gap-2 flink-items" data-i18n="contact-phone">
                                             <span class="ani-icons">
                                             <i class="fa fa-star white"></i>
                                         </span>
@@ -195,7 +237,7 @@
 
                             <li class="menu-item position-relative">
 
-                                <a href="/about" class="fw_500 d-flex  gap-2 flink-items">
+                                <a href="/about" class="fw_500 d-flex  gap-2 flink-items" data-i18n="about-title">
                                     <span class="ani-icons">
                                     <i class="fa fa-star white"></i>
                                 </span>
@@ -208,7 +250,7 @@
                                
                                 <li class="menu-link py-1">
 
-                                    <a href="/bio" class="fw_500 d-flex  gap-2 flink-items">
+                                    <a href="/bio" class="fw_500 d-flex  gap-2 flink-items" data-i18n="about-bio">
                                         <span class="ani-icons">
                                         <i class="fa fa-star white"></i>
                                     </span>
@@ -254,7 +296,7 @@
 
                              <li class="menu-item position-relative">
 
-                                <a href="/blogs" class="fw_500 d-flex  gap-2 flink-items">
+                                <a href="/blogs" class="fw_500 d-flex  gap-2 flink-items" data-i18n="blogs">
                                     <span class="ani-icons">
                                     <i class="fa fa-star white"></i>
                                 </span>
@@ -269,7 +311,7 @@
                         </ul>
                     </div>
                     <div class="d-lg-flex d-none d-grid justify-content-center ph-clickwrap align-items-center gap-xxl-7 gap-xl-6 gap-lg-5 gap-3">
-                        <a href="tel:+15594958004" class="d-flex align-items-center gap-sm-3 gap-2 touch-btn cmn-btn" style="color: white;">
+                        <a href="tel:+15594958004" class="d-flex align-items-center gap-sm-3 gap-2 touch-btn cmn-btn" style="color: white;" data-i18n="TopRightPhone">
                             
                                 <i class="fa fa-phone" aria-hidden="true"></i>
 
@@ -357,7 +399,7 @@
 
                         <div style="text-align: center; -webkit-text-fill-color:  var(--white);"  data-aos="zoom-in-up" data-aos-duration="1111">
                             
-                            <a href="mailto:Kevin@NexusHue.com" class="btn CTATypeShih" style="margin-top: 40px; background-color:  #FF006A; border-color: #FF006A; border-width: 7px;">✧₊⁺. 𝙀𝙇𝙀𝙑𝘼𝙏𝙀 𝙔𝙊𝙐𝙍 𝘽𝙍𝘼𝙉𝘿 .⁺₊✧   <span class="sparkle" style="--tx: -50px; --ty: -50px;"></span>
+                            <a href="mailto:Kevin@NexusHue.com" class="btn CTATypeShih" data-i18n="cta" style="margin-top: 40px; background-color:  #FF006A; border-color: #FF006A; border-width: 7px;">✧₊⁺. 𝙀𝙇𝙀𝙑𝘼𝙏𝙀 𝙔𝙊𝙐𝙍 𝘽𝙍𝘼𝙉𝘿 .⁺₊✧   <span class="sparkle" style="--tx: -50px; --ty: -50px;"></span>
                                 <span class="sparkle" style="--tx: 60px; --ty: -40px;"></span>
                                 <span class="sparkle" style="--tx: -40px; --ty: 85px;"></span>
                                 <span class="sparkle" style="--tx: 50px; --ty: 60px;"></span>
@@ -477,7 +519,7 @@
                                 </div>
 
                                 
-                                  <h2 class="stitle d-flex align-items-center mb-xxl-8 mb-xl-7 mb-lg-6 mb-5 gap-xxl-7 gap-xl-5 gap-3 " data-aos="zoom-in-left" data-aos-duration="1700" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">
+                                  <h2 class="stitle d-flex align-items-center mb-xxl-8 mb-xl-7 mb-lg-6 mb-5 gap-xxl-7 gap-xl-5 gap-3"  data-aos="zoom-in-left" data-aos-duration="1700" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);" >
                                     
                                     <img src="assets/img/element/ContentFlood.webp"
                                     alt="Rise above the Content Flood" 
@@ -528,17 +570,19 @@
                       <p>
                                     
     
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="none">
-                           <text x="50%" y="50%" font-size="40" font-weight="bold" fill="var(--theme)" text-anchor="middle" alignment-baseline="middle">
-                              ✧₊⁺𝙀𝙇𝙀𝙑𝘼𝙏𝙀 𝙔𝙊𝙐𝙍 𝘽𝙍𝘼𝙉𝘿 𝙏𝙊 𝙏𝙃𝙀 𝙎𝙏𝘼𝙍𝙎!⁺₊✧
+                      
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="none">
+                            <text x="50%" y="50%" font-size="40" font-weight="bold" fill="var(--theme)" text-anchor="middle" alignment-baseline="middle" data-i18n="cta">
+                               ✧₊⁺𝙀𝙇𝙀𝙑𝘼𝙏𝙀 𝙔𝙊𝙐𝙍 𝘽𝙍𝘼𝙉𝘿 𝙏𝙊 𝙏𝙃𝙀 𝙎𝙏𝘼𝙍𝙎!⁺₊✧
                             </text>
-                          </svg>
+                         </svg>
+                         
                                  
-                          <p style="color: var(--blackbg); text-indent: 40px;"> 
+                          <p style="color: var(--blackbg); text-indent: 40px;" data-i18n="unlike-other-partners">
                             Unlike other partners, I don't believe in being dead weight! I bring vision, strategy, bold ideas, and have the capacity to make shit happen without burning through bucketloads of cash!</p>
                             <br>  
 
-                            <p style="color: var(--blackbg); text-indent: 40px;">  <strong style="color: #FF006A;">𝙉𝙀𝙓𝙐𝙎★𝙃𝙐𝙀! ,</strong> is the tidal wave that lifts your brand out of the sea of ordinary! 
+                            <p style="color: var(--blackbg); text-indent: 40px;" data-i18n="is-the-tidal-wave">  <strong style="color: #FF006A;">𝙉𝙀𝙓𝙐𝙎★𝙃𝙐𝙀! ,</strong> is the tidal wave that lifts your brand out of the sea of ordinary! 
                             Turning brands into works of art that rise above the content flood!   
 
                             Harmonizing strategy & creativity to help your brand stand out in crowded markets! Capturing the attention of investors, customers, and industry leaders.
@@ -550,12 +594,12 @@
 
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="none">
                             
-                            <text x="50%" y="50%" font-size="40" font-weight="bold" fill="var(--theme)" text-anchor="middle" alignment-baseline="middle">
+                            <text x="50%" y="50%" font-size="40" font-weight="bold" fill="var(--theme)" text-anchor="middle" alignment-baseline="middle" data-i18n="harmonize">
                                 ✧₊⁺𝙃𝘼𝙍𝙈𝙊𝙉𝙄𝙕𝙀 𝘼𝙇𝙇 𝙀𝙇𝙀𝙈𝙀𝙉𝙏𝙎!⁺₊✧
                             </text>
                           </svg>
 
-                         <p style="color: var(--blackbg); text-indent: 40px;">
+                         <p style="color: var(--blackbg); text-indent: 40px;" data-i18n="beyond-getting-shit-done">
 
                             <strong style="color: #FF006A;">𝙉𝙀𝙓𝙐𝙎★𝙃𝙐𝙀! ,</strong> goes beyond getting shit done in an artsy way! My work blends all elements into a cohesive visual identity that's both unique and impactful!
                             While other partners talk, I build. I'm not here to coast...I'm here to contribute, create, and execute that shit!
@@ -580,18 +624,19 @@
                                 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="none">
         <!-- Full text as one continuous string with larger font size -->
-        <text x="50%" y="50%" font-size="40" font-weight="bold" fill="var(--theme)" text-anchor="middle" alignment-baseline="middle">
+        <text x="50%" y="50%" font-size="40" font-weight="bold" fill="var(--theme)" text-anchor="middle" alignment-baseline="middle" data-i18n="stand-out">
             ✧₊⁺𝙎𝙏𝘼𝙉𝘿 𝙊𝙐𝙏 𝙒𝙃𝙀𝙍𝙀 𝙊𝙏𝙃𝙀𝙍𝙎 𝘽𝙇𝙀𝙉𝘿 𝙄𝙉!⁺₊✧
         </text>
       </svg>
 
 
-    <p style="color: var(--blackbg);"> While I can't promise endless traffic, I can guarantee my partners will stand out from competition! There's no need to be everywhere, we just need to show the right people what makes the brand special!👽🌟
+    <p style="color: var(--blackbg);" data-i18n="endless-traffic"> While I can't promise endless traffic, I can guarantee my partners will stand out from competition! There's no need to be everywhere, we just need to show the right people what makes the brand special!👽🌟
        
        If you’re tired of blending in & ready to redefine your brand’s future, let’s connect & explore how we can make your brand 
         </p>  
-                   <P style="color: var(--blackbg);"> Rise above <br></P>
-                                       <p style="color: #FF006A;">࣪𝕿𝖍𝖊 𝕮𝖔𝖓𝖙𝖊𝖓𝖙 𝕱𝖑𝖔𝖔𝖉!</p>
+                   <P style="color: var(--blackbg);" data-i18n="Intro-end"> Rise above <br></P> 
+                   
+                                       <p style="color: #FF006A;" data-i18n="rise-above">𝕿𝖍𝖊 𝕮𝖔𝖓𝖙𝖊𝖓𝖙 𝕱𝖑𝖔𝖔𝖉!</p>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="none">
                                             <!-- Full text as one continuous string with larger font size -->
                                             <text x="50%" y="50%" font-size="40" font-weight="bold" fill="var(--theme)" text-anchor="middle" alignment-baseline="middle">
@@ -1492,6 +1537,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"defer></script>
    <!-- Star animation script -->
   <script src="assets/js/starry-sky.js" defer></script>
+   <!-- Translation -->
+  <script src="assets/js/i18next.min.js" defer></script>
+  <script src="assets/js/translation-handler.js" defer></script>
 </body>
 
 </html>

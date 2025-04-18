@@ -922,6 +922,174 @@ footer {
 }
 
 
+
+
+/* Comparison Image */
+.compare {
+  --mask-width: 50%;
+  --handle-size: 32px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.compare__separator {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: var(--mask-width);
+  width: 2px;
+  margin-left: -1px;
+  background: black;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.compare__image-one {
+  width: 100%;
+  display: block;
+}
+
+.compare__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  background: white;
+  overflow: hidden;
+  width: var(--mask-width);
+}
+
+.compare__image-two {
+  height: 100%;
+  width: auto;
+}
+
+.compare__input {
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  position: absolute;
+  top: 0;
+  left: calc(var(--handle-size) / -2);
+  width: calc(100% + var(--handle-size));
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+  cursor: col-resize;
+  background-color: transparent;
+}
+
+/* Firefox */
+.compare__input::-moz-range-track {
+  height: 100%;
+}
+
+.compare__input::-moz-range-thumb {
+  height: 100%;
+  border-radius: 0;
+  width: var(--handle-size);
+  border: none;
+}
+
+/* Webkit */
+.compare__input::-webkit-slider-runnable-track {
+  height: 100%;
+}
+
+.compare__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 100%;
+  border-radius: 0;
+  width: var(--handle-size);
+  border: none;
+}
+
+.compare__icon {
+  position: absolute;
+  z-index: 2;
+  color: #333;
+  width: var(--handle-size);
+  height: var(--handle-size);
+  top: 50%;
+  left: var(--mask-width);
+  transform: translate(-50%, -50%);
+  padding: 6px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background: white;
+}
+
+.compare__icon path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+
+
+
+.compare {
+  transform-style: preserve-3d;
+}
+
+.compare,
+.compare__mask,
+.compare__input,
+.compare__image-one,
+.compare__separator {
+  will-change: transform;
+  transition: transform 1000ms, outline 1000ms, box-shadow 1000ms, opacity 1000ms;
+  transition-timing-function: ease-out;
+  outline: 2px solid transparent;
+}
+
+.compare__input::-moz-range-thumb {
+  transition-timing-function: ease-out;
+  transition: outline 1000ms, background-color 1000ms;
+  outline: 2px solid transparent;
+}
+
+.compare__input::-webkit-slider-thumb {
+  transition-timing-function: ease-out;
+  transition: outline 1000ms, background-color 1000ms;
+  outline: 2px solid transparent;
+}
+
+.debug {
+  --step: 120px;
+}
+.debug .compare {
+  transform: scale(0.75) translateY(5%) rotateX(30deg) rotateZ(10deg);
+}
+.debug .compare__image-one {
+  outline-color: var(--red);
+}
+.debug .compare__mask {
+  outline-color: var(--light-green);
+  transform: translateZ(var(--step));
+  box-shadow: 0 calc(var(--step) * 0.66) 5px rgba(0, 0, 0, 0.05);
+}
+.debug .compare__input {
+  opacity: 1;
+  outline-color: var(--blue);
+  transform: translateZ(calc(var(--step) * 2));
+}
+.debug .compare__separator {
+  transform: translateZ(calc(var(--step) * 3));
+}
+.debug .compare__input::-moz-range-thumb {
+  outline-color: var(--blue);
+  background-color: rgb(var(--blue-rgb)/0.1);
+}
+.debug .compare__input::-webkit-slider-thumb {
+  outline-color: var(--blue);
+  background-color: rgb(var(--blue-rgb)/0.1);
+}
+/* Comparison Image */
+
+
+
 /* Swiper pagination bullets as stars */
 .swiper-pagination-bullet {
   width: 1.5em !important;

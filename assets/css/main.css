@@ -6600,6 +6600,26 @@ input.main-search-input::placeholder {
   color: var(--theme);
 }
 
+
+.ButtonGlow {
+  background-color: var(--theme);        /* Nexus Hue's red */
+  color: #ffffff;                   /* White text */
+ padding: 1.5%;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 30px var(--theme);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: visible; /* Allow sparkles to show outside button */
+  margin: 2%;
+}
+
+
+
 /* Sparkle Type SHih CTA */
 .CTATypeShih {
   background-color: var(--theme);        /* Nexus Hue's red */

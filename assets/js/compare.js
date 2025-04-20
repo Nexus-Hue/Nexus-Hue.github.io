@@ -1,16 +1,24 @@
 "use strict";
+
 // ----- IMAGE COMPARISON SLIDER ----- //
-const $compare = document.querySelector(".compare");
-const $input = document.querySelector(".compare input");
-$input.addEventListener("input", () => {
+document.querySelectorAll(".compare").forEach(($compare) => {
+    const $input = $compare.querySelector("input");
+    const $mask = $compare.querySelector(".compare__mask");
+
+    // Set initial mask width
     $compare.style.setProperty("--mask-width", `${$input.value}%`);
+    $mask.style.width = `${$input.value}%`;
+
+    // Update mask width on input
+    $input.addEventListener("input", () => {
+        $compare.style.setProperty("--mask-width", `${$input.value}%`);
+        $mask.style.width = `${$input.value}%`;
+    });
 });
-$compare.style.setProperty("--mask-width", `${$input.value}%`);
+
 // ----- DEBUG STUFF ----- //
-const $toggleDebug = document.querySelector(".toggle-debug");
-const removeOverflow = () => {
-    $compare.style.removeProperty("overflow");
-};
-$toggleDebug.addEventListener("click", () => {
-    document.body.classList.toggle("debug");
+document.querySelectorAll(".toggle-debug").forEach(($toggleDebug) => {
+    $toggleDebug.addEventListener("click", () => {
+        document.body.classList.toggle("debug");
+    });
 });

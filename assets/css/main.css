@@ -1089,6 +1089,41 @@ footer {
 /* Comparison Image */
 
 
+/* Youtube Play Button */
+.youtube-facade {
+  background:var(--blackbg);
+  position: relative;
+  cursor: pointer;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.yt-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  padding: 6%;
+  width: 97px;
+  height: 20px;
+  background: var(--theme);
+  border-radius: 14px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+.yt-play-btn::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 26px solid #fff;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  margin-left: 6px;
+}
+/* Youtube Play Button */
 
 /* Swiper pagination bullets as stars */
 .swiper-pagination-bullet {

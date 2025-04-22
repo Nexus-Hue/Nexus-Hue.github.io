@@ -3421,7 +3421,7 @@ footer {
   transform: rotate(90deg);
 }
 .radius-btn.style-2:hover span i {
-  color: var(--theme) !important;
+  color: var(--white) !important;
 }
 
 .touch-btn {
@@ -6650,7 +6650,7 @@ input.main-search-input::placeholder {
   transition: all 0.3s ease-in-out;
   position: relative;
   overflow: visible; /* Allow sparkles to show outside button */
-  margin: 2%;
+
 }
 
 

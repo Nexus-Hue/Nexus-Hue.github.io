@@ -11,9 +11,14 @@ document.addEventListener("DOMContentLoaded", function() {
             el: ".swiper-pagination",
             clickable: true
         },
+        grabCursor: true, // Cursor grabbing Jutsu! On hover
+        simulateTouch: true, // Enables swiping with mouse/touch
+        touchStartPreventDefault: false, // Interactions inside slide content
+        touchReleaseOnEdges: true, // Prevents getting stuck on edges
         breakpoints: {
             768: { slidesPerView: 2 },
             1200: { slidesPerView: 3 }
         }
     });
 });
+

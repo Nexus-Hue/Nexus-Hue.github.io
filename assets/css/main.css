@@ -128,7 +128,7 @@ h6
   margin: 0px;
   padding: 0;
   color: var(--white);
-  text-transform: capitalize;
+   
   transition: all 0.4s ease-in-out;
 }
 
@@ -1466,7 +1466,7 @@ footer {
 }
 
 .awards-wrapper .awards-content h2 {
-  text-transform: capitalize;
+   
   font-size: 80px;
   line-height: 1;
   margin-bottom: 30px;
@@ -2389,7 +2389,7 @@ footer {
   line-height: 27px;
   display: inline-block;
   transition: all 0.4s;
-  text-transform: capitalize;
+   
 }
 .blog-right-bar .box .tagwrap a:last-child {
   margin-right: 0;
@@ -2439,7 +2439,7 @@ footer {
 .blog-post-details .single-blog-post .post-content .hilight-text p {
   max-width: 100%;
   font-weight: 500;
-  text-transform: capitalize;
+   
   font-size: 24px;
   line-height: 36px;
 }
@@ -3008,7 +3008,7 @@ footer {
   color: var(--white);
   display: inline-block;
   font-weight: 500;
-  text-transform: capitalize;
+   
   font-size: 16px;
   position: relative;
   border-radius: 100px;
@@ -3039,7 +3039,7 @@ footer {
 }
 .news-details-area .blog-post-details .single-blog-post .post-content .hilight-text p {
   font-weight: 600;
-  text-transform: capitalize;
+   
   font-style: italic;
   line-height: 26px;
   color: var(--white);
@@ -3070,7 +3070,7 @@ footer {
   line-height: 1;
   background: #1D1D1D;
   margin-right: 8px;
-  text-transform: capitalize;
+   
   font-weight: 500;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -3219,7 +3219,7 @@ footer {
   color: var(--white);
   display: inline-block;
   font-weight: 500;
-  text-transform: capitalize;
+   
   font-size: 16px;
   position: relative;
   border-radius: 100px;
@@ -3280,7 +3280,7 @@ footer {
   color: var(--white);
   display: inline-block;
   font-weight: 500;
-  text-transform: capitalize;
+   
   font-size: 16px;
   position: relative;
   border-radius: 100px;
@@ -3404,7 +3404,7 @@ footer {
 .radius-btn {
   transition: all 0.4s;
   line-height: 1;
-  text-transform: capitalize;
+   
  
 }
 .radius-btn.style-2 {
@@ -3558,7 +3558,7 @@ footer {
   vertical-align: middle;
   display: inline-block;
   border: none;
-  text-transform: capitalize;
+   
   text-align: center;
   background-color: var(--theme);
   color: var(--white);
@@ -3808,7 +3808,7 @@ footer {
   border: 1px solid #454750;
   border-radius: 100px;
   line-height: 1;
-  text-transform: capitalize;
+   
   color: var(--theme);
   margin-bottom: 20px;
 }
@@ -3915,7 +3915,7 @@ footer {
 }
 .project-details-wrapper .project-details-content .list-items li {
   color: #BEBEBE;
-  text-transform: capitalize;
+   
   position: relative;
 }
 .project-details-wrapper .project-details-content .list-items li span {
@@ -4025,7 +4025,7 @@ footer {
   vertical-align: middle;
   display: inline-block;
   border: none;
-  text-transform: capitalize;
+   
   text-align: center;
   background-color: var(--theme);
   color: var(--white);
@@ -4201,7 +4201,7 @@ footer {
   font-weight: 500;
   background: transparent;
   margin-right: 5px;
-  text-transform: capitalize;
+   
   margin-bottom: 10px;
   border-radius: 0;
   color: #646464;
@@ -5146,7 +5146,7 @@ footer {
 .footer-widgets-wrapper .single-footer-widget .footer-content .payment-save label {
   font-size: 16px;
   font-weight: 500;
-  text-transform: capitalize;
+   
   color: #BEBEBE;
 }
 .footer-widgets-wrapper .single-footer-widget .footer-content .payment-save label span {
@@ -6446,7 +6446,7 @@ footer {
   color: var(--white);
   font-size: 16px;
   font-weight: 600;
-  text-transform: capitalize;
+   
 }
 .single-pricing-items .price-items .price-cont .link-btn i {
   margin-left: 10px;
@@ -6559,7 +6559,7 @@ footer {
   height: 50px;
   border: 0;
   padding: 0 0px;
-  text-transform: capitalize;
+   
   background: transparent;
   font-size: 16px !important;
   color: var(--theme);
@@ -6856,7 +6856,7 @@ input.main-search-input::placeholder {
   margin-bottom: 15px;
   display: inline-block;
   font-weight: 500;
-  text-transform: capitalize;
+   
   font-size: 16px;
   position: relative;
   border-radius: 100px;
@@ -7238,7 +7238,7 @@ input.main-search-input::placeholder {
   font-size: 50px;
   font-weight: 700;
   line-height: 120%;
-  text-transform: capitalize;
+   
 }
 @media (max-width: 991px) {
   .service-deatails-wrapper .details-content h2 {
@@ -7265,7 +7265,7 @@ input.main-search-input::placeholder {
   color: var(--theme);
   font-size: 16px;
   font-weight: 500;
-  text-transform: capitalize;
+   
   line-height: 1;
   display: inline-block;
   padding: 10px 16px;
@@ -7301,7 +7301,7 @@ input.main-search-input::placeholder {
 }
 .service-deatails-wrapper .details-content .list-items li {
   color: #BEBEBE;
-  text-transform: capitalize;
+   
   position: relative;
 }
 .service-deatails-wrapper .details-content .list-items li span {

@@ -223,7 +223,6 @@
   touch-action: manipulation;
   user-select: none;
 }
-/* Existing desktop hover stays the same */
 .book.open > .book-front {
   transform: rotateY(-180deg) translateZ(0);
   z-index: 0;

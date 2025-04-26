@@ -75,7 +75,7 @@
 }
 .book-front div:first-child::before,
 .book-front div:last-child::before {
-  background-color: #999;
+  background-color: var(--theme);
   content: "";
   left: 0;
   top: 0;
@@ -88,7 +88,7 @@
   user-select: none;
 }
 .book-front div:first-child::after {
-  background-color: #999;
+  background-color: var(--theme);
   content: "";
   height: 100%;
   width: 4px;

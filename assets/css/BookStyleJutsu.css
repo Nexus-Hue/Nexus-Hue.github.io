@@ -17,6 +17,7 @@
   perspective: 1000px;
 }
 
+
 .book:hover > .book-front,
 .book.open > .book-front {
   transform: rotateY(-180deg) translateZ(0);
@@ -257,3 +258,7 @@
   }
 }
 
+/* Allow book animations to overflow */
+.swiper2 {
+  overflow: visible !important;
+}

@@ -1,0 +1,26 @@
+# robots.txt for www.nexushue.com
+# Optimized for SEO
+
+# Allow all search engines to crawl everything on the site
+User-agent: *
+Disallow:
+
+# Block specific areas that are not important for SEO (admin, private data, etc.)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /login/
+Disallow: /checkout/
+Disallow: /assets/img/StaticShih/LOWRES/
+
+# Block bots from crawling image folders (if you don't want to index images in the assets directory)
+User-agent: Googlebot-Image
+Disallow: /assets/img/
+
+# Allow Googlebot to crawl important directories, such as blogs or content-rich pages
+User-agent: Googlebot
+Allow: /blogs/
+Allow: /about/
+Allow: /shop/
+
+# Allow search engines to crawl your XML sitemap for better indexing
+Sitemap: https://www.nexushue.com/sitemap.xml

@@ -23,22 +23,24 @@
     <meta property="og:image" content="assets/img/blogs/AiOutlaws/BeyondHeadlinesVol1.webp">
     <meta property="og:url" content="https://www.nexushue.com/AI-Hypocrisy-Trailblazers-or-Outlaws">
     <meta property="og:type" content="article">
-    <!-- Favicon/x-icon -->
-    <link rel="shortcut icon" href="assets/img/XICON.png" type="image/x-icon">
-    <!-- Bootstrap Min 5.2.3 Css-->
+       <!-- Critical CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Fontawsome Icons Css-->
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <!-- Magnifiq Popup Css -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <!-- Nice Select Css -->
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <!-- Swiper Slider Css -->
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
-    <!-- Aos Animation Css -->
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
+   
+    <!-- Deferred Non-Critical CSS -->
+    <link rel="stylesheet" href="assets/css/aos.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/nice-select.css" media="print" onload="this.media='all'">  
+    <link rel="stylesheet" href="assets/css/all.min.css" media="print" onload="this.media='all'">
+  
+    <!-- Fallback for CSS if JavaScript is disabled -->
+    <noscript>
+        <link rel="stylesheet" href="assets/css/aos.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <link rel="stylesheet" href="assets/css/all.min.css">
+    </noscript>
+
 </head>
 
 <body class="position-relative bg2-clr">

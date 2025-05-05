@@ -10,17 +10,17 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /login/
 Disallow: /checkout/
-Disallow: /assets/img/StaticShih/LOWRES/
-
-# Block bots from crawling image folders (if you don't want to index images in the assets directory)
-User-agent: Googlebot-Image
-Disallow: /assets/img/
+Disallow: /assets/img/Artwork/LOWRES/
 
 # Allow Googlebot to crawl important directories, such as blogs or content-rich pages
 User-agent: Googlebot
 Allow: /blogs/
 Allow: /about/
 Allow: /shop/
+Allow: /doritos-dinamita-ad/
+Allow: /santa-catrina-cabernet-sauvignon-brand-story/
+Allow: /kraken-gold-spiced-rum-ad-artistic-process/
+Allow: /AI-Hypocrisy-Trailblazers-or-Outlaws/
 
 # Allow search engines to crawl your XML sitemap for better indexing
 Sitemap: https://www.nexushue.com/sitemap.xml

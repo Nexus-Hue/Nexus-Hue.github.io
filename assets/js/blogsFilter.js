@@ -4,34 +4,39 @@ document.addEventListener('DOMContentLoaded', function() {
     const blogItems = blogList.querySelectorAll('.news-standard-items');
     const categoryLinks = categoryFilter.querySelectorAll('a');
 
+    function applyCategoryFilter(category) {
+        // Remove active class from all list items
+        categoryFilter.querySelectorAll('li').forEach(li => li.classList.remove('active'));
+
+        // Add active class to matching link
+        categoryLinks.forEach(link => {
+            if (link.getAttribute('data-category').toLowerCase() === category.toLowerCase() || (category === '' && link.getAttribute('data-category') === 'All')) {
+                link.closest('li').classList.add('active');
+            }
+        });
+
+        // Filter blog items
+        blogItems.forEach(item => {
+            const itemCategory = item.getAttribute('data-category');
+            if (category === '' || category.toLowerCase() === 'all' || itemCategory.toLowerCase() === category.toLowerCase()) {
+                item.classList.remove('hidden');
+            } else {
+                item.classList.add('hidden');
+            }
+        });
+    }
+
+    // Apply filter based on hash on page load
+    let initialCategory = window.location.hash.replace('#', '');
+    applyCategoryFilter(initialCategory);
+
     // Add click event to category links
     categoryLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            
-            // Remove active class from all list items
-            categoryFilter.querySelectorAll('li').forEach(li => li.classList.remove('active'));
-            
-            // Add active class to the parent list item of the clicked link
-            this.closest('li').classList.add('active');
-            
-            // Get selected category
             const selectedCategory = this.getAttribute('data-category');
-            
-            // Filter blog items
-            blogItems.forEach(item => {
-                const itemCategory = item.getAttribute('data-category');
-                
-                if (selectedCategory === 'All' || itemCategory === selectedCategory) {
-                    item.classList.remove('hidden');
-                } else {
-                    item.classList.add('hidden');
-                }
-            });
+            window.location.hash = selectedCategory.toLowerCase();  // Update hash in URL
+            applyCategoryFilter(selectedCategory);
         });
     });
-
-    // Set initial 'All' category as active
-    const allCategoryLi = categoryFilter.querySelector('li a[data-category="All"]').closest('li');
-    allCategoryLi.classList.add('active');
 });

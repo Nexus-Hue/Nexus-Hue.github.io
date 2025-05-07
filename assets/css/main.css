@@ -52,6 +52,7 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
   user-select: none;
   -webkit-user-drag: none;
   cursor: grab;   
+  overflow: visible !important;
 }
 
 /* -----------------------
@@ -1091,19 +1092,34 @@ footer {
 /* Comparison Image */
 
 
+
 /* Youtube Play Button */
+.thumb {
+  /* Remove overflow-hidden from the parent container */
+  overflow: visible !important;
+}
+
 .youtube-facade {
-  background:var(--blackbg);
+
   position: relative;
   cursor: pointer;
-  border-radius: 15px;
-  overflow: hidden;
+ 
+  /* Change this to allow overflow on hover animation */
+  overflow: visible;
+  /* Add transition for smooth scaling */
+  transition: transform .3s ease;
 }
+
+/* Add hover effect */
+.youtube-facade:hover {
+  transform: scale(1.11);
+  z-index: 1; /* Ensure it appears above other elements when scaled */
+}
+
 .yt-play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
-  
   padding: 6%;
   width: 87px;
   height: 20px;
@@ -1114,7 +1130,10 @@ footer {
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  /* Add transition for the play button too */
+  transition: transform 0.3s ease;
 }
+
 .yt-play-btn::after {
   content: '';
   display: block;
@@ -1124,6 +1143,11 @@ footer {
   border-top: 16px solid transparent;
   border-bottom: 16px solid transparent;
   margin-left: 6px;
+}
+
+/* Optional: make play button slightly larger on hover too */
+.youtube-facade:hover .yt-play-btn {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 /* Youtube Play Button */
 

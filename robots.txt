@@ -10,7 +10,7 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /login/
 Disallow: /checkout/
-Disallow: /assets/img/Artwork/
+Disallow: /assets/img/
 
 # Allow Googlebot to crawl important directories, such as blogs or content-rich pages
 User-agent: Googlebot

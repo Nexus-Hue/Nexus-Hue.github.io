@@ -1,26 +1,109 @@
-# robots.txt for www.nexushue.com
-# Optimized for SEO
-
-# Allow all search engines to crawl everything on the site
+# Block sensitive or private areas from all bots
 User-agent: *
-Disallow:
-
-# Block specific areas that are not important for SEO (admin, private data, etc.)
 Disallow: /admin/
 Disallow: /private/
 Disallow: /login/
 Disallow: /checkout/
-Disallow: /assets/img/
+Allow: /
 
-# Allow Googlebot to crawl important directories, such as blogs or content-rich pages
+# Major Search Engines
 User-agent: Googlebot
-Allow: /blogs/
-Allow: /about/
-Allow: /shop/
-Allow: /doritos-dinamita-ad/
-Allow: /santa-catrina-cabernet-sauvignon-brand-story/
-Allow: /kraken-gold-spiced-rum-ad-artistic-process/
-Allow: /AI-Hypocrisy-Trailblazers-or-Outlaws/
+Allow: /
 
-# Allow search engines to crawl your XML sitemap for better indexing
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Sogou Spider
+Allow: /
+
+# Japanese and Korean search platforms
+User-agent: Yeti  # Naver
+Allow: /
+
+User-agent: YahooJP  # Yahoo! Japan
+Allow: /
+
+# AI and Discovery Bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ChatGPT-User/2.0
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: claude-web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: AI2Bot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: omgili
+Allow: /
+
+User-agent: TimpiBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# Sitemap
 Sitemap: https://www.nexushue.com/sitemap.xml

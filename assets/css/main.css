@@ -52,7 +52,7 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
   user-select: none;
   -webkit-user-drag: none;
   cursor: grab;   
-  overflow: visible !important;
+  
 }
 
 /* -----------------------
@@ -1102,11 +1102,7 @@ footer {
 
 
 
-/* Youtube Play Button */
-.thumb {
-  /* Remove overflow-hidden from the parent container */
-  overflow: visible !important;
-}
+
 
 .youtube-facade {
 

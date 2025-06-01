@@ -1573,7 +1573,7 @@ footer {
   font-size: 120px;
   font-weight: 800;
   line-height: 100px;
-  text-transform: uppercase;
+   
 }
 .scrolling-wrap .comm .cmn-textslide.style-2 {
   font-size: 40px;
@@ -1590,14 +1590,14 @@ footer {
   font-style: italic;
   font-weight: 500;
   color: var(--white);
-  text-transform: uppercase;
+   
 }
 .scrolling-wrap .comm.style-3 .text-custom-storke {
   font-size: 70px;
   font-style: italic;
   font-weight: 800;
   color: var(--white);
-  text-transform: uppercase;
+   
 }
 .scrolling-wrap:hover .comm {
   animation-play-state: paused;
@@ -1652,28 +1652,28 @@ footer {
   font-size: 100px;
   font-weight: 700;
   line-height: 85px;
-  text-transform: uppercase;
+   
   color: var(--white);
 }
 .scrolling-wrap.style-2 .comm .text-custom-storke {
   font-size: 100px;
   font-weight: 700;
   line-height: 85px;
-  text-transform: uppercase;
+   
 }
 .scrolling-wrap.style-2 .comm.style-3 .cmn-textslide {
   font-size: 70px;
   font-style: italic;
   font-weight: 500;
   color: var(--white);
-  text-transform: uppercase;
+   
 }
 .scrolling-wrap.style-2 .comm.style-3 .text-custom-storke {
   font-size: 70px;
   font-style: italic;
   font-weight: 800;
   color: var(--white);
-  text-transform: uppercase;
+   
 }
 
 .breadcrumnd-banner {
@@ -2321,7 +2321,7 @@ footer {
 }
 .breadcrumb-wrapper .page-heading .breadcrumb-items li {
   color: var(--theme);
-  text-transform: uppercase;
+   
   font-weight: 500;
   font-size: 16px;
 }
@@ -3559,7 +3559,7 @@ footer {
   font-weight: 600;
   display: inline-block;
   font-family: "Plus Jakarta Sans", sans-serif;
-  text-transform: uppercase;
+   
   color: var(--white);
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -4449,6 +4449,9 @@ footer {
     transform: translateX(30px);
   }
 }
+
+
+
 .accordion-single {
   transition: all 0.4s;
   border-radius: 11px;
@@ -4895,7 +4898,7 @@ footer {
   font-weight: 600;
   display: inline-block;
   font-family: "Plus Jakarta Sans", sans-serif;
-  text-transform: uppercase;
+   
   color: var(--white);
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -5362,7 +5365,7 @@ footer {
 }
 .footer-v3-titlewrap .footer-v3-title {
   font-size: 150px;
-  text-transform: uppercase;
+   
   line-height: 85px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -5685,7 +5688,7 @@ footer {
   transition: all 0.4s;
   font-size: 16px !important;
   font-weight: 600;
-  text-transform: uppercase;
+   
   color: var(--white);
 }
 @media (max-width: 1199px) {
@@ -6185,13 +6188,13 @@ footer {
   transition: all 0.4s;
   font-size: 16px !important;
   font-weight: 600;
-  text-transform: uppercase;
+   
   color: var(--white);
 }
 .preloader p {
   font-size: 15px;
   font-weight: 600;
-  text-transform: uppercase;
+   
   letter-spacing: 8px;
   color: var(--theme);
 }
@@ -6390,7 +6393,7 @@ footer {
   font-weight: 600;
   display: inline-block;
   font-family: "Plus Jakarta Sans", sans-serif;
-  text-transform: uppercase;
+   
   color: var(--white);
   border-radius: 100px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -6525,7 +6528,7 @@ footer {
   color: var(--white);
   font-size: 16px;
   font-weight: 600;
-  text-transform: uppercase;
+   
 }
 .pricing-items .link-btn i {
   margin-left: 10px;
@@ -6676,7 +6679,7 @@ input.main-search-input::placeholder {
   font-size: 12px;
   font-weight: bold;
   cursor: pointer;
-  text-transform: uppercase;
+
   box-shadow: 0 0 30px var(--theme);
   transition: all 0.3s ease-in-out;
   position: relative;
@@ -6696,7 +6699,7 @@ input.main-search-input::placeholder {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  text-transform: uppercase;
+
   box-shadow: 0 0 30px var(--theme);
   transition: all 0.3s ease-in-out;
   position: relative;
@@ -6838,7 +6841,7 @@ input.main-search-input::placeholder {
   font-weight: 600;
   display: inline-block;
   font-family: "Plus Jakarta Sans", sans-serif;
-  text-transform: uppercase;
+
   color: var(--white);
   border-radius: 100px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -7239,7 +7242,7 @@ input.main-search-input::placeholder {
   font-weight: 600;
   display: inline-block;
   font-family: "Inter", sans-serif;
-  text-transform: uppercase;
+
   color: var(--white);
   border-radius: 100px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -7430,7 +7433,7 @@ input.main-search-input::placeholder {
 }
 .onhover-tabbing-wrap .nav-tabs .nav-link .right-info {
   font-size: 14px;
-  text-transform: uppercase;
+
   font-weight: 600;
   color: var(--white);
 }
@@ -8480,7 +8483,7 @@ input.main-search-input::placeholder {
   font-size: 100px;
   font-weight: 600 !important;
   line-height: 85px;
-  text-transform: uppercase;
+
 }
 .scrolling-wrap .comm .text-custom-storke {
   -webkit-text-stroke: 4.20px #FF006A;

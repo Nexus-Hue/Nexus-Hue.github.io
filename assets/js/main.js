@@ -524,19 +524,19 @@ CSS TABLE OF CONTENTS
 		$("select").niceSelect();
 		//--- Nice Select --- //
 
-		//--- Custom Accordion Tabs --- //
-		$(".accordion-single .header-area").on("click", function () {
-			if ($(this).closest(".accordion-single").hasClass("active")) {
-				$(this).closest(".accordion-single").removeClass("active");
-				$(this).next(".content-area").slideUp();
-			} else {
-				$(".accordion-single").removeClass("active");
-				$(this).closest(".accordion-single").addClass("active");
-				$(".content-area").not($(this).next(".content-area")).slideUp();
-				$(this).next(".content-area").slideToggle();
-			}
-		});
-		//--- Custom Accordion Tabs --- //
+	//--- Custom Accordion Tabs (Multi-Open Version) --- //
+$(".accordion-single .header-area").on("click", function () {
+    if ($(this).closest(".accordion-single").hasClass("active")) {
+        // If this accordion is active, close it
+        $(this).closest(".accordion-single").removeClass("active");
+        $(this).next(".content-area").slideUp();
+    } else {
+        // If this accordion is not active, open it (don't close others)
+        $(this).closest(".accordion-single").addClass("active");
+        $(this).next(".content-area").slideDown();
+    }
+});
+//--- Custom Accordion Tabs --- //
 	}); // End Document Ready Function
 
 	function loader() {

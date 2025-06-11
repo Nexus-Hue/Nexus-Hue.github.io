@@ -6676,7 +6676,26 @@ input.main-search-input::placeholder {
  padding: 1.5%;
   border: none;
   border-radius: 8px;
-  font-size: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+
+  box-shadow: 0 0 30px var(--theme);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: visible; /* Allow sparkles to show outside button */
+
+}
+
+
+
+.ButtonGlowMINI {
+  background-color: var(--theme);        /* Nexus Hue's red */
+  color: #ffffff;                   /* White text */
+ padding: 1.5%;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
   font-weight: bold;
   cursor: pointer;
 

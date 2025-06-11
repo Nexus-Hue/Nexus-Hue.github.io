@@ -52,7 +52,6 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
   user-select: none;
   -webkit-user-drag: none;
   cursor: grab;   
-  
 }
 
 /* -----------------------
@@ -6719,6 +6718,20 @@ input.main-search-input::placeholder {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
     
     color: inherit; /* keeps existing color from your site */
+}
+
+.solid-title-shadow {
+  text-shadow: 2px 4px 0 var(--blackbg);
+  transition: text-shadow 0.3s ease;
+}
+
+.solid-title-shadow:hover {
+  text-shadow: none;
+}
+
+.PINK-title-shadow {
+  text-shadow: 4.20px 7px 0 var(--theme);
+  
 }
 
 /* Sparkle Type SHih CTA */

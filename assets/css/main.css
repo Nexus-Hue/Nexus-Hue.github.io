@@ -1793,10 +1793,10 @@ footer {
 
 .contact-section {
   width: 100%;
-  max-width: 40rem;
+  max-width: 77rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 3rem 1rem;
+
 }
 
 .contact-intro > * + * {
@@ -1804,18 +1804,64 @@ footer {
 }
 
 .contact-title {
-    font-size: 1.875rem;
-  line-height: 2.25rem;
+    font-size: 1.5rem;
+
   font-weight: 700;
   color:#FF006A;
     font-family: 'Arial Black', 'Helvetica', sans-serif; /* clean sans-serif */
     font-style: italic; /* italic */
     letter-spacing: 0.5px; 
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+   
+    text-align: center;
     }
+
+
+    @media (max-width: 670px) {
+    .contact-title {
+        font-size: 1.25rem;
+          line-height: 2.25rem;
+  font-weight: 700;
+  color:#FF006A;
+    font-family: 'Arial Black', 'Helvetica', sans-serif; /* clean sans-serif */
+    font-style: italic; /* italic */
+    letter-spacing: 0.5px; 
+   margin-top: -10px;
+   margin-bottom: -10px;
+    text-align: center;
+    }
+}
+
+@media (max-width: 560px) {
+    .contact-title {
+        font-size: 1rem;
+         
+  font-weight: 700;
+  color:#FF006A;
+    font-family: 'Arial Black', 'Helvetica', sans-serif; /* clean sans-serif */
+    font-style: italic; /* italic */
+    letter-spacing: 0.5px; 
+   
+    text-align: center;
+    }
+}
+
+@media (max-width: 392px) {
+    .contact-title {
+        font-size: 0.8rem;
+         
+  font-weight: 700;
+  color:#FF006A;
+    font-family: 'Arial Black', 'Helvetica', sans-serif; /* clean sans-serif */
+    font-style: italic; /* italic */
+    letter-spacing: 0.5px; 
+
+    text-align: center;
+    }
+}
 
 .contact-description {
   color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 .form-group-container {
@@ -6731,7 +6777,35 @@ input.main-search-input::placeholder {
 
 .PINK-title-shadow {
   text-shadow: 4.20px 7px 0 var(--theme);
-  
+}
+
+.MINI-PINK-title-shadow {
+  text-shadow: 2px 3px 0 var(--theme);
+}
+
+.FooterTitles {
+    font-size: 3rem; 
+    text-align: center;
+    margin-bottom: 1rem; 
+    font-weight: bold;
+}
+
+@media (max-width: 670px) {
+    .FooterTitles {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .FooterTitles {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 392px) {
+    .FooterTitles {
+        font-size: 1.5rem;
+    }
 }
 
 /* Sparkle Type SHih CTA */

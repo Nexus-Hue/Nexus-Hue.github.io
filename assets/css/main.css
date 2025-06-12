@@ -8872,3 +8872,12 @@ input.main-search-input::placeholder {
   content: "";
   background: rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=main.css.map */
+
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  appearance: button; 
+}

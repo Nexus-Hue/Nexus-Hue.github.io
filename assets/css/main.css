@@ -8874,10 +8874,3 @@ input.main-search-input::placeholder {
 }/*# sourceMappingURL=main.css.map */
 
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-  appearance: button; 
-}

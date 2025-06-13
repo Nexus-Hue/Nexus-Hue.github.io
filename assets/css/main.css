@@ -4210,9 +4210,9 @@ footer {
   justify-content: space-between;
   padding: 22px 20px;
   background-color: transparent;
-  font-weight: 500;
+  
   transition: all 0.4s ease-in-out;
-  border: 1px solid #454750;
+  border: 2px solid var(--theme);
   border-radius: 0;
   font-size: 18px;
   line-height: 1;
@@ -6763,6 +6763,12 @@ input.main-search-input::placeholder {
   font-style: italic !important;
   letter-spacing: 1px; /* increase spacing for chunkiness */
  
+}
+
+.fancy-h1 {
+    color: var(--theme);
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .solid-title-shadow {

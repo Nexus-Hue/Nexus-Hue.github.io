@@ -6779,7 +6779,11 @@ input.main-search-input::placeholder {
   transition: text-shadow 0.3s ease;
 }
 
-
+@media (max-width: 390px) {
+  .solid-title-shadow {
+    text-shadow: 2.5px 2.5px 0 var(--blackbg); 
+  }
+}
 
 
 .solid-title-shadow:hover {

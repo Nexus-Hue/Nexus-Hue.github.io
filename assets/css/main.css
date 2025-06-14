@@ -6755,8 +6755,17 @@ input.main-search-input::placeholder {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 900 !important;
   font-style: italic !important;
-  letter-spacing: 1px; /* increase spacing for chunkiness */
  
+ 
+}
+
+.yaytext-style-TITLES {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900 !important;
+  font-style: italic !important;
+  letter-spacing: 1px; /* increase spacing for chunkiness */
+ line-height: 33%;
 }
 
 .fancy-h1 {
@@ -6766,13 +6775,20 @@ input.main-search-input::placeholder {
 }
 
 .solid-title-shadow {
-  text-shadow: 2px 4px 0 var(--blackbg);
+  text-shadow: 3px 3px 0 var(--blackbg);
   transition: text-shadow 0.3s ease;
 }
+
+
+
 
 .solid-title-shadow:hover {
   text-shadow: none;
 }
+
+
+
+
 
 .PINK-title-shadow {
   text-shadow: 4.20px 4.20px 0 var(--theme);

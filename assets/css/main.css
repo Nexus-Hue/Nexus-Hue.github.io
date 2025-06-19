@@ -1303,9 +1303,9 @@ footer {
 
 .submenu-toggle {
   font-size: 33px;       
-  padding: 10px 20px;    
-  min-width: 46px;       
-  min-height: 46px;
+  padding: 10px 30px;    
+  min-width: 97px;       
+max-height: 7px;
   display: inline-flex;
   align-items: center;
   justify-content: center;

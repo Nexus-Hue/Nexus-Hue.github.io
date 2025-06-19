@@ -2914,6 +2914,10 @@ footer {
 
 }
 
+.news-standard-items.hidden {
+  display: none;
+}
+
 @media (min-width: 1400px) {
   .highlight-text  {
     font-size: clamp(1rem, 2.5vw, 3rem);

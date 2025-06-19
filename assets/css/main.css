@@ -1301,15 +1301,17 @@ footer {
     padding: 5px 20px 5px;
   }
 
-  /* Toggle button styles */
-  .submenu-toggle {
-    display: inline-block;
-    background: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
+.submenu-toggle {
+  font-size: 33px;       
+  padding: 10px 20px;    
+  min-width: 46px;       
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
 
   /* Rotate icon when active */
   .submenu-toggle.active {

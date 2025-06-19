@@ -1281,6 +1281,50 @@ footer {
 }
 
 
+@media (max-width: 991px) {
+  /* Hide submenus initially */
+  .sub-menu {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 20px;
+    background: var(--bg1) !important;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+  }
+
+  /* Show submenu smoothly when active */
+  .sub-menu.mobile-active {
+    max-height: 500px; /* enough to fully show content */
+    opacity: 1;
+    padding: 5px 20px 5px;
+  }
+
+  /* Toggle button styles */
+  .submenu-toggle {
+    display: inline-block;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  /* Rotate icon when active */
+  .submenu-toggle.active {
+    transform: rotate(180deg);
+  }
+}
+
+.submenu-toggle::before,
+.submenu-toggle::after {
+  content: none !important;
+}
+
+
+
+
 .about-wrapper-2 .about-header-items {
   display: flex;
   justify-content: space-between;
@@ -5707,6 +5751,10 @@ footer {
     display: initial !important;
   }
 }
+
+
+
+
 .header-section .main-navbar .custom-nav .menu-item button::after {
   position: absolute;
   content: "\f062";
@@ -6773,7 +6821,13 @@ input.main-search-input::placeholder {
 
 @media (max-width: 390px) {
   .solid-title-shadow {
-    text-shadow: 2.5px 2.5px 0 var(--blackbg); 
+    text-shadow: 1.5px 1.5px 0 var(--blackbg); 
+  }
+}
+
+@media (max-width: 490px) {
+  .solid-title-shadow {
+    text-shadow: 2px 2px 0 var(--blackbg); 
   }
 }
 

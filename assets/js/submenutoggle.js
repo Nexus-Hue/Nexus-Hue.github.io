@@ -13,6 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
             // Toggle button rotation
             this.classList.toggle('active');
 
+            // Toggle parent menu-item active class (so the star can spin)
+            const parentItem = this.closest('.menu-item');
+            parentItem.classList.toggle('active');
+
             // Toggle submenu visibility
             if (submenu && submenu.classList.contains('sub-menu')) {
                 submenu.classList.toggle('mobile-active');
@@ -29,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
                 document.querySelectorAll('.submenu-toggle.active').forEach(toggle => {
                     toggle.classList.remove('active');
+                });
+                document.querySelectorAll('.menu-item.active').forEach(item => {
+                    item.classList.remove('active');
                 });
             }
         }

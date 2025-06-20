@@ -1293,16 +1293,19 @@ footer {
     transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
   }
 
-  /* Show submenu smoothly when active */
+
   .sub-menu.mobile-active {
     max-height: 500px; /* enough to fully show content */
     opacity: 1;
     padding: 5px 20px 5px;
   }
 
+.menu-item.active .ani-icons {
+  transform: rotate(360deg);
+  transition: transform 0.9s ease;
+}
 
-
-  /* Rotate icon when active */
+  
   .submenu-toggle.active {
     transform: rotate(360deg);
   }

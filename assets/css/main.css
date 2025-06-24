@@ -1296,44 +1296,35 @@ footer {
   }
 }
 
-
 @media (max-width: 991px) {
-
   .sub-menu {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-   
-
-  
+    pointer-events: none; 
     transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
   }
-
-
+  
   .sub-menu.mobile-active {
-    max-height: 500px; /* enough to fully show content */
+    max-height: 500px;
     opacity: 1;
-    padding: 5px 20px 5px;
+    pointer-events: auto; 
   }
 
-.menu-item.active .ani-icons {
-  transform: rotate(360deg);
-  transition: transform 0.9s ease;
-}
-
+  .menu-item.active .ani-icons {
+    transform: rotate(360deg);
+    transition: transform 0.9s ease;
+  }
   
   .submenu-toggle.active {
     transform: rotate(360deg);
   }
 }
 
-
-
 .submenu-toggle::before,
 .submenu-toggle::after {
   content: none !important;
 }
-
 
 
 

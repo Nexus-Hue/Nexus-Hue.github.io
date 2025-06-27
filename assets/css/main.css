@@ -6859,7 +6859,7 @@ input.main-search-input::placeholder {
     text-align: center;
     margin-bottom: 1rem;
     font-weight: bold;
-    line-height: 1.25; /* <— THIS IS THE FIX */
+    line-height: 1.25; 
     word-break: break-word;
     hyphens: auto;
 }
@@ -6888,7 +6888,7 @@ input.main-search-input::placeholder {
 /* Sparkle Type SHih CTA */
 .CTATypeShih {
   background-color: var(--theme);        /* Nexus Hue's red */
-  color: #ffffff;                   /* White text */
+  color: #ffffff;                  
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
@@ -6899,7 +6899,7 @@ input.main-search-input::placeholder {
   box-shadow: 0 0 30px var(--theme);
   transition: all 0.3s ease-in-out;
   position: relative;
-  overflow: visible; /* Allow sparkles to show outside button */
+  overflow: visible;
 }
 
 .CTATypeShih:hover {

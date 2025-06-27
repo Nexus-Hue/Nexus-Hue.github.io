@@ -6855,10 +6855,13 @@ input.main-search-input::placeholder {
 }
 
 .FooterTitles {
-    font-size: 3rem; 
+  font-size: 3rem;
     text-align: center;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
     font-weight: bold;
+    line-height: 1.25; /* <— THIS IS THE FIX */
+    word-break: break-word;
+    hyphens: auto;
 }
 
 @media (max-width: 670px) {
@@ -6878,6 +6881,9 @@ input.main-search-input::placeholder {
         font-size: 1.5rem;
     }
 }
+
+
+
 
 /* Sparkle Type SHih CTA */
 .CTATypeShih {

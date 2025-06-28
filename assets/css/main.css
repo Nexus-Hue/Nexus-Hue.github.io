@@ -506,13 +506,15 @@ span {
 
 
 
-/* Spill effect container */
+
 .spill-effect {
-  
+   user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
   overflow: visible;
 }
 
-/* Style for swiper container */
+
 .swiper.trusted-inner {
   overflow: visible; /* Allow content to spill out */
 }
@@ -531,13 +533,13 @@ span {
   transition: transform 2s ease;
 }
 
-/* other hero elements stay beneath the spilled images */
+
 .hero-v1-content {
   position: relative;
-  z-index: 1; /* Lower z-index than the images */
+  z-index: 1; 
 }
 
-/* social and contact elements stay beneath */
+
 .spilit-socail,
 .spilit-contact {
   position: relative;
@@ -6434,7 +6436,9 @@ footer {
 
 .brand-wrapper {
   border-top: 3px solid #ffffff;
-  
+ user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
  
 }
 

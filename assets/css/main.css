@@ -508,8 +508,11 @@ span {
 
 /* Spill effect container */
 .spill-effect {
-  
+     user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
   overflow: visible;
+
 }
 
 /* Style for swiper container */
@@ -6434,7 +6437,9 @@ footer {
 
 .brand-wrapper {
   border-top: 3px solid #ffffff;
-  
+    user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
  
 }
 
@@ -8603,9 +8608,12 @@ input.main-search-input::placeholder {
   .sponsor-wrap a {
     max-width: 120px;
     display: block;
+    
+
   }
   .sponsor-wrap a img {
     width: 100%;
+    
   }
 }
 .sponsor-wrap .brand-image {
@@ -8613,14 +8621,17 @@ input.main-search-input::placeholder {
   filter: grayscale(50%);
   transition: all 0.4s ease-in-out;
   opacity: 0.4;
+  
 }
 .sponsor-wrap .brand-image:hover {
   filter: initial;
   opacity: 1;
+  
 }
 .sponsor-wrap .swiper-slide.swiper-slide-active .brand-image {
   filter: initial;
   opacity: 1;
+  
 }
 
 

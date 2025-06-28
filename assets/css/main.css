@@ -6822,20 +6822,20 @@ input.main-search-input::placeholder {
     text-align: center;
 
     color: white;
-    -webkit-text-fill-color: white; /* for Safari */
+    -webkit-text-fill-color: white; 
     background: none;
     -webkit-background-clip: unset;
     background-clip: unset;
     filter: none;
     -moz-filter: none;
     -webkit-filter: none;
-
+/*  
    text-shadow:0px 0px 5px  #fff,
       0px 0px 120px  #fff,
       0px 0px 5px  #fff,
       0px 0px 1px  #fff
       ;
-
+*/
     opacity: 0;
     animation: apple-glow-onloadopacity 1s ease-out forwards;
 }

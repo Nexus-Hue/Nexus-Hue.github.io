@@ -1156,6 +1156,7 @@ footer {
   transition: transform 0.3s ease;
 }
 
+
 .yt-play-btn::after {
   content: '';
   display: block;
@@ -6792,6 +6793,65 @@ input.main-search-input::placeholder {
   overflow: visible; /* Allow sparkles to show outside button */
 
 }
+
+.apple-glow-container svg.apple-glow-filters { 
+    height: 0; 
+    width: 0; 
+    position: absolute; 
+    z-index: -1; 
+}
+
+.apple-glow-text-element {
+    position: relative;
+    display: inline-block;
+    font-weight: 1000;
+    line-height: 1.2;
+    animation: apple-glow-onloadscale 1s ease-out forwards;
+    font-size: clamp(1.8rem, 6vw, 4rem); /* responsive sizing */
+}
+
+.apple-glow-text-element::before {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    display: inline-block;
+    pointer-events: none;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: center;
+
+    color: white;
+    -webkit-text-fill-color: white; /* for Safari */
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    filter: none;
+    -moz-filter: none;
+    -webkit-filter: none;
+
+   text-shadow:0px 0px 5px  #fff,
+      0px 0px 120px  #fff,
+      0px 0px 5px  #fff,
+      0px 0px 1px  #fff
+      ;
+
+    opacity: 0;
+    animation: apple-glow-onloadopacity 1s ease-out forwards;
+}
+
+
+@keyframes apple-glow-onloadscale {
+    24% { transform: scale(1); }
+    100% { transform: scale(1.02); }
+}
+
+@keyframes apple-glow-onloadopacity {
+    24% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
 
 .yaytext-style {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,

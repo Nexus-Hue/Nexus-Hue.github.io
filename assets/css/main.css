@@ -6805,6 +6805,7 @@ input.main-search-input::placeholder {
     width: 0; 
     position: absolute; 
     z-index: -1; 
+    
 }
 
 .apple-glow-text-element {
@@ -6817,6 +6818,7 @@ input.main-search-input::placeholder {
     line-height: 1.2;
     animation: apple-glow-onloadscale 1s ease-out forwards;
     font-size: clamp(1.8rem, 6vw, 4rem); /* responsive sizing */
+    
 }
 
 .apple-glow-text-element::before {

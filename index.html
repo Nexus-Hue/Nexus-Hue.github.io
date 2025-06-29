@@ -1731,12 +1731,13 @@ I make brands hit their gold standard, and then go past it.</p>
 
 <div class="form-group">
   <label for="budget" class="form-label">Please select budget range</label>
-  <select id="budget" name="budget" class="form-input" required aria-describedby="budget-desc">
-    <option value="" selected >  </option>
-    <option value="3000-5000">$3,000 – $7,000</option>
-    <option value="5000-10000">$7,000 – $11,000</option>
-    <option value="10000+">$11k+</option>
-  </select>
+<select id="budget" name="budget" class="form-input" required aria-describedby="budget-desc" 
+style="padding: 0.75rem 1rem; line-height: 1.5; height: auto;">
+  <option value="" selected disabled>Select your budget range</option>
+  <option value="3000-5000">$3,000 – $7,000</option>
+  <option value="5000-10000">$7,000 – $11,000</option>
+  <option value="10000+">$11k+</option>
+</select>
   <span id="budget-desc" class="sr-only">Please select your project budget range.</span>
 </div>
 

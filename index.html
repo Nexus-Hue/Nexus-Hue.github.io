@@ -1547,9 +1547,9 @@ I make brands hit their gold standard, and then go past it.</p>
                             
                            
                             
-  <p class="FooterTitles yaytext-style PINK-title-shadow " >
-                                NEXUS★HUE's MISSION
-                    </p>
+  <p class="FooterTitles yaytext-style PINK-title-shadow " > NEXUS★HUE's MISSION  </p>
+                                
+                  
                         <p class="contact-title ">✧₊⁺ ELEVATE YOUR BRAND TO THE STARS! ⁺₊✧  </p>
                   <p class="contact-title ">        & 𝕽𝖎𝖘𝖊 𝕬𝖇𝖔𝖛𝖊
 𝕿𝖍𝖊 𝕮𝖔𝖓𝖙𝖊𝖓𝖙 𝕱𝖑𝖔𝖔𝖉!</p> 
@@ -1557,18 +1557,13 @@ I make brands hit their gold standard, and then go past it.</p>
                             
                        
 
-                              <p  style="text-align: center;" >  
-                                 Premium brands demand exceptional strategy & creativity<br>
-                                I combine both to make your brands dominate their Market!
-                               
-                               
-                                </p> 
-                          
+                             
+                         
                                 
                                
                             
 
-<br>
+ <br>
                               
 
                         </div>
@@ -1590,41 +1585,7 @@ I make brands hit their gold standard, and then go past it.</p>
                                     <div class="contact-intro">
                               
                                      
-                             <div class="col-lg-6 wow fadeInUp" data-aos="zoom-in-left" data-aos-duration="1400" 
-     style="padding: 2%; display: block; text-align: center; width: 100%; max-width: 420px; margin-left: auto; margin-right: auto;">
-
-  <div class="faq yaytext-style" style="display: inline-block; text-align: left; width: 100%;">
-
-    <div class="accordion-section" style="width: 100%;">
-
-      <div class="accordion-single mb-xxl-4 mb-4 py-xxl-7 py-xl-6 py-lg-4 py-3 px-xxl-8 px-xl-7 px-lg-6 px-4 ButtonGlow" style="margin: 0 auto;">
-
-        <h2 class="header-area" style="text-align: center;">
-          <button class="accordion-btn d-flex align-items-center justify-content-center position-relative w-100" type="button" style="text-align: center;">
-            <strong>★ Key Info to Share </strong>
-          </button>
-        </h2>
-
-        <div class="content-area">
-          <div class="content-body pt-4">
-            <div class="content-inner" style="text-align: left;">
-              
-    [★] Socials/website  <br>
-    [★] What do you want to achieve? <br>
-    [★] What services are you interested in? <br>
-
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
+                           
 
 
 
@@ -1656,13 +1617,12 @@ I make brands hit their gold standard, and then go past it.</p>
 
 <div class="form-group">
   <label for="budget" class="form-label">Please select budget range</label>
-<select id="budget" name="budget" class="form-input" required aria-describedby="budget-desc" 
-style="padding: 0.75rem 1rem; line-height: 1.5; height: auto;">
-  <option value="" selected disabled>Select your budget range</option>
-  <option value="7000">$7,000 - $11,0000</option>
-  <option value="7000-11000">$11,000 - $15,000</option>
-  <option value="11000+">$25k+</option>
-</select>
+  <div id="budget-options" role="radiogroup" aria-describedby="budget-desc" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+    <button type="button" class="budget-btn" data-value="7000-11000">$7,000 - $11,000</button>
+    <button type="button" class="budget-btn" data-value="7000-15000">$11,000 - $15,000</button>
+    <button type="button" class="budget-btn" data-value="25000+">$25k+</button>
+  </div>
+  <input type="hidden" name="budget" id="budget" required>
   <span id="budget-desc" class="sr-only">Please select your project budget range.</span>
 </div>
 
@@ -1805,6 +1765,7 @@ style="padding: 0.75rem 1rem; line-height: 1.5; height: auto;">
   <!-- SUB MENU TYPE SHIT-->
   <script src="assets/js/submenutoggle.js" defer></script>
   <script src="assets/js/sub-menu-list.js" defer></script>
+<script src="assets/js/BudgetRange.js" defer></script>
 
 </body>
 

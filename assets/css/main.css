@@ -282,6 +282,26 @@ span {
     color: black; /* Set the text color to black */
 }
 
+  .budget-btn {
+    padding: 0.75rem 1.25rem;
+    border: 2px solid #ccc;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .budget-btn:hover {
+    border-color: #999;
+  }
+
+  .budget-btn.selected {
+    background-color: var(--theme);
+    color: white;
+    border-color:var(--theme);
+  }
+
+
 .tubelight span{
   color:#fff;
   text-transform:uppercase;

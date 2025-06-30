@@ -983,6 +983,10 @@ footer {
 }
 
 
+.diagonal-box {
+ transform: skewY(-11deg);
+ 
+}
 
 
 /* Comparison Image */

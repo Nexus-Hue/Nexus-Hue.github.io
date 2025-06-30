@@ -289,6 +289,8 @@ span {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s ease;
+    text-decoration: none;
+  color: inherit; /* blue link styling reset for Iphones*/
   }
 
   .budget-btn:hover {

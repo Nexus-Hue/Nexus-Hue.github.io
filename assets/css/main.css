@@ -298,9 +298,6 @@ span {
   color: inherit; /* ensures nested text doesn't get blue */
 }
 
-input, select, button {
-  -webkit-appearance: none;
-}
 
   .budget-btn:hover {
     border-color: #999;

@@ -290,8 +290,17 @@ span {
     cursor: pointer;
     transition: all 0.2s ease;
     text-decoration: none;
-  color: inherit; /* blue link styling reset for Iphones*/
+
   }
+
+  
+.budget-btn span {
+  color: inherit; /* ensures nested text doesn't get blue */
+}
+
+input, select, button {
+  -webkit-appearance: none;
+}
 
   .budget-btn:hover {
     border-color: #999;

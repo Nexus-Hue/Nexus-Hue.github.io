@@ -5,7 +5,7 @@ document.querySelectorAll(".compare").forEach(($compare) => {
     const $input = $compare.querySelector("input");
     const $mask = $compare.querySelector(".compare__mask");
 
-    // Set initial mask width
+    // initial mask width
     $compare.style.setProperty("--mask-width", `${$input.value}%`);
     $mask.style.width = `${$input.value}%`;
 
@@ -16,7 +16,7 @@ document.querySelectorAll(".compare").forEach(($compare) => {
     });
 });
 
-// ----- DEBUG STUFF ----- //
+// ----- DEBUG TYPE SHIH ----- //
 document.querySelectorAll(".toggle-debug").forEach(($toggleDebug) => {
     $toggleDebug.addEventListener("click", () => {
         document.body.classList.toggle("debug");

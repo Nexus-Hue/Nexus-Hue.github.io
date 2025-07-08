@@ -9735,3 +9735,42 @@ input.main-search-input::placeholder {
   width: 24px;
   margin-right: 15px;
 }
+
+.nh-tooltip {
+  position: relative;
+  cursor: help;
+  display: inline-block;
+}
+
+.nh-tooltip__text {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--theme);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: normal;
+  width: 240px;
+  z-index: 999;
+  text-align: left;
+  box-shadow: 0 4px 12px var(--theme);
+}
+
+/* Hover behavior (desktop) */
+.nh-tooltip:hover .nh-tooltip__text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Touch-safe behavior (optional, mobile hover fallback using focus) */
+.nh-tooltip:focus-within .nh-tooltip__text {
+  visibility: visible;
+  opacity: 1;
+}

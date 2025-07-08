@@ -2185,12 +2185,21 @@ footer {
 .hero-v1-content .banner-quickly-thumb {
   border-radius: 300px;
   border: 4px solid aliceblue;
+  width: 100%;
+  aspect-ratio: 4 / 1;
+  overflow: hidden;
+  max-width: 1442px;
+  margin-inline: auto; /* center it horizontally */
+  position: relative;
 }
 .hero-v1-content .banner-quickly-thumb img {
   border-radius: 1000px;
   width: 100%; 
+    height: 100%;
+      object-fit: cover;
+  display: block;
     max-width: 1442px; 
-    height: auto; 
+
 }
 .hero-v1-content .hero-arrow {
   width: 150px;

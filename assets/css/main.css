@@ -9961,8 +9961,9 @@ input.main-search-input::placeholder {
     justify-content: center;
     width: 32px;
     height: 32px;
-    color: #000;
-    border: 1px solid #000;
+    color: var(--white);
+    background-color:var(--theme) ;
+    border: 1px solid #ffffff;
     margin: 0 0.2rem;
     border-radius: 50%;
     text-decoration: none;

@@ -9368,6 +9368,9 @@ input.main-search-input::placeholder {
     border-radius: 20px;
   }
 }
+
+
+
 .nh-product-slider__cover {
   border-radius: 30px;
   position: absolute;
@@ -9785,7 +9788,9 @@ input.main-search-input::placeholder {
 }
 
 
-
+.NexusProduct{
+ display: block;
+}
 
 
 
@@ -9978,12 +9983,13 @@ input.main-search-input::placeholder {
         grid-gap: 1.5rem;
     }
 
-    .NexusProduct-card-wrapper {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.NexusProduct-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-block: 2rem;
+    height: auto;
+}
 
     .NexusProduct-product-imgs {
         display: flex;

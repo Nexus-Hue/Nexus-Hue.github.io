@@ -1813,26 +1813,66 @@ footer {
 }
 
 .hero-section-version1 {
-  padding: 200px 5px 160px;
+  padding: 150px 5px 160px;
   position: relative;
   z-index: 0;
 }
+
 .hero-section-version1 .sfot-element1 {
   position: absolute;
-  top: 947px;
-  right: 88%;
+  top:13%;
+  left:27%;
+  width:60px;
+  height: 60px;
   animation: zomin 5s linear infinite;
-  z-index: -1;
+  z-index: 1;
 }
+
 .hero-section-version1 .sfot-element2 {
   position: absolute;
-  top: 525px;
-  right: 9%;
-  width: 64px;
-  height: 64px;
+  top:13%;
+  right:27%;
+  width:60px;
+  height: 60px;
   animation: zomin 2s linear infinite;
-  z-index: -1;
+  z-index: 1;
 }
+
+
+@media (max-width: 1800px) {
+  .hero-section-version1 .sfot-element1 {
+   top:13%;
+  left:10%;
+  }
+  .hero-section-version1 .sfot-element2 {
+   top:13%;
+  right:10%;
+  width:60px;
+  height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+ 
+  .hero-section-version1 .sfot-element2 {
+   top:80%;
+  right:5%;
+  width:30px;
+  height: 30px;
+  }
+}
+
+@media (max-width: 390px) {
+ 
+  .hero-section-version1 .sfot-element2 {
+   top:77%;
+  right:5%;
+  width:60px;
+  height: 60px;
+  }
+}
+
+
 
 
 .hero-section-version1 .spilit-socail {
@@ -1992,18 +2032,7 @@ footer {
 
   font-size: 20px;
 }
-@media (max-width: 1800px) {
-  .hero-section-version1 .sfot-element1 {
-    top: 725px;
-    right: 90%;
-  }
-  .hero-section-version1 .sfot-element2 {
-    right: 2%;
-    top: 250px;
-    width: 30px;
-    height: 30px;
-  }
-}
+
 @media (max-width: 1700px) {
   .hero-section-version1 .spilit-contact {
     transform: rotate(90deg);

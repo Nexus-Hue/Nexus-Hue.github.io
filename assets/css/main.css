@@ -1452,7 +1452,16 @@ footer {
 }
 
 
+@keyframes keep-active {
+  from { opacity: 1; }
+  to { opacity: 0.99; }
+}
 
+#line-shape,
+#sky,
+#shootingstars {
+  animation: keep-active 1s infinite;
+}
 
 
 

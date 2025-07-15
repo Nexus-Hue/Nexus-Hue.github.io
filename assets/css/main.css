@@ -47,11 +47,12 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
   background-color: #ffffff;  
   border-radius: 15px;       
   padding: 20px;              
-z-index: 3;
+z-index: 3 !important;
   border-left: 11px solid var(--theme); 
   user-select: none;
   -webkit-user-drag: none;
   cursor: grab;   
+  position: relative; 
 }
 
 .Reading-Card p {

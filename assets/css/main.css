@@ -63,7 +63,10 @@ z-index: 3 !important;
   color: var(--theme) !important; 
 }
 
-
+.z-above {
+  position: relative;
+  z-index: 1;
+}
 
 
 .Reading-Card .date-list b,
@@ -1447,6 +1450,8 @@ footer {
   overflow: hidden;
   z-index: -1;
 }
+
+
 
 
 

@@ -65,7 +65,7 @@ z-index: 3 !important;
 
 .z-above {
   position: relative;
-  z-index: 1;
+  z-index:2 !important; 
 }
 
 
@@ -573,12 +573,30 @@ span {
   z-index: 1; /* Lower z-index than the images */
 }
 
-/* social and contact elements stay beneath */
+/* Socials Base styling */
 .spilit-socail,
 .spilit-contact {
   position: relative;
   z-index: 0;
 }
+
+
+.hero-section-version1 .spilit-socail {
+  transform: none;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem; 
+  margin-top: 24px;
+}
+
+.hero-section-version1 .spilit-socail a {
+  color: var(--bnbg);
+  font-size: 20px;
+}
+
+/* Socials Base styling */
 
 .sr-only {
   position: absolute;
@@ -631,7 +649,9 @@ span {
 }
 
 .bnbgFade {
-  background: linear-gradient(to bottom, #FF006A 11%, #0F1C38 100%);
+  background: linear-gradient(to bottom, #FF006A 50%, #0f1c3800 100%);
+    position: relative;
+    
 }
 
 .themebg {
@@ -1414,55 +1434,6 @@ footer {
   border-radius: 20px;
 }
 
-#sky {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  z-index: -9;
-}
-
-#shootingstars {
-  margin: 0;
-  padding: 0;
-  width: 150vh;
-  height: 100vw;
-  position: fixed;
-  overflow: hidden;
-  transform: translatex(calc(50vw - 50%)) translatey(calc(50vh - 50%))
-    rotate(120deg);
-    z-index: -9;
-}
-
-.wish {
-  height: 2px;
-  top: 300px;
-  width: 100px;
-  margin: 0;
-  opacity: 0;
-  padding: 0;
-  background-color: white;
-  position: absolute;
-  background: linear-gradient(-45deg, #ffffff, #00bbff);
-  filter: drop-shadow(0 0 11px #00bbff);
-  overflow: hidden;
-  z-index: -1;
-}
-
-
-@keyframes keep-active {
-  from { opacity: 1; }
-  to { opacity: 0.99; }
-}
-
-#line-shape,
-#sky,
-#shootingstars {
-  animation: keep-active 1s infinite;
-}
-
 
 
 
@@ -1831,7 +1802,7 @@ footer {
 .hero-section-version1 {
   padding: 150px 5px 160px;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 .hero-section-version1 .sfot-element1 {
@@ -1891,17 +1862,6 @@ footer {
 
 
 
-.hero-section-version1 .spilit-socail {
-  transform: rotate(90deg);
-  position: absolute;
-  right: -75px;
-  top: 60%;
-}
-.hero-section-version1 .spilit-socail a {
-  color: var(--bnbg);
-
-  font-size: 20px;
-}
 
 
 
@@ -2049,22 +2009,7 @@ footer {
   font-size: 20px;
 }
 
-@media (max-width: 1700px) {
-  .hero-section-version1 .spilit-contact {
-    transform: rotate(90deg);
-    left: -150px;
-    top: 50%;
-  }
-  .hero-section-version1 .spilit-socail {
-    transform: rotate(0deg);
-    position: initial;
-    text-align: center;
-    justify-content: center;
-    right: -90px;
-    top: 50%;
-    margin-top: 24px;
-  }
-}
+
 @media (max-width: 1600px) {
   .hero-section-version1 {
     padding: 190px 5px 100px;
@@ -6134,6 +6079,20 @@ footer {
   justify-content: space-between;
   margin: 0 auto;
   transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Fade effect only at the top */
+.top-fade-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px; /* Adjust height of fade area */
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent 0%, var(--blackbg) 100%);
 }
 
 .line-shape span {
@@ -6141,7 +6100,7 @@ footer {
   width: 1px;
   height: 100%;
   display: block;
-  background: #ff000000;
+  
 }
 
 .line-shape span::before,
@@ -10060,6 +10019,7 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 60vh;
   overflow: hidden;
+  
 
 }
 
@@ -10073,4 +10033,16 @@ input.main-search-input::placeholder {
   /* Fade top and bottom edges */
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
   mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+
+
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index:1; 
+  opacity: 0.5;
+  pointer-events: none; 
 }

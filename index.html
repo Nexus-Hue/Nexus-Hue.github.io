@@ -1,37 +1,25 @@
 <!doctype html>
 <html lang="en">
 
-<!--<< Header Area >>-->
-
 <head>
-  <!-- Languages -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS★HUE | Creative Agency led by artist</title>
+    <!-- Languages -->
     <link rel="alternate" hreflang="en" href="https://www.nexushue.com/"/>
     <link rel="alternate" hreflang="es" href="https://www.nexushue.com/Espanol/"/>
     <link rel="alternate" hreflang="x-default" href="https://www.nexushue.com/"/>
-
-    
-    <!-- Essential Meta Tags First -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXUS★HUE | Fresno Ca Creative Agency</title>
-
     <meta name="description" content="Creative agency led by artist Nexus Hue | Brand strategist | unique websites, unforgettable branding, & attention-grabbing ads ">
     <link rel="canonical" href="https://www.nexushue.com/">
-    
     <!-- SEO Tags -->
-    <meta name="keywords" content="Nexus Hue, branding agency Fresno, unique websites, high-converting ads, brand differentiation, visual identity design, Kevin Robles, creative partner for business, B2B branding expert">
-
-
-
+    <meta name="keywords" content="Nexus Hue, branding agency, Fresno, unique websites, high-converting ads, brand differentiation, visual identity design, Kevin Robles, creative partner for business, B2B branding expert">
     <!--🔥 Preload Critical Assets 🔥-->
     <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
     <link rel="preload" href="assets/css/main.css" as="style">
     <link rel="preload" href="assets/img/banner/13.webp" as="image" fetchpriority="high">
-
     <!-- Critical CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-   
+    <link rel="stylesheet" href="assets/css/main.css">  
     <!-- Deferred Non-Critical CSS -->
     <link rel="stylesheet" href="assets/css/aos.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="assets/css/magnific-popup.css" media="print" onload="this.media='all'">
@@ -39,7 +27,6 @@
     <link rel="stylesheet" href="assets/css/swiper.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="assets/css/all.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="assets/css/BookStyleJutsu.css" media="print" onload="this.media='all'">
-
     <!-- Fallback for CSS if JavaScript is disabled -->
     <noscript>
         <link rel="stylesheet" href="assets/css/aos.css">
@@ -49,15 +36,12 @@
         <link rel="stylesheet" href="assets/css/all.min.css">
         <link rel="stylesheet" href="assets/css/BookStyleJutsu.css">
     </noscript>
-
     <!-- Preload Secondary Images -->
     <link rel="preload" href="assets/img/Artwork/Center.webp" as="image">
     <link rel="preload" href="assets/img/Artwork/Left.webp" as="image">
     <link rel="preload" href="assets/img/Artwork/Right.webp" as="image">
-
     <!-- Favicon -->
     <link rel="icon" href="assets/img/XICON.png" type="image/x-icon">
-
    <!-- Social Media Tags -->
 <meta property="og:title" content="𝙉𝙀𝙓𝙐𝙎★𝙃𝙐𝙀 | ₊⁺ 𝙎𝙏𝘼𝙉𝘿 𝙊𝙐𝙏 𝙒𝙃𝙀𝙍𝙀 𝙊𝙏𝙃𝙀𝙍𝙎 𝘽𝙇𝙀𝙉𝘿 𝙄𝙉! ⁺₊">
 <meta property="og:description" content="Making businesses Stand Out Where Others Blend In! Using handmade websites, unique branding, and strategic advertising by Fresno's Artist Nexus Hue">
@@ -67,11 +51,9 @@
 <meta property="og:image:secure_url" content="https://www.nexushue.com/assets/img/banner/13.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-
  <!-- OG Locale and Site Name Tags -->
  <meta property="og:locale" content="en_US">
  <meta property="og:site_name" content="NEXUS★HUE">
-
  <!-- Twitter Card Tags -->
  <meta name="twitter:card" content="summary_large_image">
  <meta name="twitter:url" content="https://www.nexushue.com">
@@ -80,7 +62,8 @@
  <meta name="twitter:image" content="https://www.nexushue.com/assets/img/banner/13.webp">
 </head>
 
-<body class="position-relative bg2-clr">
+<body class=" position-relative bg2-clr">
+         <canvas id="canvas" class="canvas"></canvas>
   
     <div id="lang-announcement" aria-live="polite" style="position:absolute; left:-9999px; height:1px; width:1px; overflow:hidden;"></div>
 
@@ -433,13 +416,17 @@
     <main class="main position-relative overflow-hidden" id="mains">
 
         <!-- Custom Line Shape -->
-        <div class="line-shape w-100 cus-z-1 first  h-100 d-flex flex-wrap"> <svg id="sky"></svg>
-            <div id="shootingstars"></div> </div>
+        <div class="line-shape w-100 cus-z-1 first  h-100 d-flex flex-wrap"> 
+        
+       
+        </div>
+       
+      
         
         <!-- Custom Line Shape -->
 
         <!-- Hero Section -->
-        <section class="hero-section-version1 bnbgFade position-relative " >
+        <section class=" hero-section-version1 bnbgFade position-relative " >
        
                   <h1 class="white-clr text-uppercase yaytext-style ">     
                             
@@ -464,13 +451,14 @@
                                 
 <div class="NH-background-video-wrapper">
   <video
+    id="hero-video"
     poster="/assets/img/banner/backup.webp"
     playsinline
     autoplay
     muted
     loop
-    preload="auto"
-    fetchpriority="high"
+    preload="metadata"
+   
   >
     <source src="/assets/video/BackgroundVideo-Optimized.mp4" type="video/mp4" />
   </video>
@@ -478,10 +466,11 @@
 
 
 
- <div class="container text-center solid-title-shadow yaytext-style " >
+
+ <div class="container  text-center solid-title-shadow yaytext-style " >
                         
 
-        <span class="apple-glow-text-element yaytext-style" data-text="STOP SLASHING PRICES!">STOP SLASHING PRICES!</span><br>
+        <span class="apple-glow-text-element yaytext-style " data-text="STOP SLASHING PRICES!">STOP SLASHING PRICES!</span><br>
         <span class="apple-glow-text-element yaytext-style" data-text="ATTRACT PREMIUM CLIENTS!">ATTRACT PREMIUM CLIENTS!</span>
         
 
@@ -634,7 +623,7 @@
         <section class="section-bg ">
             <div class="container">
                 <div class="row g-6 justify-content-between">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 z-above">
                         <div class="d-flex gap-xxl-7 gap-xl-5 gap-4 position-relative ">
                             <div class=" about-small-thumb w-100 mt-xxl-10 mt-xl-7 mt-lg-5 mt-3 ">
 
@@ -655,7 +644,7 @@
 
                     <div class="col-lg-6 ">
                         <div class="about-samll-content ">
-                            <div class="pricing-title ">
+                            <div class="pricing-title z-above">
 
                                 <div class="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-xxl-2 py-2 px-xxl-4 px-4 theme-clr gap-xxl-4 gap-3 mb-xxl-8 mb-xl-6 mb-5 "
                                     style="font-weight: bold; -webkit-text-fill-color: #ffffff;">
@@ -849,7 +838,7 @@
 
                      
 
-                    <div class="container  position-relative" >
+                    <div class="container z-above position-relative" >
                        
                         <div class="d-flex align-items-end justify-content-between flex-wrap gap-5  ">
                             <div class="pricing-title">
@@ -1019,7 +1008,7 @@ I make brands hit their gold standard, and then go past it.</p>
  
                   
 
-                    <div class="container  position-relative" style="padding-top: 40px;">
+                    <div class="container z-above position-relative" style="padding-top: 40px;">
                         <div class="d-flex align-items-end justify-content-between flex-wrap gap-5 ">
                             <div class="pricing-title">
                                 <h5 class="stitle yaytext-style PINK-title-shadow" >
@@ -1221,7 +1210,7 @@ I make brands hit their gold standard, and then go past it.</p>
                     </div>
 
                      
-          <div class="container  position-relative" style="padding-top: 40px;">
+          <div class="container z-above position-relative" style="padding-top: 40px;">
          <h3 class="yaytext-style PINK-title-shadow FooterTitles">✦ NEXUS HUE WEB DESIGN PACKAGES ✦</h3>
 <p class="yaytext-style text-center subheader" style="margin-top: 0; padding-bottom: 20px; font-size: 1.2rem; color: var(--white);">
 UNLIMITED REVISIONS! + 1 MONTH POST LAUNCH SUPPORT!
@@ -1504,7 +1493,7 @@ MORE DETAILS
                                                              
 
 
-                    <div class="brand-section  fix section-padding " >
+                    <div class="brand-section z-above fix section-padding " >
                         <div class="container">
                             <div class="pricing-title">
                                 <h3 class="stitle yaytext-style PINK-title-shadow" >
@@ -1722,7 +1711,7 @@ MORE DETAILS
    
 
 
-        <div class="sponsor-section blackbg ">
+        <div class="sponsor-section blackbg z-above">
             <div class="sponsor-wrap ps-sm-10 ps-2 pe-2">
                 <div class="swiper trusted-inner swiper-initialized swiper-horizontal swiper-pointer-events">
                     <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-2060.5px, 0px, 0px);" id="swiper-wrapper-aa0967be541213100" aria-live="off">
@@ -1753,8 +1742,8 @@ MORE DETAILS
         
 
         <!-- Watch Version01 Start -->
-         <section class="blackbg">
-        <div class="watch-version01  position-relative ">
+         <section class="blackbg ">
+        <div class="watch-version01 z-above position-relative ">
             <div class="container ">
                 <div class="watch-content d-center">
                     <a href="https://www.youtube.com/watch?v=VTCBpzsH9fI" target="_blank" class="video-popup position-relative fw_500 d-flex  gap-2 flink-items">
@@ -1775,7 +1764,7 @@ MORE DETAILS
     </section>
        <!-- Watch Version01 Start -->
 
-    <div class="sponsor-section blackbg ">
+    <div class="sponsor-section blackbg z-above">
         <div class="sponsor-wrap ps-sm-10 ps-2 pe-2">
             <div class="swiper trusted-inner swiper-initialized swiper-horizontal swiper-pointer-events">
                 
@@ -2006,11 +1995,10 @@ MORE DETAILS
     <script src="assets/js/vanilla-tilt.min.js" defer></script>
     <!-- js Main start -->
     <script src="assets/js/main.js" defer></script>
-     <!-- Anime.js library (must come before your starry sky script) -->
+     <!-- Anime.js library (must come before your animation scripts) -->
   <script src="assets/js/anime.min.js"defer></script>
-   <!-- Star animation script -->
-  <script src="assets/js/starry-sky.js" defer></script>
   
+   <script src="assets/js/starry-sky.js"defer></script>
           <!-- JS to swap in the iframe on click -->
   <script src="assets/js/youtube-facade.js" defer></script>
 
@@ -2019,8 +2007,9 @@ MORE DETAILS
   <script src="assets/js/sub-menu-list.js" defer></script>
 <script src="assets/js/BudgetRange.js" defer></script>
 
+<!-- Web design pricing cards -->
 <script src="/assets/js/PriceCARDS.js" defer></script>
-<script src="/assets/js/HeroCheck.js" defer></script>
+
 
 
 

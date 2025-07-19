@@ -8963,25 +8963,35 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 1399px) {
-  .software-fullwatch .video-wrapper {
-    width: 100%;
-    height: 50vh;
-    overflow: hidden;
-  }
-}
+
 
 
 
 .watch-version01 {
-  background: url(../img/team/RedSEA_TEST.webp) no-repeat center center;
+  background: url(../img/team/DuhRedSea.webp) no-repeat center center;
   background-size: cover;
-  padding: 300px 5px;
-  background-attachment: fixed;
+  padding: 400px 5px;
   min-width: 420px;
-      width: auto;
-      
+  width: auto;
+  margin-top: -20%;
+  position: relative; /* required for z-index to work */
+  z-index: 4;
 }
+
+
+@media screen and (min-width: 2500px) {
+  .watch-version01 {
+    margin-top: -15% !important;
+  }
+}
+
+@media screen and (min-width: 3500px) {
+  .watch-version01 {
+    margin-top: -11% !important;
+  }
+}
+
+
 .watch-version01 .video-popup .icons {
   width: 122px;
   min-width: 122px;

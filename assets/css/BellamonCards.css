@@ -1,10 +1,10 @@
 :root {
-  --color1: rgb(0, 231, 255);
+  --color1: rgb(255, 0, 230);
   --color2: rgb(255, 0, 230);
   --back: url(https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg);
   
-  --NexusHue1: #a5c2ff;
-  --NexusHue2: #ff006a;
+  --NexusHue1: #ff006a;
+  --NexusHue2:  #002981 ;
   --NexusHuefront: url(/assets/img/CollectableCards/NexusHueCollectableCard.webp);
 
   --pika1: #54a29e;

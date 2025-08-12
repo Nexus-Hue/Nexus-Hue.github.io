@@ -68,6 +68,11 @@ z-index: 3 !important;
   z-index:2 !important; 
 }
 
+.z-aboveAll {
+  position: relative;
+  z-index:10 !important; 
+}
+
 
 .Reading-Card .date-list b,
 .Reading-Card .date-list .Reading-Card-date,
@@ -10055,4 +10060,64 @@ input.main-search-input::placeholder {
   z-index:1; 
   opacity: 0.5;
   pointer-events: none; 
+}
+
+
+.book-sandbox {
+  max-width: 1474px;
+  width: 100%;
+
+  margin: 0 auto;
+  background-color: #33333300;
+
+  box-sizing: border-box;
+  display: block;
+  padding: 0;
+}
+
+.book-sandbox .book-wrapper {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.book-sandbox .book-container {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+
+.book-sandbox .book {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  position: relative;
+  user-select: none;
+}
+
+.book-sandbox .page,
+.book-sandbox .page-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.book-sandbox .media-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.book-sandbox .media-wrapper img,
+.book-sandbox .media-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }

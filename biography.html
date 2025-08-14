@@ -405,18 +405,38 @@ Who is Kevin Robles? & Who is Nexus Hue? Are they the same person?
 
 
                     </div>
-               
-                 <div class="book-sandbox z-aboveAll">
-  <div class="book-wrapper">
-    <div class="book-container">
-      <div class="book" id="book">
+               <!-- PLACEHOLDER IMAGE -->
+<div id="flipbook-placeholder" style="cursor:pointer; max-width: 1474px; margin:0 auto;">
+  <img src="/assets/img/biography/book_1/BiograpphyBook1_Placeholder.webp" alt="Click to open book" style="width:100%; display:block;">
+<div style="display:flex; align-items:center; justify-content:center; padding: 2%;">
+  <p class="yaytext-style ButtonGlow" style="text-align:center; max-width:50%;">
+    CLICK HERE TO OPEN FLIPBOOK
+  </p>
+</div>
+  
+</div>
 
-        <!-- VIDEO PAGE -->
-  <div class="page">
+<!-- FLIPBOOK CONTAINER -->
+<div id="flipbook-container"></div>
+
+<script>
+  document.getElementById('flipbook-placeholder').addEventListener('click', function() {
+    this.style.display = 'none'; // hide placeholder
+
+    const container = document.getElementById('flipbook-container');
+
+    // Inject your flipbook HTML
+    container.innerHTML = `
+      <div class="book-sandbox z-aboveAll">
+        <div class="book-wrapper">
+          <div class="book-container">
+            <div class="book" id="book">
+
+
+       <!-- IMAGE PAGE -->
+        <div class="page">
           <div class="media-wrapper">
-            <video autoplay muted loop playsinline fetchpriority="high">
-              <source src="/assets/img/biography/book_1/Biography_Cover.mp4" type="video/mp4">
-            </video>
+            <img src="/assets/img/biography/book_1/KevinBioGraphy_CoverPage.webp" alt="Page 0" fetchpriority="high">
           </div>
         </div>
 
@@ -507,14 +527,24 @@ Who is Kevin Robles? & Who is Nexus Hue? Are they the same person?
           </div>
         </div>
 
-
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
- </div>
+    `;
+
+    // Dynamically reload FlipbookScript.js to force initialization
+    const script = document.createElement('script');
+    script.src = 'assets/js/FlipbookScript.js';
+    script.defer = true;
+    document.body.appendChild(script);
+  });
+</script>
+
+                
           </div>
  
-
+<br>
 
                     <div class="Reading-Card yaytext-style container">
 
@@ -604,7 +634,7 @@ Just added less coolant to accommodate for the missing piece. Looking for parts 
     
     </div>
     
-<br><br><br><br>
+<br>
     
       <div class="Reading-Card yaytext-style container ">
 

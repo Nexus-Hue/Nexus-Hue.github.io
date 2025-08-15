@@ -406,149 +406,69 @@ Who is Kevin Robles? & Who is Nexus Hue? Are they the same person?
 
                     </div>
                            </div>
-               <!-- PLACEHOLDER IMAGE -->
+<!-- PLACEHOLDER IMAGE -->
 <div id="flipbook-placeholder" style="cursor:pointer; max-width: 1474px; margin:0 auto;">
   <img src="/assets/img/biography/book_1/BiograpphyBook1_Placeholder.webp" alt="Click to open book" style="width:100%; display:block;">
-<div style="display:flex; align-items:center; justify-content:center; padding: 2%;">
-  <p class="yaytext-style ButtonGlow" style="text-align:center; max-width:50%;">
-    CLICK HERE TO OPEN FLIPBOOK
-  </p>
+  <div style="display:flex; align-items:center; justify-content:center; padding: 2%;">
+    <p class="yaytext-style ButtonGlow" style="text-align:center; max-width:50%;">
+      CLICK HERE TO OPEN FLIPBOOK
+    </p>
+  </div>
 </div>
-
-
-  
-</div>
-
 
 <!-- FLIPBOOK CONTAINER -->
 <div id="flipbook-container"></div>
 
 <script>
-  document.getElementById('flipbook-placeholder').addEventListener('click', function() {
-    this.style.display = 'none'; // hide placeholder
+document.getElementById('flipbook-placeholder').addEventListener('click', function() {
+  this.style.display = 'none'; // hide placeholder
 
-    const container = document.getElementById('flipbook-container');
+  const container = document.getElementById('flipbook-container');
 
-    // Detect if device is mobile (screen width <= 768px)
-    const isMobile = window.innerWidth <= 768;
-
-    container.innerHTML = `
+  container.innerHTML = `
 <div class="book-sandbox z-aboveAll">
-        <div class="book-wrapper">
-          <div class="book-container">
-            <div class="book" id="book">
+  <div class="book-wrapper">
+    <div class="book-container">
+      <div class="book" id="book">
 
+        <!-- IMAGE PAGES -->
+        <div class="page"><div class="media-wrapper"><img src="/assets/img/biography/book_1/KevinBioGraphy_CoverPage.webp" alt="Page 0" fetchpriority="high"></div></div>
+        <div class="page"><div class="media-wrapper"><img src="/assets/img/biography/book_1/Page1.webp" alt="Page 1" fetchpriority="high"></div></div>
+        <div class="page"><div class="media-wrapper"><img src="/assets/img/biography/book_1/Page2.webp" alt="Page 2" fetchpriority="high"></div></div>
+        <div class="page"><div class="media-wrapper"><img src="/assets/img/biography/book_1/Page3.webp" alt="Page 3" fetchpriority="high"></div></div>
+        <div class="page"><div class="media-wrapper"><img src="/assets/img/biography/book_1/Page4.webp" alt="Page 4" fetchpriority="high"></div></div>
 
-       <!-- IMAGE PAGE -->
+        <!-- PAGE 5: Apple-safe video for everyone -->
         <div class="page">
           <div class="media-wrapper">
-            <img src="/assets/img/biography/book_1/KevinBioGraphy_CoverPage.webp" alt="Page 0" fetchpriority="high">
+            <video autoplay muted loop playsinline fetchpriority="high">
+              <source src="/assets/img/biography/book_1/Page5_apple.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
 
+        <!-- IMAGE PAGES PART 2 -->
+        <div class="page"><div class="media-wrapper"><img src="/assets/img/biography/book_1/Page6.webp" alt="Page 6" fetchpriority="high"></div></div>
+        <div class="page"><div class="media-wrapper"><img src="/assets/img/biography/book_1/Page7.webp" alt="Page 7" fetchpriority="high"></div></div>
+        <div class="page"><div class="media-wrapper"><img src="/assets/img/biography/book_1/Page8.webp" alt="Page 8" fetchpriority="high"></div></div>
+        <div class="page"><div class="media-wrapper"><img src="/assets/img/biography/book_1/Page9.webp" alt="Page 9" fetchpriority="high"></div></div>
+        <div class="page"><div class="media-wrapper"><img src="/assets/img/biography/book_1/Page10.webp" alt="Page 10" fetchpriority="high"></div></div>
+        <div class="page"><div class="media-wrapper"><img src="/assets/img/biography/book_1/Page11.webp" alt="Page 11" fetchpriority="high"></div></div>
+        <div class="page"><div class="media-wrapper"><img src="/assets/img/biography/book_1/Page12.webp" alt="Page 12" fetchpriority="high"></div></div>
+        <div class="page"><div class="media-wrapper"><img src="/assets/img/biography/book_1/Page13.webp" alt="Page 13" fetchpriority="high"></div></div>
 
-        <!-- IMAGE PAGE -->
-        <div class="page">
-          <div class="media-wrapper">
-            <img src="/assets/img/biography/book_1/Page1.webp" alt="Page 1" fetchpriority="high">
-          </div>
-        </div>
-
-        <!-- IMAGE PAGE -->
-        <div class="page">
-          <div class="media-wrapper">
-            <img src="/assets/img/biography/book_1/Page2.webp" alt="Page 2" fetchpriority="high">
-          </div>
-        </div>
-
-  
-
-        <!-- IMAGE PAGE -->
-        <div class="page">
-          <div class="media-wrapper">
-            <img src="/assets/img/biography/book_1/Page3.webp" alt="Page 3" fetchpriority="high">
-          </div>
-        </div>
-
-         <div class="page">
-          <div class="media-wrapper">
-            <img src="/assets/img/biography/book_1/Page4.webp" alt="Page 4" fetchpriority="high">
-          </div>
-        </div>
-
-             <div class="page">
-                <div class="media-wrapper">
-                  ${isMobile
-                    ? `<img src="/assets/img/biography/book_1/Page5Mobile.gif" alt="Page 5 GIF" fetchpriority="high">`
-                    : `<video autoplay muted loop playsinline fetchpriority="high">
-                         <source src="/assets/img/biography/book_1/Page5.mp4" type="video/mp4">
-                       </video>`}
-                </div>
-              </div>
-
-                <div class="page">
-          <div class="media-wrapper">
-            <img src="/assets/img/biography/book_1/Page6.webp" alt="Page 6" fetchpriority="high">
-          </div>
-        </div>
-
-                    <div class="page">
-          <div class="media-wrapper">
-            <img src="/assets/img/biography/book_1/Page7.webp" alt="Page 7" fetchpriority="high">
-          </div>
-        </div>
-
-         <div class="page">
-          <div class="media-wrapper">
-            <img src="/assets/img/biography/book_1/Page8.webp" alt="Page 8" fetchpriority="high">
-          </div>
-        </div>
-
-          <div class="page">
-          <div class="media-wrapper">
-            <img src="/assets/img/biography/book_1/Page9.webp" alt="Page 9" fetchpriority="high">
-          </div>
-        </div>
-
-          <div class="page">
-          <div class="media-wrapper">
-            <img src="/assets/img/biography/book_1/Page10.webp" alt="Page 10" fetchpriority="high">
-          </div>
-        </div>
-
-          <div class="page">
-          <div class="media-wrapper">
-            <img src="/assets/img/biography/book_1/Page11.webp" alt="Page 11" fetchpriority="high">
-          </div>
-        </div>
-
-          <div class="page">
-          <div class="media-wrapper">
-            <img src="/assets/img/biography/book_1/Page12.webp" alt="Page 12" fetchpriority="high">
-          </div>
-        </div>
-
-          <div class="page">
-          <div class="media-wrapper">
-            <img src="/assets/img/biography/book_1/Page13.webp" alt="Page 13" fetchpriority="high">
-          </div>
-        </div>
-
-            </div>
-          </div>
-        </div>
       </div>
-    `;
-    
+    </div>
+  </div>
+</div>
+  `;
 
-    // Dynamically reload FlipbookScript.js to force initialization
-    const script = document.createElement('script');
-    script.src = 'assets/js/FlipbookScript.js';
-    script.defer = true;
-    document.body.appendChild(script);
-  });
-
-  
+  // Reload FlipbookScript.js to force initialization
+  const script = document.createElement('script');
+  script.src = 'assets/js/FlipbookScript.js';
+  script.defer = true;
+  document.body.appendChild(script);
+});
 </script>
 
                 

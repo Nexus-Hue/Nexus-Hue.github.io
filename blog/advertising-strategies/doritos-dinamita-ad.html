@@ -540,22 +540,12 @@
 
 <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
 <script>
-  // Replace 'YOUR_NEW_PROJECT_ID' with your actual CommentBox.io project ID
   commentBox('5754487973085184-proj', {
-    className: 'commentbox',         // div class to attach comments
-    defaultBoxId: 'my-commentbox',   // the div ID to attach comments
-    tlcParam: 'tlc',                 // keeps unique links to comments
-    sortOrder: 'best',               // default comment sort order
-    createBoxUrl: function(boxId, pageLocation) {
-      pageLocation.search = '';      // remove query string
-      pageLocation.hash = boxId;     // add boxId to URL
-      return pageLocation.href;
-    },
-    onCommentCount: function(count) {
-      console.log("Comments loaded:", count);
-    }
+    backgroundColor: '#000',  // dark background
+    textColor: '#fff'         // white text
   });
 </script>
+
 
 
 

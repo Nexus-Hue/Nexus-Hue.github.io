@@ -60,7 +60,8 @@ z-index: 3 !important;
 }
 
 .Reading-Card a {
-  color: var(--theme) !important; 
+  color: var(--white) !important; 
+  background-color: var(--theme);
 }
 
 .z-above {
@@ -73,6 +74,10 @@ z-index: 3 !important;
   z-index:10 !important; 
 }
 
+.z-Peak {
+  position: relative;
+  z-index:15 !important; 
+}
 
 .Reading-Card .date-list b,
 .Reading-Card .date-list .Reading-Card-date,
@@ -115,13 +120,16 @@ body {
   font-weight: normal;
   line-height: 28px;
   color: var(--white);
-  background-color:  #FF006A;
+
   padding: 0;
   margin: 0;
   overflow-x: hidden;
 }
 
-
+html {
+    scroll-padding-top: 100px; /* height of your fixed header */
+    scroll-behavior: smooth;   /* optional: smooth scrolling */
+}
 
 ul {
   padding: 0;
@@ -161,19 +169,19 @@ h6
 
 h1 {
   font-size: 80px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 112%;
 }
 
 h2 {
-  font-size: 55px;
+  font-size: 42px;
   line-height: 125%;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h3 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 900;
   line-height: 135%;
 }
 
@@ -207,9 +215,12 @@ a {
 p {
   margin: 0px;
   transition: all 0.4s ease-in-out;
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-  color: var(--white);
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600 !important;
+  font-style: italic !important;
+
 }
 
 .zindex1 {
@@ -529,6 +540,11 @@ span {
   
 }
 
+.themebg {
+  background: var(--theme);
+  
+}
+
 
 .blackbg2 {
   background: var(--blackbg);
@@ -567,8 +583,7 @@ span {
 .spill-effect .swiper-slide img {
   position: relative;
   z-index: 0;
-  transform: translateY(-50%); /* Move images up to overlap with hero section */
-  
+
   transition: transform 2s ease;
 }
 
@@ -611,6 +626,7 @@ span {
   margin: -1px; 
   overflow: hidden; 
   clip: rect(0,0,0,0); 
+  white-space: nowrap;
   border: 0;
 }
 
@@ -1047,6 +1063,8 @@ footer {
   cursor: col-resize;
   background-color: transparent;
 }
+
+
 
 /* Firefox */
 .compare__input::-moz-range-track {
@@ -1805,30 +1823,34 @@ footer {
 }
 
 .hero-section-version1 {
-  padding: 150px 5px 160px;
+  padding-top: 2% ;
+
   position: relative;
-  z-index: 1;
+  z-index: 90;
 }
 
 .hero-section-version1 .sfot-element1 {
   position: absolute;
-  top:13%;
+  top:9.77%;
   left:27%;
   width:60px;
   height: 60px;
   animation: zomin 5s linear infinite;
   z-index: 1;
+  
 }
 
 .hero-section-version1 .sfot-element2 {
   position: absolute;
-  top:13%;
+  top:9.77%;
   right:27%;
   width:60px;
   height: 60px;
   animation: zomin 2s linear infinite;
   z-index: 1;
+  
 }
+
 
 
 @media (max-width: 1800px) {
@@ -2016,9 +2038,7 @@ footer {
 
 
 @media (max-width: 1600px) {
-  .hero-section-version1 {
-    padding: 190px 5px 100px;
-  }
+ 
   .hero-section-version1 .spilit-contact {
     justify-content: center;
     position: initial;
@@ -2028,11 +2048,7 @@ footer {
     margin-top: 10px;
   }
 }
-@media (max-width: 1199px) {
-  .hero-section-version1 {
-    padding: 160px 5px 90px;
-  }
-}
+
 @media (max-width: 991px) {
   .hero-section-version1 .sfot-element1 {
     display: none;
@@ -2040,7 +2056,7 @@ footer {
 }
 @media (max-width: 575px) {
   .hero-section-version1 {
-    padding: 130px 5px 60px;
+   padding-top: 2% ;
   }
   .hero-section-version1 .spilit-contact a {
     font-size: 11px;
@@ -3375,7 +3391,7 @@ footer {
   transition: all 0.4s ease-in-out;
 }
 .blog-box-item .blog-image::before {
-  background-color: var(--bg1);
+  background-color: var(--theme);
   bottom: 0;
   content: "";
   left: 50%;
@@ -4606,7 +4622,7 @@ footer {
 }
 
 .faq .header-area button::before {
-  content: " ⁺☾⁺₊✧";
+
   background-color: var(--theme);
   width: 38px;
   min-width: 38px;
@@ -6086,6 +6102,7 @@ footer {
   transform: translateX(-50%);
   pointer-events: none;
   z-index: 0;
+
 }
 
 /* Fade effect only at the top */
@@ -10052,6 +10069,8 @@ input.main-search-input::placeholder {
 
 
 
+
+
 #canvas {
   position: fixed;
   top: 0;
@@ -10120,5 +10139,14 @@ input.main-search-input::placeholder {
   height: 100%;
   object-fit: contain;
   display: block;
+}
+
+
+mark {
+background-color: var(--theme);
+  color: aliceblue;
+  padding: 0.15em 0.3em;
+  border-radius: 0.25em; 
+  font-weight: bold;     
 }
 

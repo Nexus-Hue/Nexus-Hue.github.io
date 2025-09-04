@@ -9861,6 +9861,13 @@ input.main-search-input::placeholder {
 }
 
 
+
+.DuhAlert 
+{--bs-alert-color: var(--white);
+  --bs-alert-bg: #ac0048;
+  --bs-alert-border-color: #ff1c7b;}
+
+
 .NexusProduct-product-link {
     text-decoration: none;
     text-transform: uppercase;
@@ -9874,9 +9881,9 @@ input.main-search-input::placeholder {
 }
 
 .NexusProduct-product-link:hover {
-    opacity: 0.9;
+    color: var(--white);
+    transform: scale(1.1); /* makes it grow 10% */
 }
-
 .NexusProduct-product-rating {
     color: var(--theme);
 }
@@ -9918,6 +9925,7 @@ input.main-search-input::placeholder {
     padding-left: 1.7rem;
     font-weight: 900;
     opacity: 0.9;
+    
 }
 
 .NexusProduct-product-detail ul li span {
@@ -10112,6 +10120,26 @@ input.main-search-input::placeholder {
   object-fit: contain;
   display: block;
 }
+
+/* Base button style */
+.NH-accordion-button {
+  background-color: #FF006A !important; /* collapsed state bg */
+  color: #ffffff !important;           /* text color */
+  border: none !important;             /* optional: remove border */
+  box-shadow: none !important;         /* optional: remove focus shadow */
+}
+
+/* Expanded button state */
+.NH-accordion-button:not(.collapsed) {
+  background-color: #FF3380 !important; /* bg when expanded */
+  color: #ffffff !important;
+}
+
+/* Arrow icon color */
+.NH-accordion-button::after {
+  filter: invert(1); /* makes arrow white */
+}
+
 
 
 mark {

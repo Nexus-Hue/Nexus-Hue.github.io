@@ -41,6 +41,10 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
   text-align: center;
 }
 
+.RedText-glow {
+    text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);
+}
+
 
 
  .Reading-Card {
@@ -60,9 +64,35 @@ z-index: 3 !important;
 }
 
 .Reading-Card a {
-  color: var(--white) !important; 
+  color: var(--white) !important;
   background-color: var(--theme);
+  display: inline-block;      
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.Reading-Card a:hover {
+  transform: scale(1.15); /* stronger zoom */
+  box-shadow: 0 0 15px 4px #FF006A; /* pink glow */
+}
+
+
+
+.Reading-Card h1 {
+  color: var(--theme) !important; 
+
+}
+
+.Reading-Card h2 {
+  color: var(--blackbg) !important; 
+
+}
+
+
 
 .z-above {
   position: relative;
@@ -127,8 +157,8 @@ body {
 }
 
 html {
-    scroll-padding-top: 100px; /* height of your fixed header */
-    scroll-behavior: smooth;   /* optional: smooth scrolling */
+    scroll-padding-top: 100px; 
+    scroll-behavior: smooth;  
 }
 
 ul {
@@ -163,7 +193,10 @@ h6
   margin: 0px;
   padding: 0;
   color: var(--white);
-   
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900 !important;
+  font-style: italic !important;
   transition: all 0.4s ease-in-out;
 }
 
@@ -208,7 +241,7 @@ a {
   text-decoration: none;
   outline: none !important;
   cursor: pointer;
-  color: var(--bg2);
+  color: var(--white);
   transition: all 0.4s ease-in-out;
 }
 
@@ -329,7 +362,12 @@ span {
     border-color:var(--theme);
   }
 
-  
+  .budget-options {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
 
 .tubelight span{
   color:#fff;
@@ -551,13 +589,23 @@ span {
   
 }
 
-/* Sponsor section Color */
+
 .blackbg333 {
   background:var(--blackbg);
              
 }
 
 
+
+.BlackbgText {
+  color: var(--blackbg);
+             
+}
+
+.ThemeText {
+  color: var(--theme);
+             
+}
 
 
 /* Spill effect container */
@@ -620,15 +668,17 @@ span {
 
 .sr-only {
   position: absolute;
-  width: 1px; 
-  height: 1px; 
-  padding: 0; 
-  margin: -1px; 
-  overflow: hidden; 
-  clip: rect(0,0,0,0); 
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0); /* legacy for older browsers */
+  clip-path: inset(50%);   /* modern alternative */
   white-space: nowrap;
   border: 0;
 }
+
 
 
 
@@ -1384,6 +1434,15 @@ footer {
   content: none !important;
 }
 
+header.fixed-header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background: var(--bg1);
+}
+
+
 .about-wrapper-2 .about-header-items {
   display: flex;
   justify-content: space-between;
@@ -1399,6 +1458,27 @@ footer {
   display: flex;
   gap: 50px;
 }
+
+
+.counter-area a {
+  background-color: var(--theme);
+  color: var(--white);
+padding: 1%;
+  border-radius: 6px;
+
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.counter-area a:hover {
+  background-color: #fff; /* or a lighter shade of var(--theme) */
+  color: var(--theme);
+}
+
+
+
+
+
+
 @media (max-width: 575px) {
   .about-wrapper-2 .about-header-items .counter-area {
     flex-wrap: wrap;
@@ -6972,7 +7052,10 @@ input.main-search-input::placeholder {
   background-color: var(--theme);        /* Nexus Hue's red */
   color: #ffffff;                  
   padding: 12px 24px;
-  
+  margin-top: 40px; 
+  background-color:  #FF006A !important ;
+   border-color: #FF006A;
+   border-width: 7px;
   
   font-size: 16px;
   font-weight: bold;
@@ -7014,7 +7097,7 @@ input.main-search-input::placeholder {
 }
 
 .CTATypeShih:hover::after {
-  content: '✧₊⁺ 𝙀𝙇𝙀𝙑𝘼𝙏𝙀 𝙔𝙊𝙐𝙍 𝘽𝙍𝘼𝙉𝘿! ⁺₊✧';
+  content: ' ';
   position: absolute;
   top: 0;
   left: 0;
@@ -7055,8 +7138,8 @@ input.main-search-input::placeholder {
 /* Add individual sparkle elements */
 .sparkle {
   position: absolute;
-  width: 4px;
-  height: 4px;
+  width: 7px;
+  height: 7px;
   background-color: white;
   border-radius: 50%;
   opacity: 0;
@@ -7064,7 +7147,7 @@ input.main-search-input::placeholder {
 }
 
 .CTATypeShih:hover .sparkle {
-  animation: sparkle-fly 0.97s ease-out forwards;}
+  animation: sparkle-fly .97s ease-out forwards;}
   
 
 .CTATypeShih .sparkle:nth-child(1) { top: 20%; left: 20%; }
@@ -8995,9 +9078,10 @@ input.main-search-input::placeholder {
 }
 
 .watch-version01 .video-popup .icons i {
-  font-size: 36px;
-  color: var(--black);
+  font-size: 27px;
+  color: var(--white);
 }
+
 .watch-version01 .video-popup .circle {
   position: absolute;
   top: -32px;
@@ -9904,7 +9988,7 @@ input.main-search-input::placeholder {
 }
 
 .NexusProduct-last-price span {
-    color: #f64749;
+       color: var(--theme);
     text-decoration: line-through;
 }
 
@@ -9925,11 +10009,15 @@ input.main-search-input::placeholder {
     padding-left: 1.7rem;
     font-weight: 900;
     opacity: 0.9;
-    
+   
 }
 
+
+
 .NexusProduct-product-detail ul li span {
-    font-weight: 400;
+    font-weight: 700;
+    -webkit-text-fill-color:rgb(255, 255, 255) ;
+    
 }
 
 .NexusProduct-purchase-info {
@@ -9953,7 +10041,7 @@ input.main-search-input::placeholder {
 
 .NexusProduct-purchase-info .NexusProduct-btn {
     cursor: pointer;
-    color: #fff;
+    color: #ffffff;
 }
 
 .NexusProduct-purchase-info .NexusProduct-btn:first-of-type {
@@ -9992,12 +10080,6 @@ input.main-search-input::placeholder {
 
 
 
-.NexusProduct-social-links a:hover {
-    background: #000;
-    border-color: transparent;
-    color: #fff;
-}
-
 @media screen and (min-width: 992px) {
     .NexusProduct-card {
         display: grid;
@@ -10013,41 +10095,40 @@ input.main-search-input::placeholder {
     height: auto;
 }
 
-    .NexusProduct-product-imgs {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+
 
     .NexusProduct-product-content {
         padding-top: 0;
     }
 }
 
-
-
-.NH-background-video-wrapper {
-  position: relative;
-  width: 100%;
-  height: 60vh;
-  overflow: hidden;
-  
-
-}
-
 .NH-background-video-wrapper video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  /* keep your existing sizing/layout */
+  width: 98%;
+  height: auto;
   display: block;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
 
-  /* Fade top and bottom edges */
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+  /* feather edges top, bottom, left, right */
+  -webkit-mask-image: 
+    linear-gradient(to top, transparent 0%, black 15%, black 85%, transparent 100%),
+    linear-gradient(to left, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-composite: xor;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 100% 100%;
+
+  mask-image: 
+    linear-gradient(to top, transparent 0%, black 15%, black 85%, transparent 100%),
+    linear-gradient(to left, transparent 0%, black 15%, black 85%, transparent 100%);
+  mask-composite: intersect;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 100% 100%;
 }
-
-
 
 
 
@@ -10150,3 +10231,41 @@ background-color: var(--theme);
   font-weight: bold;     
 }
 
+.GAP40 {
+padding-top: 40px;
+}
+
+.GAP77 {
+padding-top: 77px;
+}
+
+
+
+
+.GAP97 {
+padding-top: 97px;
+}
+
+
+.GAP107 {
+padding-top: 107px;
+}
+
+.GAP140 {
+padding-top: 140px;
+}
+
+
+.SmallBreath  {
+padding: 2%;
+}
+
+
+
+/* Swiper Inline shit now here */
+.swiper-lazy.custom-img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    max-width: 420px; 
+    height: auto; 
+}

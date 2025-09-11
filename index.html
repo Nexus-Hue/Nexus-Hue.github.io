@@ -9,7 +9,7 @@
     <link rel="alternate" hreflang="en" href="https://www.nexushue.com/"/>
     <link rel="alternate" hreflang="es" href="https://www.nexushue.com/Espanol/"/>
     <link rel="alternate" hreflang="x-default" href="https://www.nexushue.com/"/>
-    <meta name="description" content="NEXUS★HUE is the only agency that truly fuses strategy x creativity, the kind of execution that's only possible from one person seeing the full picture ">
+    <meta name="description" content="NEXUS★HUE, the only agency that fuses strategy & creativity, for the kind of execution that's only possible from seeing the full picture ">
     <link rel="canonical" href="https://www.nexushue.com/">
     <!-- SEO Tags -->
     <meta name="keywords" content="Nexus Hue, branding agency, Fresno, unique websites, creative ads, brand differentiation, visual identity, Kevin Robles, creative partner for business, branding strategist">
@@ -17,7 +17,12 @@
     <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
     <link rel="preload" href="assets/css/main.css" as="style">
     <link rel="preload" href="assets/img/banner/13.webp" as="image" fetchpriority="high">
-    <link rel="preload" as="media" href="/assets/video/BackgroundVideo-Optimized.mp4" type="video/mp4" fetchpriority="high" />
+    <link rel="preload" href="/assets/img/banner/BackupPoster.webp" as="image" fetchpriority="high">  
+    <link rel="preload" as="media" href="https://media.nexushue.com/video/main-hero/BackgroundVideo.webm" type="video/webm" fetchpriority="high"/>
+
+    <link rel="preload" href="assets/img/Artwork/Center.webp" as="image" fetchpriority="high">  
+    <link rel="preload" href="assets/img/Artwork/Left.webp" as="image" fetchpriority="high">  
+    <link rel="preload" href="assets/img/Artwork/Right.webp" as="image" fetchpriority="high">  
 
     <!-- Critical CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -29,7 +34,7 @@
     <link rel="stylesheet" href="assets/css/nice-select.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="assets/css/swiper.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="assets/css/all.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="assets/css/BookStyleJutsu.css" media="print" onload="this.media='all'">
+   
     <!-- Fallback for CSS if JavaScript is disabled -->
     <noscript>
         <link rel="stylesheet" href="assets/css/aos.css">
@@ -37,12 +42,9 @@
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <link rel="stylesheet" href="assets/css/swiper.min.css">
         <link rel="stylesheet" href="assets/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/BookStyleJutsu.css">
+    
     </noscript>
-    <!-- Preload Secondary Images -->
-    <link rel="preload" href="assets/img/Artwork/Center.webp" as="image">
-    <link rel="preload" href="assets/img/Artwork/Left.webp" as="image">
-    <link rel="preload" href="assets/img/Artwork/Right.webp" as="image">
+ 
     <!-- Favicon -->
     <link rel="icon" href="assets/img/XICON.png" type="image/x-icon">
    <!-- Social Media Tags -->
@@ -68,7 +70,10 @@
 <body class=" position-relative bg2-clr">
          <canvas id="canvas" class="canvas"></canvas>
   
-    <div id="lang-announcement" aria-live="polite" style="position:absolute; left:-9999px; height:1px; width:1px; overflow:hidden;"></div>
+<input type="checkbox" name="botcheck" class="sr-only">
+<div id="lang-announcement" class="sr-only" aria-live="polite"></div>
+
+
 
     <!-- Preloader Start -->
     <div id="preloader" class="preloader">
@@ -128,7 +133,7 @@
     </div>
 
 
-<header class="header-section cmn-fixed py-lg-0 py-6" style="position: fixed; top: 0px; z-index: 999; width: 100%; background: var(--bg1);">
+<header class="header-section cmn-fixed py-lg-0 py-6 fixed-header">
     <div class="container">
         <div class="main-navbar">
             <nav class="navbar-custom">
@@ -387,7 +392,7 @@
                     </div>
 
                     <div class="d-lg-flex d-none d-grid justify-content-center ph-clickwrap align-items-center gap-xxl-7 gap-xl-6 gap-lg-5 gap-3 yaytext-style solid-title-shadow">
-                        <a href="#contact-section-style-jutsu" class="d-flex align-items-center gap-sm-3 gap-2 touch-btn cmn-btn" style="color: white;">
+                        <a href="#contact-section-style-jutsu" class="d-flex align-items-center gap-sm-3 gap-2 touch-btn cmn-btn">
                            <i class="fa fa-envelope"></i>CONTACT NEXUS★HUE ₊˚✧
                         </a>
                     </div>
@@ -403,7 +408,7 @@
 
 
     <!-- Main start -->
-    <main class="main position-relative overflow-hidden" id="mains" style="padding-top: 77px;">
+    <main class="main position-relative overflow-hidden GAP77" id="mains">
 
     
 
@@ -418,10 +423,10 @@
         <!-- Custom Line Shape -->
 
         <!-- Hero Section -->
-        <section class=" hero-section-version1  position-relative " >
+        <header class=" hero-section-version1  position-relative " >
 
 
-<div class="white-clr text-uppercase yaytext-style" style="text-align: center;">
+<div class="white-clr text-uppercase yaytext-style text-center">
   <h1 class="tubelight" style="display: inline-flex; justify-content: center; " data-aos="zoom-in" data-aos-duration="710">
     <span>⁺⋆✩</span> 
     <span>N</span>
@@ -442,21 +447,25 @@
  
 </div>
 
-                       
-                                
 <div class="NH-background-video-wrapper">
+
 <video
   id="hero-video"
-  poster="/assets/img/banner/backup.webp"
+  poster="/assets/img/banner/BackupPoster.webp"
   playsinline
   autoplay
   muted
   loop
   preload="auto"
-    fetchpriority="high"
->
-  <source src="/assets/video/BackgroundVideo-Optimized.mp4" type="video/mp4" />
+  fetchpriority="high">
+
+
+  <source src="https://media.nexushue.com/video/main-hero/BackgroundVideo.webm" type="video/webm">
+
+
+
 </video>
+
 
 </div>
 
@@ -466,18 +475,18 @@
  <div class="container text-center solid-title-shadow yaytext-style " >
                         
 
-        <span class="head-text-element yaytext-style " 
+        <h3 class="head-text-element yaytext-style " 
         data-text="STRATEGY & BOLD BRANDING ARE THE ONLY WAY TO SURVIVE">
                     STRATEGY & BOLD BRANDING ARE THE ONLY WAY TO SURVIVE
                 
-    </span>
+ </h3>
                     
                     <br>
 
- <span class="head-text-element yaytext-style " 
+ <h3 class="head-text-element yaytext-style " 
 
  data-text="𝕿𝖍𝖊 𝕮𝖔𝖓𝖙𝖊𝖓𝖙 𝕱𝖑𝖔𝖔𝖉!">
-             𝕿𝖍𝖊 𝕮𝖔𝖓𝖙𝖊𝖓𝖙 𝕱𝖑𝖔𝖔𝖉!</span>
+             𝕿𝖍𝖊 𝕮𝖔𝖓𝖙𝖊𝖓𝖙 𝕱𝖑𝖔𝖔𝖉!</h3>
         
 
 
@@ -486,7 +495,7 @@
 
      <div style="text-align: center; -webkit-text-fill-color:  var(--white);"  data-aos="zoom-in-up" data-aos-duration="1111">
                             
-                            <a href="mailto:Kevin@NexusHue.com" class="btn CTATypeShih yaytext-style " style="margin-top: 40px; background-color:  #FF006A; border-color: #FF006A; border-width: 7px;">✧₊⁺ CONTACT NEXUS★HUE! ⁺₊✧<span class="sparkle" style="--tx: -50px; --ty: -50px;"></span>
+                            <a href="mailto:Kevin@NexusHue.com" class="btn CTATypeShih yaytext-style"> CONTACT NEXUS★HUE! <span class="sparkle" style="--tx: -50px; --ty: -50px;"></span>
                                 <span class="sparkle" style="--tx: 60px; --ty: -40px;"></span>
                                 <span class="sparkle" style="--tx: -40px; --ty: 85px;"></span>
                                 <span class="sparkle" style="--tx: 50px; --ty: 60px;"></span>
@@ -575,17 +584,17 @@
             
          
           
-        </section>
+        </header>
         <!-- Hero Section -->
        
 
  
         
      
-                  <div class="sponsor-section" style="padding: 2%;">
+                  <div class="sponsor-section SmallBreath">
             <div class="spill-effect">
                 <div class="swiper trusted-inner swiper-initialized swiper-horizontal swiper-pointer-events">
-                    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-2060.5px, 0px, 0px);" id="swiper-wrapper-aa0967be541213100" aria-live="off">
+                    <div class="swiper-wrapper"  id="swiper-wrapper-aa0967be541213100" aria-live="off">
                        
                         <div class="swiper-slide" data-swiper-slide-index="1"  role="group" aria-label="1 / 4">
                           
@@ -650,7 +659,7 @@
                                 </div>
 
                                 
-                                  <h2 class="stitle d-flex align-items-center mb-xxl-8 mb-xl-7 mb-lg-6 mb-5 gap-xxl-7 gap-xl-5 gap-3"   style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);" >
+                                  <h2 class="stitle d-flex align-items-center mb-xxl-8 mb-xl-7 mb-lg-6 mb-5 gap-xxl-7 gap-xl-5 gap-3 RedText-glow">
                                     
                                     <img src="assets/img/element/ContentFlood.webp"
                                     alt="Rise above the Content Flood" 
@@ -660,20 +669,20 @@
                                     
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="210">
                                         <g fill="var(--theme)" font-size="12" font-weight="bold">
-                                          <text x="50%" y="18" text-anchor="middle" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">コ</text>
-                                          <text x="50%" y="34" text-anchor="middle" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">ン</text>
-                                          <text x="50%" y="50" text-anchor="middle" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">テ</text>
-                                          <text x="50%" y="66" text-anchor="middle" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">ン</text>
-                                          <text x="50%" y="82" text-anchor="middle" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">ツ</text>
-                                          <text x="50%" y="98" text-anchor="middle" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">の</text>
-                                          <text x="50%" y="114" text-anchor="middle" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">洪</text>
-                                          <text x="50%" y="130" text-anchor="middle" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">水</text>
-                                          <text x="50%" y="146" text-anchor="middle" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">を</text>
-                                          <text x="50%" y="162" text-anchor="middle" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">乗</text>
-                                          <text x="50%" y="178" text-anchor="middle" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">り</text>
-                                          <text x="50%" y="194" text-anchor="middle" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">越</text>
-                                          <text x="50%" y="210" text-anchor="middle" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">え</text>
-                                          <text x="50%" y="226" text-anchor="middle" style="text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);">ろ</text>
+                                          <text x="50%" y="18" text-anchor="middle" class="RedText-glow" >コ</text>
+                                          <text x="50%" y="34" text-anchor="middle" class="RedText-glow" >ン</text>
+                                          <text x="50%" y="50" text-anchor="middle" class="RedText-glow" >テ</text>
+                                          <text x="50%" y="66" text-anchor="middle" class="RedText-glow" >ン</text>
+                                          <text x="50%" y="82" text-anchor="middle" class="RedText-glow" >ツ</text>
+                                          <text x="50%" y="98" text-anchor="middle" class="RedText-glow" >の</text>
+                                          <text x="50%" y="114" text-anchor="middle" class="RedText-glow" >洪</text>
+                                          <text x="50%" y="130" text-anchor="middle" class="RedText-glow" >水</text>
+                                          <text x="50%" y="146" text-anchor="middle" class="RedText-glow" >を</text>
+                                          <text x="50%" y="162" text-anchor="middle" class="RedText-glow" >乗</text>
+                                          <text x="50%" y="178" text-anchor="middle" class="RedText-glow" >り</text>
+                                          <text x="50%" y="194" text-anchor="middle" class="RedText-glow" >越</text>
+                                          <text x="50%" y="210" text-anchor="middle" class="RedText-glow" >え</text>
+                                          <text x="50%" y="226" text-anchor="middle" class="RedText-glow" >ろ</text>
                                         </g>
                                       </svg>
                                       
@@ -693,7 +702,7 @@
 <!-- Inside  Quick Intro Card -->   
 
  <div class="container" > 
-                       <div class="Reading-Card yaytext-style " style="text-align:center; "> 
+                       <div class="Reading-Card yaytext-style text-center" > 
                    
                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="none">
   <text 
@@ -713,12 +722,12 @@
 </svg>
                          
                 
-                  <p style="color: var(--blackbg);">
+                  <p>
                        If your brand doesn’t stand for something, it’ll get washed away by 𝕿𝖍𝖊 𝕮𝖔𝖓𝖙𝖊𝖓𝖙 𝕱𝖑𝖔𝖔𝖉!™</p> <br>
 
     
 
-                            <p style="color: var(--blackbg); ">  NEXUS★HUE  is the tidal wave that lifts your brand out of the sea of ordinary! 
+                            <p>  NEXUS★HUE  is the tidal wave that lifts your brand out of the sea of ordinary! 
                             Turning brands into works of art that rise above 𝕿𝖍𝖊 𝕮𝖔𝖓𝖙𝖊𝖓𝖙 𝕱𝖑𝖔𝖔𝖉!™  
 
                           
@@ -751,10 +760,10 @@
 
 
 
-    <p style="color: var(--blackbg); ">
+    <p>
   
 NEXUS★HUE is the only agency that truly fuses strategy x creativity, the kind of execution that's only possible from one person seeing the full picture</p> <br>
-                         <p style="color: var(--blackbg); ">
+                         <p>
 
                         NEXUS★HUE goes beyond artsy solutions. Delivering results through strategy & creative execution! 
                             By blending all elements into visual identities that are both unique & impactful!
@@ -796,7 +805,7 @@ NEXUS★HUE is the only agency that truly fuses strategy x creativity, the kind 
   
 
 
-    <p style="color: var(--blackbg);" > I can't promise tons of traffic yet, but I can guarantee you will stand out from competition! We just need the right people to see the value!🌟
+    <p> I can't promise tons of traffic yet, but I can guarantee you will stand out from competition! We just need the right people to see the value!🌟
        
       <br>   <br>Let’s connect & <br> ✧₊⁺ ELEVATE YOUR BRAND ! ⁺₊✧
         </p>  
@@ -816,15 +825,19 @@ NEXUS★HUE is the only agency that truly fuses strategy x creativity, the kind 
                                             </text>
                                           </svg>
                       
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="35" viewBox="0 0 72 90" fill="none">
+            
+             <a class="yaytext-style" href="mailto:kevin@nexushue.com?subject=Let's Build a Differentiated Brand Universe&body=Hi Nexus★Hue, I'm interested in creating a brand that truly stands out. Let's connect!" ><svg xmlns="http://www.w3.org/2000/svg" width="50" height="35" viewBox="0 0 72 90" fill="none">
   
-  <path d="M66 8 L52 32 H60 L50 60 L70 38 H62 L78 8 Z" fill="var(--theme)" />
-</svg>
-             <a href="mailto:kevin@nexushue.com?subject=Let's Build a Differentiated Brand Universe&body=Hi Nexus★Hue, I'm interested in creating a brand that truly stands out. Let's connect!" >CLICK HERE TO CONTACT NEXUS★HUE</a>
-      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="35" viewBox="0 0 72 90" fill="none">
-  
-  <path d="M66 8 L52 32 H60 L50 60 L70 38 H62 L78 8 Z" fill="var(--theme)" />
-</svg>
+  <path d="M66 8 L52 32 H60 L50 60 L70 38 H62 L78 8 Z" fill="var(--white)" />
+</svg> CONTACT  
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="35" viewBox="0 0 72 90" fill="none">
+  <g transform="translate(72,0) scale(-1,1)">
+    <path d="M66 8 L52 32 H60 L50 60 L70 38 H62 L78 8 Z" fill="var(--white)" />
+  </g>
+</svg></a>
+     
+         
+
 
 
 
@@ -886,7 +899,7 @@ NEXUS★HUE is the only agency that truly fuses strategy x creativity, the kind 
                                 <h2 class="stitle yaytext-style PINK-title-shadow">
                                    NEXUS★HUE ADVERTISEMENTS </h2>
                                     <h3 > High impact B2B type shih</h3>
-                                <p style="color: var(--pra-clr);" >
+                                <p>
                                 Differentiation focused, adapted to your industry! 
                               Signature 𝙉𝙀𝙓𝙐𝙎★𝙃𝙐𝙀 PREMIUM style adapted to work with your industry needs!</p>
                                                          </div>
@@ -894,17 +907,17 @@ NEXUS★HUE is the only agency that truly fuses strategy x creativity, the kind 
             
                         </div>
                         
-         <div class="col-lg-4 wow fadeInUp" style="padding: 2%;">
+         <div class="col-lg-4 wow fadeInUp SmallBreath">
                         <div class="faq">
                             <div class="accordion-section">
 
                                 <div class=" accordion-single mb-xxl-4 mb-4 py-xxl-7 py-xl-6 py-lg-4 py-3 px-xxl-8 px-xl-7 px-lg-6 px-4 ButtonGlow">
 
-                                    <h2 class="header-area " style="text-align: center; padding-top: 1%;">
+                                    <p class="header-area">
                                         <button class=" accordion-btn d-flex align-items-center justify-content-center  text-start d-flex position-relative w-100" type="button">
-                                        <strong  style="text-align: center; ">  ★ Ideal Use Cases </strong>    
+                                        <strong>  ★ Ideal Use Cases </strong>    
                                         </button>
-                                    </h2>
+                                    </p>
                                      
                                     <div class="content-area">
                                         <div class="content-body pt-4">
@@ -969,8 +982,8 @@ NEXUS★HUE is the only agency that truly fuses strategy x creativity, the kind 
                         </a>
                     </div>
 
-                    <h4 style="color: var(--blackbg);">Doritos Dinamita 💣<br></h4>
-                    <p style="color: var(--blackbg);" > ¡Una explosión de sabor! | An explosion of flavor! <br>
+                    <h4 class="BlackbgText">Doritos Dinamita 💣 </h4>
+                    <p class="BlackbgText"> ¡Una explosión de sabor! | An explosion of flavor! <br>
                     This ad is for Doritos Dinamita, tortilla chips rolled up like dynamite, packed with explosive cheese flavor. 
 No boring rotating food shots or tired lines. My work brings your product’s energy to life, feel it before you even taste it.</p>
 
@@ -998,8 +1011,8 @@ No boring rotating food shots or tired lines. My work brings your product’s en
                         </a>
                      
                     </div>
-                    <h4 style="color: var(--blackbg);">Santa Catrina 🌱</h4>
-                    <p style="color: var(--blackbg);" > Introducing "Santa Catrina Cabernet Sauvignon" A unique blend of Booze and boos inspired by Mexican heritage, with deep roots revolving around "Dia de los Muertos."
+                    <h4 class="BlackbgText">Santa Catrina 🌱</h4>
+                    <p class="BlackbgText"> Introducing "Santa Catrina Cabernet Sauvignon" A unique blend of Booze and boos inspired by Mexican heritage, with deep roots revolving around "Dia de los Muertos."
                    I set out to create a world. Combining design, storytelling, and cultural depth to build something that feels personal yet premium.
 
                     </p><br>
@@ -1028,8 +1041,8 @@ No boring rotating food shots or tired lines. My work brings your product’s en
                         </a>
                         
                     </div>
-                    <h4  style="color: var(--blackbg);">Kraken Gold Rum🏅</h4>
-                    <p style="color: var(--blackbg);" > This project was about blending my own bold, creative voice with the existing tone of an established brand, without losing either. 
+                    <h4 class="BlackbgText">Kraken Gold Rum🏅</h4>
+                    <p class="BlackbgText"> This project was about blending my own bold, creative voice with the existing tone of an established brand, without losing either. 
                         It’s easy to go over board pun intended. It’s also wayy too easy to play it safe. 
                         But the magic happens in that inbetween space creativity enhancing the brand, not overshadowing it.
 
@@ -1040,7 +1053,7 @@ I make brands hit their gold standard, and then go past it.</p>
         </div>
         
     </div>
-    <p style="text-align: center;" >  ✧₊⁺ 𝕹𝖆𝖛𝖎𝖌𝖆𝖙𝖎𝖔𝖓 ⁺₊✧</p>
+    <p class="text-center">  ✧₊⁺ 𝕹𝖆𝖛𝖎𝖌𝖆𝖙𝖎𝖔𝖓 ⁺₊✧</p>
     <div class="swiper-pagination"> </div>
 </div>
 
@@ -1049,19 +1062,19 @@ I make brands hit their gold standard, and then go past it.</p>
  
                   
 
-                    <div class="container z-above position-relative" style="padding-top: 40px;">
+                    <div class="container z-above position-relative GAP40">
                         <div class="d-flex align-items-end justify-content-between flex-wrap gap-5 ">
                             <div class="pricing-title">
-                                <h5 class="stitle yaytext-style PINK-title-shadow" >
+                                <h2 class="stitle yaytext-style PINK-title-shadow" >
                                     NEXUS★HUE PROMOS
-                                </h3>
+                                </h2>
                                 <h3 > Showcase products & elevate brand perception!</h3>
-                                <p style="color: var(--pra-clr);" >
+                                <p>
                                  Attention grabbers, for social media or company website! </p>
                             </div>
                         </div>
 
-                               <div class="col-lg-4 wow fadeInUp"  style="padding: 2%;">
+                               <div class="col-lg-4 wow fadeInUp SmallBreath" >
                         <div class="faq">
                             <div class="accordion-section">
 
@@ -1138,8 +1151,8 @@ I make brands hit their gold standard, and then go past it.</p>
 -->
                                            
                                             </div>
-                                            <h4 style="color: var(--blackbg);">City of Fresno  🛩️</h4>
-                                            <p style="color: var(--blackbg);">
+                                            <h4 class="BlackbgText">City of Fresno  🛩️</h4>
+                                            <p class="BlackbgText">
                                                 This was a test I made for fun. My goal was just to see If I could recreate Fresno digitally. After making it, I realized it could be a new way of promoting events in Fresno!
                                             </p>
                                         </div>
@@ -1168,8 +1181,8 @@ I make brands hit their gold standard, and then go past it.</p>
 -->
 
                                             </div>
-                                            <h4  style="color: var(--blackbg);">Sonic 3 movie promo for Tiktok ⚡</h4>
-                                            <p style="color: var(--blackbg);" >
+                                            <h4 class="BlackbgText">Sonic 3 movie promo for Tiktok ⚡</h4>
+                                            <p class="BlackbgText">
                                                 Made in partnership with paramount to promote the NEW Sonic 3 Movie on TikTok! 
                                                 Also a test for Sierra Vista Mall because setting up camera crews apparently goes against their policies!(⊙ᗝ⊙')
                                                 So full 3d seems like a natural progression.
@@ -1200,8 +1213,8 @@ I make brands hit their gold standard, and then go past it.</p>
 -->
 
                                             </div>
-                                            <h4 style="color: var(--blackbg);">Limited edition Naruto x Pokemon PS5 🖌️</h4>
-                                            <p  style="color: var(--blackbg);" >
+                                            <h4 class="BlackbgText">Limited edition Naruto x Pokemon PS5 🖌️</h4>
+                                            <p  class="BlackbgText">
                                                 There was no real purpose other than getting better at my craft while having fun. My direction was lead by just wanting to remix things I like. In this case it was anime and video-games
                                             </p>
                                         </div>
@@ -1232,8 +1245,8 @@ I make brands hit their gold standard, and then go past it.</p>
                                                 </a>
 -->
                                             </div>
-                                            <h4 style="color: var(--blackbg);">Coke x Marshmello ×͜×<br></h4>
-                                            <p style="color: var(--blackbg);" >
+                                            <h4 class="BlackbgText">Coke x Marshmello ×͜×<br></h4>
+                                            <p class="BlackbgText">
                                                 Made in anticipation of the limited edition Coke x Marshmello soda. 
                                             </p>
                                         </div>
@@ -1255,7 +1268,7 @@ I make brands hit their gold standard, and then go past it.</p>
      
                     
                      
-          <div class="container z-above position-relative" style="padding-top: 40px;">
+          <div class="container z-above position-relative GAP40">
          <h3 class="yaytext-style PINK-title-shadow FooterTitles">✦ NEXUS HUE WEB DESIGN PACKAGES ✦</h3>
 <p class="yaytext-style text-center subheader" style="margin-top: 0; padding-bottom: 20px; font-size: 1.2rem; color: var(--white);">
 UNLIMITED REVISIONS! + 1 MONTH POST LAUNCH SUPPORT!
@@ -1305,10 +1318,10 @@ UNLIMITED REVISIONS! + 1 MONTH POST LAUNCH SUPPORT!
         <div class="nh-product-slider__card">
           <img src="/assets/img/marketing/background.webp" alt="The Speedster" class="nh-product-slider__cover" loading="lazy">
           <div class="nh-product-slider__content">
-            <h1 class="nh-product-slider__title yaytext-style ">
+            <h3 class="nh-product-slider__title yaytext-style ">
               THE SPEEDSTER <br>
        
-            </h1>
+            </h3>
             <span class="nh-product-slider__price yaytext-style">$11k</span>
             <div class="nh-product-ctr">
               <div class="nh-product-labels">
@@ -1399,7 +1412,7 @@ CONVERSION FOCUSED COPY INCLUDED, EVEN IF YOUR BRAND IDENTITY’S A HOT MESS. IF
                <div class="nh-product-slider__bottom">
                 
              <button class="nh-product-slider__cart" type="button" onclick="window.location.href='/services/web-design/the-speedster';">
-MORE DETAILS
+PRICE BREAKDOWN
 </button>
 
               <button class="nh-product-slider__fav js-fav"><span class="heart"></span>UNLIMITED REVISION</button>
@@ -1547,7 +1560,7 @@ MORE DETAILS
                                   <h3 > Latest Artsy Poster Type Shih</h3><br>
 
                             </div>
-                                     <div class="col-lg-4 wow fadeInUp " style="padding: 2%;">
+                                     <div class="col-lg-4 wow fadeInUp SmallBreath">
                         <div class="faq">
                             <div class="accordion-section">
 
@@ -1607,12 +1620,11 @@ MORE DETAILS
                                                 
                                                 <div class="swiper-lazy-preloader"></div>
                                                 
-                                                <img class="swiper-lazy" 
-                                                src="assets/img/Artwork/LOWRES/TheUSA_Poster_lowres.webp"
-                                                data-src="assets/img/Artwork/TheUSA_Poster.webp" 
-                                                alt="Parody of USA season 47. Inspired by The Boys & their similarities"
-                                                loading="lazy"
-                                                style="aspect-ratio: 420 / 420; object-fit: cover; width: 420px; height: 420px;">
+                                               <img class="swiper-lazy custom-img" 
+                                                    src="assets/img/Artwork/LOWRES/TheUSA_Poster_lowres.webp"
+                                                    data-src="assets/img/Artwork/TheUSA_Poster.webp" 
+                                                    alt="Parody of USA season 47. Inspired by The Boys & their similarities"
+                                                    loading="lazy">
                                                 
                         	
 
@@ -1621,12 +1633,12 @@ MORE DETAILS
                                         <div class="swiper-slide ">
                                             <div class="brand-image2 text-center">
                                                 
-                                                <img class="swiper-lazy" 
+                                                <img class="swiper-lazy custom-img" 
                                                 src="assets/img/Artwork/LOWRES/Zucker_lowres.webp"
                                                 data-src="assets/img/Artwork/Zucker.webp" 
                                                 alt="Mark Zuckerberg being himself, eating a snack in the metaverse"
                                                 loading="lazy"
-                                                style="aspect-ratio: 420 / 420; object-fit: cover; width: 420px; height: 420px;">
+                                               >
 
                                                
 
@@ -1635,12 +1647,11 @@ MORE DETAILS
                                         <div class="swiper-slide ">
                                             <div class="brand-image2 text-center">
 
-                                                <img class="swiper-lazy" 
+                                                <img class="swiper-lazy custom-img" 
                                                 src="assets/img/Artwork/LOWRES/Santa-CatrinaSelfie_lowres.webp"
                                                 data-src="assets/img/Artwork/Santa-Catrina-Selfie.webp" 
                                                 alt="Santa Catrina Illustration, Santa Catrina Selfie in one of the Santa Catrina Temples"
-                                                loading="lazy"
-                                                style="aspect-ratio: 420 / 420; object-fit: cover; width: 420px; height: 420px;">
+                                                loading="lazy">
 
                                               
 
@@ -1648,15 +1659,29 @@ MORE DETAILS
                                         </div>
 
                                         <div class="swiper-slide ">
-                                            <div class="brand-image2 text-center ">
+                                            <div class="brand-image2 text-center custom-img">
 
                                                
                                                 <img class="swiper-lazy" 
                                                 src="assets/img/Artwork/LOWRES/SpaceOddityLOWRES.webp"
                                                 data-src="assets/img/Artwork/Space-Oddity-Poster.webp" 
                                                 alt="Space Oddity Poster illustration for a remix of daft punk faster better harder stronger"
-                                                loading="lazy"
-                                                style="aspect-ratio: 420 / 420; object-fit: cover; width: 420px; height: 420px;">
+                                                loading="lazy">
+
+                                                
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide ">
+                                            <div class="brand-image2 text-center custom-img">
+
+                                               
+                                                <img class="swiper-lazy" 
+                                                src="assets/img/Artwork/LOWRES/MikasaDeckDesign_lowres.webp"
+                                                data-src="assets/img/Artwork/Mikasa-SkateDeck-Design.webp" 
+                                                alt="Mikasa from Attack on titan, skateboard Deck Design"
+                                                loading="lazy">
 
                                                 
                                                 
@@ -1666,28 +1691,11 @@ MORE DETAILS
                                         <div class="swiper-slide ">
                                             <div class="brand-image2 text-center ">
 
-                                               
-                                                <img class="swiper-lazy" 
-                                                src="assets/img/Artwork/LOWRES/MikasaDeckDesign_lowres.webp"
-                                                data-src="assets/img/Artwork/Mikasa-SkateDeck-Design.webp" 
-                                                alt="Mikasa from Attack on titan, skateboard Deck Design"
-                                                loading="lazy"
-                                                style="aspect-ratio: 420 / 420; object-fit: cover; width: 420px; height: 420px;">
-
-                                                
-                                                
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide ">
-                                            <div class="brand-image2 text-center">
-
-                                                <img class="swiper-lazy" 
+                                                <img class="swiper-lazy custom-img" 
                                                 src="assets/img/Artwork/LOWRES/CyberpunkPhoto_lowres.webp"
                                                 data-src="assets/img/Artwork/CyberpunkPhoto.webp" 
                                                 alt="Cyberpunk mixed media Illustration of a cyborg, artwork titled Plastic Hearts"
-                                                loading="lazy"
-                                                style="aspect-ratio: 420 / 420; object-fit: cover; width: 420px; height: 420px;">
+                                                loading="lazy">
 
                                                
 
@@ -1696,12 +1704,11 @@ MORE DETAILS
                                         <div class="swiper-slide ">
                                             <div class="brand-image2 text-center">
                                                 
-                                                <img class="swiper-lazy" 
+                                                <img class="swiper-lazy custom-img" 
                                                 src="assets/img/Artwork/LOWRES/LonelyTower_lowres.webp"
                                                 data-src="assets/img/Artwork/Lonely-Ahh-Tower.webp" 
                                                 alt="Digital Painting of a Lonely ahh Tower on an alien planet"
-                                                loading="lazy"
-                                                style="aspect-ratio: 420 / 420; object-fit: cover; width: 420px; height: 420px;">
+                                                loading="lazy">
                                                 
                                                 
 
@@ -1710,12 +1717,11 @@ MORE DETAILS
                                         <div class="swiper-slide ">
                                             <div class="brand-image2 text-center">
                                                 
-                                                <img class="swiper-lazy"
+                                                <img class="swiper-lazy custom-img"
                                                 src="assets/img/Artwork/LOWRES/MikasaSkateboard_lowres.webp" 
                                                 data-src="assets/img/Artwork/Mikasa-Skateboard.webp" 
                                                 alt="Skateboard design, Attack on Titan Mikasa skateboard design"
-                                                loading="lazy"
-                                                style="aspect-ratio: 420 / 420; object-fit: cover; width: 420px; height: 420px;">
+                                                loading="lazy">
                                                
                                                
 
@@ -1725,12 +1731,11 @@ MORE DETAILS
                                         <div class="swiper-slide ">
                                             <div class="brand-image2 text-center ">
                                                
-                                                <img class="swiper-lazy" 
+                                                <img class="swiper-lazy custom-img" 
                                                 src="assets/img/Artwork/LOWRES/L_lowres.webp"
                                                 data-src="assets/img/Artwork/Fallen-Angels.webp" 
                                                 alt="Mixed Media, Fallen Angels chillen in Purgatory"
-                                                loading="lazy"
-                                                style="aspect-ratio: 420 / 420; object-fit: cover; width: 420px; height: 420px;">
+                                                loading="lazy">
                                               
 
                                             </div>
@@ -1769,7 +1774,7 @@ MORE DETAILS
                 <div class="watch-content d-center">
                     <a href="https://www.youtube.com/watch?v=VTCBpzsH9fI" target="_blank" class="video-popup position-relative fw_500 d-flex  gap-2 flink-items">
                         
-                        <span class="ani-icons icons themebg radius100 d-center " style="-webkit-text-fill-color: aliceblue;">
+                        <span class="ani-icons icons themebg radius100 d-center " >
 
                         
                                 <i class="fa fa-star white"></i>
@@ -1832,7 +1837,7 @@ MORE DETAILS
 
                                     </div>
                                   
-                                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                                   <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
                                   
                                       <input type="hidden" name="access_key" value="6dc8d72d-e666-48ce-b547-803aa180c2c1" />
                                       <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
@@ -1893,7 +1898,7 @@ MORE DETAILS
                <i class="fas fa-arrow-up" aria-hidden="true"></i>
            </a>
           
-           <p class="FooterTypeText" style="color: aliceblue;" >
+           <p class="FooterTypeText">
             All Rights Reserved <br>
                &copy;<a href="/" class="FooterTypeText" aria-label="Nexus Hue Home">𝙉𝙀𝙓𝙐𝙎★𝙃𝙐𝙀</a>
            </p>
@@ -1930,7 +1935,7 @@ MORE DETAILS
                         <span class="address d-block">
                             Email
                         </span>
-                        <a href="mailto:Kevin@NexusHue.com">Kevin@NexusHue.com</a>
+                        <a href="mailto:Kevin@NexusHue.com">E-Mail</a>
                     </div>
                 </div>
                 <div class="sub__contac-item">
@@ -1939,7 +1944,7 @@ MORE DETAILS
                             Call now
                         </span>
                         <a href="tel:+15594958004" class="textp">
-                          5594958004
+                    Call Nexus Hue
                         </a>
                     </div>
                 </div>
@@ -1996,7 +2001,7 @@ MORE DETAILS
   <script src="assets/js/anime.min.js"defer></script>
   
    <script src="assets/js/starry-sky.js"defer></script>
-      
+     
   <script src="assets/js/youtube-facade.js" defer></script>
 
   <!-- SUB MENU TYPE SHIT-->

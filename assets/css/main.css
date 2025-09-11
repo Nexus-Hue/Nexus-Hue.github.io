@@ -607,8 +607,12 @@ span {
   line-height: 1.4; /* improves readability */
 }
 
+.text-contrast-redText {
 
 
+
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
 
 
 .BlackbgText {

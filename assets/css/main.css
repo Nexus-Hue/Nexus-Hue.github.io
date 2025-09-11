@@ -597,6 +597,20 @@ span {
 
 
 
+.text-contrast {
+
+  text-shadow: 
+    0 1px 2px rgba(15, 28, 56, 0.6),  /* main shadow */
+    1px 1px 0 rgba(15, 28, 56, 0.4),   /* subtle outline */
+    -1px -1px 0 rgba(15, 28, 56, 0.4); /* subtle outline */
+  font-weight: 600; /* makes letters pop */
+  line-height: 1.4; /* improves readability */
+}
+
+
+
+
+
 .BlackbgText {
   color: var(--blackbg);
              

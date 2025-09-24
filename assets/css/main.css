@@ -376,6 +376,11 @@ span {
 }
 
 
+.tubelightLine {
+  display: inline-flex;
+  justify-content: center;
+}
+
 .tubelight span{
   color:#fff;
   text-transform:uppercase;
@@ -632,7 +637,7 @@ span {
 }
 
 .ThemeText {
-  color: var(--theme);
+  color: var(--theme) ; 
              
 }
 
@@ -2716,6 +2721,13 @@ padding: 1%;
     line-height: 26px !important;
   }
 }
+
+.tagline {
+  margin-top: 10px;
+  background-color: var(--theme);
+  font-size: large;
+}
+
 
 .tag-share {
   border-top: 1px solid var(--border1);

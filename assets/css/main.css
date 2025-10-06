@@ -45,7 +45,14 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
     text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);
 }
 
+.text-indent {
+  text-indent: 2em;
+}
 
+.justified {
+   text-align: justify;
+  hyphens: auto; /* lets words break at syllables */
+}
 
  .Reading-Card {
   background-color: #ffffff;  
@@ -6942,7 +6949,6 @@ input.main-search-input::placeholder {
   overflow: visible; /* Allow sparkles to show outside button */
 
 }
-
 
 
 .ButtonGlowMINI {

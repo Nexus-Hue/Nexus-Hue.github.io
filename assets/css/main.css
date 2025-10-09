@@ -129,7 +129,7 @@ z-index: 3 !important;
    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-    font-size: clamp(1.33rem, 2vw, 3rem);
+    font-size: clamp(1.33rem, 2.2vw, 3rem);
   animation:animate .38s linear;
   animation-iteration-count:2;
 
@@ -203,7 +203,7 @@ z-index: 3 !important;
   font-weight: 900 !important;
   font-style: italic !important;
   line-height: 1.2;
-  font-size: clamp(3rem, 4vw, 7rem); 
+  font-size: clamp(3rem, 5vw, 7rem); 
   color: #FFFF;
 }
 
@@ -7152,7 +7152,7 @@ input.main-search-input::placeholder {
   background-color: var(--theme);        /* Nexus Hue's red */
   color: #ffffff;                  
   padding: 12px 24px;
-  margin-top: 40px; 
+  margin: 20px; 
   background-color:  #FF006A !important ;
    border-color: #FF006A;
    border-width: 7px;

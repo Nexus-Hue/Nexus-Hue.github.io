@@ -109,6 +109,14 @@ z-index: 3 !important;
   vertical-align: middle;
 }
 
+.Ribbon {
+  color: white; 
+  -webkit-text-fill-color: white;
+  background-color: var(--theme); 
+  padding: 2%; 
+   border-radius: 4px; /* optional, rounded edges */
+}
+
   .LilBreath {
     padding: 1%;
   }

@@ -32,7 +32,7 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
 
   justify-content: center;
   align-items: center; 
-  line-height: 1.27; 
+  line-height: 1; 
    margin-bottom: 1rem;
   
 }
@@ -52,7 +52,7 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
 }
 
 .tubelight-MAIN-TITLE-SIZE span {
-  font-size: clamp(1rem, calc(1rem + 2.6vw), 4rem);
+  font-size: clamp(1rem, calc(1rem + 2.6vw), 5rem);
 }
 
 .tubelight-TITLE-SIZE span {
@@ -64,7 +64,7 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
 }
 
   .Title-subhead {
-   font-size:large ;
+font-size: clamp(0.25rem, 0.5rem + 1vw, 2rem);
    line-height: 1.27;
   }
     

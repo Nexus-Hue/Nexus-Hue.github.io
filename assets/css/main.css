@@ -115,28 +115,41 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
 }
 
 
+/* === 1. Load the fonts === */
+@font-face {
+  font-family: "Chokokutai";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/assets/webfonts/chokokutai-v12-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "UnifrakturCook";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('/assets/webfonts/unifrakturcook-v25-latin-700.woff2') format('woff2');
+}
+
+/* === 2. Use the fonts === */
 .chokokutai-regular {
   font-family: "Chokokutai", system-ui;
   font-weight: 400;
-  font-style: normal;
-    src: url('/assets/webfonts/chokokutai-v12-latin-regular.woff2');
 }
 
 .unifrakturcook-bold {
   font-family: "UnifrakturCook", cursive;
-  font-weight: 900;
-  font-style: normal;
-  src: url('/assets/webfonts/unifrakturcook-v25-latin-700.woff2');
+  font-weight: 700;
 }
 
 .unifrakturcook-bold-TITLE {
   font-family: "UnifrakturCook", cursive;
-  font-weight: 900 !important;
-  font-style: italic !important;
+  font-weight: 700;
+  font-style: italic;
   line-height: 1.2;
-  font-size: clamp(3rem, 5vw, 7rem); 
-  color: #FFFF;
-  src: url('/assets/webfonts/unifrakturcook-v25-latin-700.woff2');
+  font-size: clamp(3rem, 5vw, 7rem);
+  color: #fff;
 }
 
 

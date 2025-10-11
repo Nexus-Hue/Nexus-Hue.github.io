@@ -115,7 +115,7 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
 }
 
 
-/* === 1. Load the fonts === */
+/* === fonts === */
 @font-face {
   font-family: "Chokokutai";
   font-weight: 400;
@@ -132,7 +132,7 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
   src: url('/assets/webfonts/unifrakturcook-v25-latin-700.woff2') format('woff2');
 }
 
-/* === 2. Use the fonts === */
+/* === font edits === */
 .chokokutai-regular {
   font-family: "Chokokutai", system-ui;
   font-weight: 400;

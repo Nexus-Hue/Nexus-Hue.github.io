@@ -4,100 +4,6 @@ Author URI: www.nexushue.com
 Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
 */
 /*CSS Table Of Content Ends Here*/
-
-:root {
-  --body: #FF006A;
-  --black: #000;
-  --blackbg:#0F1C38;              /* --Blog & News--- */
-
-  --white: #ffffff;             /* --MAIN TEXT--- */
-  --spantext: #FF006A;
-
-  --theme: #FF006A;
-  --theme2: #ffffff;
-  --theme3: #2c2c2c;
-
-  --bg1: #FF006A;            /* --Nav Bar--- */
-  --bg2: #ffffff;          /* --CREATIVE PORTFOLIO--- */
-  --bg3: #1D1D1D;                
-
-  --bnbg: #ffffff;           /* --BANNER--- */
-  
-  --border1: #FF006A;              /* --BOXES--- */
-
-
-  
-  --pra-clr: #bebebe;
-  --dd-clr: #FF006A;
-  --place: #858585;
-  --tag: #646464;
-  --bspan: #ababab;
-
- 
-}
-
-.FooterTypeText {
-  color:#ffffff;
-  text-align: center;
-}
-
-.RedText-glow {
-    text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);
-}
-
-.STRONG-Red-Glow {
-  color: #FFFF;
-  text-shadow: 
-    0 0 5px #FF006A,
-    0 0 10px #FF006A,
-    0 0 20px #FF006A,
-    0 0 40px #FF006A;
-
-}
-
-.text-indent {
-  text-indent: 2em;
-}
-
-.justified {
-   text-align: justify;
-  hyphens: auto; /* lets words break at syllables */
-}
-
- .Reading-Card {
-  background-color: #ffffff;  
-  border-radius: 15px;       
-  padding: 20px;              
-z-index: 3 !important;
-  border-left: 11px solid var(--theme); 
-  user-select: none;
-  -webkit-user-drag: none;
-  cursor: grab;   
-  position: relative; 
-}
-
-.Reading-Card p {
-  color: var(--blackbg) !important; 
-}
-
-.Reading-Card a {
-  color: var(--white) !important;
-  background-color: var(--theme);
-  display: inline-block;      
-  padding: 0.6em 1.2em;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.Reading-Card a:hover {
-  transform: scale(1.15); /* stronger zoom */
-  box-shadow: 0 0 15px 4px #FF006A; /* pink glow */
-}
-
-
 .QuikIntroTitles {
   font-size:large ;
   font-weight: 900 !important;
@@ -213,13 +119,14 @@ z-index: 3 !important;
   font-family: "Chokokutai", system-ui;
   font-weight: 400;
   font-style: normal;
+    src: url('/assets/webfonts/chokokutai-v12-latin-regular.woff2');
 }
 
 .unifrakturcook-bold {
   font-family: "UnifrakturCook", cursive;
   font-weight: 900;
-  
   font-style: normal;
+  src: url('/assets/webfonts/unifrakturcook-v25-latin-700.woff2');
 }
 
 .unifrakturcook-bold-TITLE {
@@ -229,8 +136,102 @@ z-index: 3 !important;
   line-height: 1.2;
   font-size: clamp(3rem, 5vw, 7rem); 
   color: #FFFF;
+  src: url('/assets/webfonts/unifrakturcook-v25-latin-700.woff2');
 }
 
+
+
+:root {
+  --body: #FF006A;
+  --black: #000;
+  --blackbg:#0F1C38;              /* --Blog & News--- */
+
+  --white: #ffffff;             /* --MAIN TEXT--- */
+  --spantext: #FF006A;
+
+  --theme: #FF006A;
+  --theme2: #ffffff;
+  --theme3: #2c2c2c;
+
+  --bg1: #FF006A;            /* --Nav Bar--- */
+  --bg2: #ffffff;          /* --CREATIVE PORTFOLIO--- */
+  --bg3: #1D1D1D;                
+
+  --bnbg: #ffffff;           /* --BANNER--- */
+  
+  --border1: #FF006A;              /* --BOXES--- */
+
+
+  
+  --pra-clr: #bebebe;
+  --dd-clr: #FF006A;
+  --place: #858585;
+  --tag: #646464;
+  --bspan: #ababab;
+
+ 
+}
+
+.FooterTypeText {
+  color:#ffffff;
+  text-align: center;
+}
+
+.RedText-glow {
+    text-shadow: 1px 1px 2px var(--theme), -1px -1px 2px var(--theme);
+}
+
+.STRONG-Red-Glow {
+  color: #FFFF;
+  text-shadow: 
+    0 0 5px #FF006A,
+    0 0 10px #FF006A,
+    0 0 20px #FF006A,
+    0 0 40px #FF006A;
+
+}
+
+.text-indent {
+  text-indent: 2em;
+}
+
+.justified {
+   text-align: justify;
+  hyphens: auto; /* lets words break at syllables */
+}
+
+ .Reading-Card {
+  background-color: #ffffff;  
+  border-radius: 15px;       
+  padding: 20px;              
+z-index: 3 !important;
+  border-left: 11px solid var(--theme); 
+  user-select: none;
+  -webkit-user-drag: none;
+  cursor: grab;   
+  position: relative; 
+}
+
+.Reading-Card p {
+  color: var(--blackbg) !important; 
+}
+
+.Reading-Card a {
+  color: var(--white) !important;
+  background-color: var(--theme);
+  display: inline-block;      
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Reading-Card a:hover {
+  transform: scale(1.15); /* stronger zoom */
+  box-shadow: 0 0 15px 4px #FF006A; /* pink glow */
+}
 
 
 .Reading-Card h1 {

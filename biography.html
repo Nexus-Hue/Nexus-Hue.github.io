@@ -45,8 +45,9 @@
            
 </head>
 
-<body class="position-relative bg2-clr">
-
+<body class="position-relative ">
+       <canvas id="canvas" class="canvas"></canvas>
+   
     <!-- Preloader Start -->
     <div id="preloader" class="preloader">
         <div class="animation-preloader">
@@ -391,7 +392,7 @@
     <main class="main">
 
          <!-- Breadcrumb Section Start -->
-         <div class="breadcrumb-wrapper " style="background-color: var(--blackbg);">
+         <div class="breadcrumb-wrapper " >
            
            
             <div class="container" style="padding-top: 97px;">
@@ -418,13 +419,14 @@
                     </div>
                            </div>
 <!-- PLACEHOLDER IMAGE -->
-<div id="flipbook-placeholder" style="cursor:pointer; max-width: 1474px; margin:0 auto;">
-  <img src="/assets/img/biography/book_1/BiograpphyBook1_Placeholder.webp" alt="Click to open book" style="width:100%; display:block;">
+<div id="flipbook-placeholder">
+  <img src="/assets/img/biography/book_1/BiograpphyBook1_Placeholder.webp" class="flipbook-placeholder" alt="Click to open book">
  
    
                                        <div  data-aos="zoom-in-up" data-aos-duration="1111" style="display:flex; justify-content:center; ">
                             
-                            <p class="btn CTATypeShih yaytext-style text-contrast">  OPEN FLIPBOOK <span class="sparkle" style="--tx: -50px; --ty: -50px;"></span>
+                            
+                            <p class="btn CTATypeShih yaytext-style text-contrast ">  OPEN FLIPBOOK <span class="sparkle" style="--tx: -50px; --ty: -50px;"></span>
                                 <span class="sparkle" style="--tx: 60px; --ty: -40px;"></span>
                                 <span class="sparkle" style="--tx: -40px; --ty: 85px;"></span>
                                 <span class="sparkle" style="--tx: 50px; --ty: 60px;"></span>
@@ -437,7 +439,8 @@
                         </div>
 </div>
 
-<!-- FLIPBOOK CONTAINER -->
+
+<div class="LilBreath">
 <div id="flipbook-container"></div>
 
 <script>
@@ -494,9 +497,9 @@ document.getElementById('flipbook-placeholder').addEventListener('click', functi
 </script>
 
                 
-   
+   </div>
  
-<br>
+
 
                     <div class="Reading-Card yaytext-style container">
 
@@ -1012,6 +1015,10 @@ In times like these, money runs dry & that’s when innovators rise.</p>
     <script src="assets/js/vanilla-tilt.min.js" defer></script>
     <!-- js Mian start -->
     <script src="assets/js/main.js" defer></script>
+
+     <script src="assets/js/anime.min.js"defer></script>
+  
+   <script src="assets/js/starry-sky.js"defer></script>
 
      <!-- SUB MENU TYPE SHIT-->
   <script src="assets/js/submenutoggle.js" defer></script>

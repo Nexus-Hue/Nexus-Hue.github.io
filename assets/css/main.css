@@ -10388,13 +10388,21 @@ input.main-search-input::placeholder {
   pointer-events: none; 
 }
 
+.flipbook-placeholder {
+  cursor:pointer;
+   max-width: 1000px;
+     margin:0 auto;
+     width:100%; 
+     display:block;
+     
+}
 
 .book-sandbox {
-  max-width: 1474px;
+  max-width: 1000px;
   width: 100%;
 
   margin: 0 auto;
-  background-color: #33333300;
+
 
   box-sizing: border-box;
   display: block;

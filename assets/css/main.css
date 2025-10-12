@@ -5309,7 +5309,7 @@ padding: 1%;
 .footer-version-one {
 
   background-size: cover;
-background-color: #0F1C38;
+background-color: #021A30;
 }
 
 @media (max-width: 1399px) {
@@ -9221,7 +9221,12 @@ input.main-search-input::placeholder {
   width: 122px;
   min-width: 122px;
   height: 122px;
-  border: 1.5px solid var(--white);
+  
+}
+
+.lilBorderEdge {
+  
+  border: 0.45px solid #ff8abb;
  
 }
 

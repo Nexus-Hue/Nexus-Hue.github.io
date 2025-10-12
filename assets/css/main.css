@@ -60,7 +60,7 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
 }
 
 .tubelight-MAIN-TITLE-SIZE span {
-  font-size: clamp(1rem, calc(1rem + 2.6vw), 5rem);
+  font-size: clamp(2.2rem, calc(1rem + 3vw), 6rem);
 }
 
 .tubelight-TITLE-SIZE span {

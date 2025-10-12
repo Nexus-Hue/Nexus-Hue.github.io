@@ -60,7 +60,7 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
 }
 
 .tubelight-MAIN-TITLE-SIZE span {
-  font-size: clamp(2.2rem, calc(1rem + 3vw), 6rem);
+  font-size: clamp(1.85rem, calc(1rem + 3vw), 6rem);
 }
 
 .tubelight-TITLE-SIZE span {
@@ -72,9 +72,18 @@ Description: Nexus Hue - Artist - Creative Agency from Fresno Ca<
 }
 
   .Title-subhead {
-font-size: clamp(0.25rem, 0.5rem + 1vw, 2rem);
+font-size: clamp(0.20rem, 0.4rem + 1vw, 2rem);
    line-height: 1.27;
   }
+
+  .unifrakturcook-bold-TITLE {
+  font-family: "UnifrakturCook", cursive;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.2;
+  font-size: clamp(2.75rem, 5vw, 7rem);
+  color: #fff;
+}
     
       
 .tubelight span:nth-child(1){
@@ -150,17 +159,6 @@ font-size: clamp(0.25rem, 0.5rem + 1vw, 2rem);
   font-family: "UnifrakturCook", cursive;
   font-weight: 700;
 }
-
-.unifrakturcook-bold-TITLE {
-  font-family: "UnifrakturCook", cursive;
-  font-weight: 700;
-  font-style: italic;
-  line-height: 1.2;
-  font-size: clamp(3rem, 5vw, 7rem);
-  color: #fff;
-}
-
-
 
 :root {
   --body: #FF006A;

@@ -25,13 +25,13 @@ function draw() {
   frameCount++;
 
   // transparentish dark mask type shih
-  if (frameCount % 150 === 0) {
+  if (frameCount % 97 === 0) {
     context.fillStyle = "rgba(3, 6, 13, 0.5)";
     context.fillRect(0, 0, Rain.width, Rain.height);
   }
 
   context.font = font_size + "px 'Sawarabi Mincho', 'Roboto Mono'";
-  context.fillStyle = "rgba(3, 6, 13, 0.23)";
+  context.fillStyle = "rgba(3, 6, 13, 0.07)";
   context.fillRect(0, 0, Rain.width, Rain.height);
 
   context.fillStyle = "#FFF";
@@ -71,8 +71,8 @@ function resizeCanvas() {
   context.scale(dpr, dpr); // scale drawing for pixel density
 
   // densityFactor for dem screen sizes
-  if (width >= 1440) densityFactor = 11;
-  else if (width >= 1024) densityFactor = 7;
+  if (width >= 1440) densityFactor = 27;
+  else if (width >= 1024) densityFactor = 11;
   else densityFactor = 3;
 
   // drops 

@@ -66,3 +66,38 @@ if (frameCount % 150 === 0) {
 }
 
 setInterval(draw, 43);
+
+
+function resizeCanvas() {
+  const dpr = window.devicePixelRatio || 1;
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+
+  // Adjust canvas resolution for retina displays
+  Rain.width = width * dpr;
+  Rain.height = height * dpr;
+  Rain.style.width = width + "px";
+  Rain.style.height = height + "px";
+
+  context.setTransform(1, 0, 0, 1, 0, 0); // reset
+  context.scale(dpr, dpr); // scale drawing for pixel density
+
+  // Recalculate density and columns
+  let densityFactor = 3;
+  if (width >= 1440) densityFactor = 11;
+  else if (width >= 1024) densityFactor = 7;
+
+  const columns = Math.floor(width / font_size);
+  drops.length = columns;
+  for (let i = 0; i < columns; i++) {
+    drops[i] = Math.random() * (height / font_size) - 1;
+  }
+
+  // Reapply mirror effect
+  context.translate(width, 0);
+  context.scale(-1, 1);
+}
+
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas(); // run once on load
+

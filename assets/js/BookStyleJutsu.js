@@ -25,8 +25,8 @@ function draw() {
   frameCount++;
 
   // transparentish dark mask type shih
-  if (frameCount % 97 === 0) {
-    context.fillStyle = "rgba(3, 6, 13, 0.5)";
+  if (frameCount % 150 === 0) {
+    context.fillStyle = "rgba(4, 9, 18, 0.5)";
     context.fillRect(0, 0, Rain.width, Rain.height);
   }
 

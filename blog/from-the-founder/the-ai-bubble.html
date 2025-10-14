@@ -216,9 +216,11 @@
  <meta name="twitter:image" content="https://media.nexushue.com/img/blog/la-bulle/LaBulle_Poster.webp">
 </head>
 
-<body class=" position-relative bg2-clr yay-text-style">
-         <canvas id="canvas" class="canvas"></canvas>
-  
+<body class=" position-relative bg2-clr ">
+                  
+           <canvas id="canvas" class="canvas"></canvas>
+      <canvas id="Rain"></canvas>
+
     <div id="lang-announcement" aria-live="polite" style="position:absolute; left:-9999px; height:1px; width:1px; overflow:hidden;"></div>
 
     <!-- Preloader Start -->
@@ -279,7 +281,7 @@
     </div>
 
 
-<header class="header-section cmn-fixed py-lg-0 py-6" style="position: fixed; top: 0px; z-index: 999; width: 100%; background: var(--bg1);">
+<header class="header-section cmn-fixed py-lg-0 py-6 fixed-header" >
     <div class="container">
         <div class="main-navbar">
             <nav class="navbar-custom">
@@ -524,12 +526,7 @@
 
 
 
-                     <!-- Custom Line Shape -->
-        <div class="line-shape w-100 cus-z-1 first  h-100 d-flex flex-wrap"> 
-        
-       
-        </div>
-
+    
 
                
 
@@ -539,19 +536,45 @@
     
 
     <!-- Main start -->
-    <main class="main position-relative overflow-hidden " id="mains">
+    <main class="main position-relative " id="mains">
 
      <div class="HeroShit z-above ">
 <Donkeysection id="top">
    <img src="https://media.nexushue.com/img/blog/la-bulle/HeroShit/bg.webp" id="bg" alt="Waterfall background" />
+<img id="clouds_1"
+     src="https://media.nexushue.com/img/blog/la-bulle/HeroShit/LowRes_Hero_LaBulle/clouds_1_compressed.webp" 
+     srcset="https://media.nexushue.com/img/blog/la-bulle/HeroShit/clouds_1.webp" 
+     alt="Layer of semi-transparent clouds floating">
 
-<h1 id="text" class=" STRONG-Red-Glow tubelight-TITLE-SIZE ">The Ai Bubble </h1>
+<h1 id="text" class=" STRONG-Green-Glow tubelight-TITLE-SIZE yay-text-style text-uppercase">The Ai Bubble </h1>
+   
 
-<img src="https://media.nexushue.com/img/blog/la-bulle/subject2.webp" id="man" alt="Main subject of this blog" />
-<img src="https://media.nexushue.com/img/blog/la-bulle/HeroShit/clouds_1.webp" id="clouds_1" alt="Layer of semi-transparent clouds floating" />
-<img src="https://media.nexushue.com/img/blog/la-bulle/HeroShit/clouds_2.webp" id="clouds_2" alt="Second layer of clouds in the sky" />
-<img src="https://media.nexushue.com/img/blog/la-bulle/HeroShit/LEFT.webp" id="mountain_left" alt="Left curtain effect" />
-<img src="https://media.nexushue.com/img/blog/la-bulle/HeroShit/RIGHT.webp" id="mountain_right" alt="Right curtain effect" />
+
+<img id="man"
+     src="https://media.nexushue.com/img/blog/la-bulle/HeroShit/LowRes_Hero_LaBulle/subject2_compressed.webp" 
+     srcset="https://media.nexushue.com/img/blog/la-bulle/subject2.webp" 
+     alt="Main subject of this blog">
+
+
+<img id="mountain_left" 
+     src="https://media.nexushue.com/img/blog/la-bulle/HeroShit/LowRes_Hero_LaBulle/LEFT_compressed.webp" 
+     srcset="https://media.nexushue.com/img/blog/la-bulle/HeroShit/LEFT.webp" 
+     alt="Left curtain effect">
+<img id="clouds_2"
+     src="https://media.nexushue.com/img/blog/la-bulle/HeroShit/LowRes_Hero_LaBulle/clouds_2_compressed.webp" 
+     srcset="https://media.nexushue.com/img/blog/la-bulle/HeroShit/clouds_2.webp" 
+     alt="Second layer of clouds in the sky">
+
+<img id="mountain_right"
+     src="https://media.nexushue.com/img/blog/la-bulle/HeroShit/LowRes_Hero_LaBulle/RIGHT_compressed.webp" 
+     srcset="https://media.nexushue.com/img/blog/la-bulle/HeroShit/RIGHT.webp" 
+     alt="Right curtain effect">
+
+
+
+
+
+
 
     </Donkeysection>
    
@@ -600,11 +623,12 @@
 
 
         <!--================= Back Wrapper Start Here =================-->
-        <div class="back-wrapper yaytext-style z-aboveAll" > 
+        <div class="back-wrapper yaytext-style " > 
 
 
             <!--================= Blog Section Start Here =================-->
             <div class="back__blog__area back-blog-page back-blog-page-single pt-70 pb-60">
+              
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8">
@@ -3512,7 +3536,7 @@ SEARCH BAR  -->
   <script src="/assets/js/sub-menu-list.js" defer></script>
 <script src="/assets/js/BudgetRange.js" defer></script>
 
-
+   <script src="/assets/js/BookTokBlogStyle.js"defer></script>
 <script src="/blog/assets/js/smooth-scroll.min.js" defer></script>
 
 

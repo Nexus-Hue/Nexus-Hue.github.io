@@ -63,650 +63,11 @@ ol {
   padding-left: 0; /* optional, removes extra indent */
 }
 
-/*****************************************************
-    02. Common Class CSS Here 
-****************************/
-.text-center {
-  text-align: center;
-}
-.text-right {
-  text-align: right;
-}
-.back-absolute {
-  position: absolute;
-}
 
-/*****************************************************
-    03. Header Section CSS Here  
-****************************/
-
-.back-offcanvas {
-  width: 100%;
-  left: 100%;
-  transition: all 0.8s ease-out 0s;
-  position: fixed;
-  background: #fff;
-  height: 100vh;
-  top: 0;
-  bottom: 0;
-  opacity: .9;
-  z-index: 9999;
-  cursor: url(assets/images/x.svg), auto;
-}
-
-
-.back-canvas {
-  background: #fff;
-  padding: 46px 40px 50px 50px;
-  font-size: 1.15em;
-  max-width: 450px;
-  box-shadow: 0 0 45px rgba(0, 0, 0, 0.06);
-  width: 100%;
-  right: -500px;
-  z-index: 999999;
-  transition: all 0.5s ease 0s;
-  position: fixed;
-  overflow-y: auto;
-  height: 100vh;
-  top: 0;
-}
-
-.back-canvas .close-btn {
-  overflow: visible;
-}
-.back-canvas .close-btn  {
-  position: absolute;
-  top: 25px;
-  display: block;
-  z-index: 99;
-  left: 49px;
-  cursor: pointer;
-  transition: all .3s ease;
-}
-.back-canvas .close-btn .back-close {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50%;
-  background: #0088cb;
-}
-.back-canvas .close-btn  .back-close span {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  width: 2px !important;
-  height: 20px !important;
-  background: #ffffff;
-  border: none !important;
-  transition: all 0.5s ease 0s;
-  opacity: .6;
-}
-.back-canvas .close-btn .back-close span.line2 {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-.back-canvas .close-btn:hover  .line {
-  opacity: 0.9;
-}
-.back-canvas .canvas-logo {
-  padding-left: 0;
-  padding-bottom: 25px;
-}
-.back-canvas .canvas-logo img {
-  max-height: 28px;
-}
-.back-canvas .offcanvas-text p {
-  font-size: 14px;
-  line-height: 24px;
-  color: #777;
-  margin: 30px 0 45px;
-}
-.back-canvas .social-links {
-  margin-top: 44px;
-}
-.back-canvas .social-links li a {
-  background: #3acb00;
-  border-radius: 5px;
-}
-.back-canvas .social-links li a:hover {
-  opacity: .9;
-}
-.back-canvas .back-title.back-small-title h2 {
-  margin: 0;
-}
-.back-canvas .offback-logo {
-  padding-top: 80px;
-}
-.back-canvas .offback-logo img {
-  height: 45px;
-}
-.back-canvas .canvas-contact .address-area .address-list {
-  display: flex;
-  margin: 25px 0;
-}
-.back-canvas .canvas-contact .address-area .address-list .info-icon svg {
-  color: #0088cb;
-  width: 36px;
-  height: 26px;
-  margin-right: 6px;
-  position: relative;
-  top: -5px;
-  left: -8px;
-}
-.back-canvas .canvas-contact .address-area .address-list .info-content .title {
-  font-size: 16px;
-  line-height: 26px;
-
-  color: #0a0a0a;
-  margin-bottom: 0;
-}
-.back-canvas .canvas-contact .address-area .address-list .info-content em {
-  display: block;
-  font-style: normal;
-  line-height: 22px;
-  font-size: 15px;
-  color: #777;
-}
-.back-canvas .canvas-contact .address-area .address-list .info-content em a {
-  color: #777;
-}
-.back-canvas .canvas-contact .address-area .address-list .info-content em a:hover {
-  color: #0088cb;
-}
- .back-canvas {
-  right: 0 !important;
-}
-.back-sub-shadow li ul.sub-menu {
-  box-shadow: 0px 30px 30px 0px rgba(10, 0, 45, 0.1);
-}
-@-webkit-keyframes stickyanimations {
-  0% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-}
-@keyframes stickyanimations {
-  0% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-}
 /*****************************************************
     04. Breadcrumbs Section CSS 
 ****************************/
-.back-breadcrumbs .breadcrumbs-wrap {
-  position: relative;
-  overflow: hidden;
-}
-.back-breadcrumbs .breadcrumbs-wrap .breadcrumbs-inner {
-  padding: 60px 0;
-  background: #fbfafa;
-}
-.back-breadcrumbs .breadcrumbs-wrap .breadcrumbs-inner .breadcrumbs-text {
-  text-align: center;
-}
-.back-breadcrumbs .breadcrumbs-wrap .breadcrumbs-inner .breadcrumbs-text .breadcrumbs-title {
-  width: 100%;
-  font-size: 40px;
-  text-transform: capitalize;
-  color: #000;
-  font-weight: 700;
-  line-height: 1;
-  margin: 0 0 10px;
-}
-.back-breadcrumbs .breadcrumbs-wrap .breadcrumbs-inner .breadcrumbs-text .back-nav ul li {
-  display: inline;
-  color: #000;
-  font-size: 16px;
-  font-weight: 400;
-  opacity: .8;
-}
-.back-breadcrumbs .breadcrumbs-wrap .breadcrumbs-inner .breadcrumbs-text .back-nav ul li a {
-  color: #000;
-}
-.back-breadcrumbs .breadcrumbs-wrap .breadcrumbs-inner .breadcrumbs-text .back-nav ul li a:hover {
-  opacity: 0.7;
-}
-.back-breadcrumbs .breadcrumbs-wrap .breadcrumbs-inner .breadcrumbs-text .back-nav ul li:after {
-  content: "";
-  margin: 0 6px 0 12px;
-  background: #000;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  display: inline-block;
-}
-.back-breadcrumbs .breadcrumbs-wrap .breadcrumbs-inner .breadcrumbs-text .back-nav ul li:last-child:after {
-  content: unset;
-  margin: 0;
-}
-.back-breadcrumbs.back-breadcrumbs-author .breadcrumbs-text img {
-  border-radius: 50%;
-}
-.back-breadcrumbs.back-breadcrumbs-author .breadcrumbs-text .breadcrumbs-title {
-  font-size: 20px !important;
-  margin: 20px 0 4px !important;
-}
-.back-breadcrumbs.back-breadcrumbs-author .breadcrumbs-text strong {
-  font-size: 14px;
-  color: var(--theme);
-  font-weight: 400;
 
-}
-.back-breadcrumbs.back-breadcrumbs-author .breadcrumbs-text .social-links li a {
-  width: 30px;
-  height: 30px;
-  line-height: 32px;
-  font-size: 13px;
-}
-.back-breadcrumbs.back-breadcrumbs-author .breadcrumbs-text p.des {
-  max-width: 450px;
-  margin: 8px auto 20px;
-}
-.back-breadcrumbs.back-breadcrumbs-single .container {
-  max-width: 1200px;
-}
-.back-breadcrumbs.back-breadcrumbs-single .container .single-cate {
-  background: #f9f9f9;
-  color: #0a0a0a;
-  display: inline-block;
-  padding: 4px 18px;
-  border-radius: 30px;
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-.back-breadcrumbs.back-breadcrumbs-single .back-breadcrumbs .breadcrumbs-wrap .breadcrumbs-inner {
-  top: 61%;
-}
-.back-breadcrumbs.back-breadcrumbs-single .breadcrumbs-wrap .breadcrumbs-inner .breadcrumbs-text {
-  text-align: left;
-}
-.back-breadcrumbs.back-breadcrumbs-blog-single .container {
-  max-width: 1200px;
-}
-.back-breadcrumbs.back-breadcrumbs-blog-single .breadcrumbs-wrap .breadcrumbs-inner .breadcrumbs-text {
-  text-align: left;
-}
-.back-breadcrumbs.back-breadcrumbs-blog-single .breadcrumbs-wrap .breadcrumbs-inner .breadcrumbs-text span {
-  font-size: 16px;
-  color: #000;
-  margin-bottom: 15px;
-  display: block;
-}
-.back-breadcrumbs.back-breadcrumbs-blog-single .breadcrumbs-wrap .breadcrumbs-inner .breadcrumbs-text .back-nav ul li {
-  font-size: 14px;
-  color: #ffffff;
-  margin-right: 30px;
-  opacity: 1;
-}
-.back-breadcrumbs.back-breadcrumbs-blog-single .breadcrumbs-wrap .breadcrumbs-inner .breadcrumbs-text .back-nav ul li svg {
-  width: 17px;
-  height: 17px;
-  margin-right: 4px;
-  position: relative;
-  top: -2px;
-}
-.back-breadcrumbs.back-breadcrumbs-blog-single .breadcrumbs-wrap .breadcrumbs-inner .breadcrumbs-text .back-nav ul li:after {
-  display: none;
-}
-/*****************************************************
-    05. Back Hero  Area CSS Here 
-****************************/
-.back-hero-area ul {
-  margin: 0;
-  padding: 0;
-}
-.back-hero-area ul .image-area {
-  position: relative;
-}
-.back-hero-area ul .image-area img {
-    display: block;    
-    width: 100%;       /* fill container width for the grid bug */
-    height: auto;      /* keep this to maintain duh aspect ratio breh */
-}
-
-
-.back-hero-area ul .image-area .back-btm-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 40px;
-}
-.back-hero-area ul .image-area .back-btm-content h3 {
-
-  font-size: 36px;
-  line-height: 46px;
-  margin: 20px 0 16px;
-}
-.back-hero-area ul .image-area .back-btm-content h3 a {
-  color: var(--white);
-  text-decoration: none;
-  display: inline;
-  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
-  background-size: 0 1px;
-  background-repeat: no-repeat;
-  background-position: left 100%;
-  transition: all 0.7s;
-  
-}
-
-.back-hero-area ul .image-area .back-btm-content h3 a:hover {
-  background-color: var(--theme);
-  background-size: 100% 1px;
-  color: var(--white);
-}
-
-.back-hero-area ul .image-area .back-btm-content ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-.back-hero-area ul .image-area .back-btm-content ul li {
-  color: #ffffff;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  padding-right: 30px;
-}
-.back-hero-area ul .image-area .back-btm-content ul li a {
-  color: #ffffff;
-}
-.back-hero-area ul .image-area .back-btm-content ul li a:hover {
-  color: #00cb00;
-}
-.back-hero-area ul .image-area .back-btm-content ul li svg {
-  width: 18px;
-  position: relative;
-  top: -2px;
-}
-.back-hero-area ul .image-area .back-btm-content ul li span {
-  margin-right: 10px;
-}
-.back-hero-area ul .image-area .back-btm-content ul li.back-author img {
-  width: 35px;
-  border-radius: 50%;
-  height: 35px;
-}
-.back-hero-area ul .image-area .back-btm-content ul li:last-child {
-  padding-right: 0;
-}
-.back-hero-area ul .image-area:before {
-  content: "";
-  position: absolute;
-  background: linear-gradient(transparent, transparent, transparent, transparent, transparent,  var(--blackbg));
-  bottom: 0;
-  height: 100%;
-  width: 100%;
- 
-
-}
-.back-hero-area .back-hero-right .col-lg-12 {
-  padding-bottom: 30px;
-}
-.back-hero-area .back-hero-right ul .image-area .back-btm-content {
-  padding: 30px;
-}
-.back-hero-area .back-hero-right ul .image-area .back-btm-content h3 {
-  font-size: 20px;
-  line-height: 30px;
-}
-.back-hero-area .back-pl-6 {
-  padding-left: 6px;
-}
-.back-hero-area .back-pl-3 {
-  padding-left: 3px;
-}
-.back-hero-area .back-pr-3 {
-  padding-right: 3px;
-}
-.back-hero-area .back-hero-bottom {
-  padding-left: 250px;
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
-.back-hero-area .back-hero-bottom li {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.back-hero-area .back-hero-bottom li .image-areas {
-  flex: 0 0 35%;
-  max-width: 35%;
-  padding-right: 20px;
-}
-.back-hero-area .back-hero-bottom li .back-btm-content {
-  flex: 0 0 65%;
-  max-width: 65%;
-  padding-right: 20px;
-}
-.back-hero-area .back-hero-bottom li .back-btm-content .back-cates {
-  display: inline-block;
-  font-size: 12px;
-  text-transform: uppercase;
-background-color: var(--theme);
-  color: #ffffff;
-  padding: 2%;
-}
-.back-hero-area .back-hero-bottom li .back-btm-content h3 {
-  font-size: 16px;
-  line-height: 26px;
-  margin: 6px 0 9px;
-}
-.back-hero-area .back-hero-bottom li .back-btm-content h3 a {
-  color: #ffffff;
-  text-decoration: none;
-  display: inline;
-  background-image: linear-gradient(to bottom, #000000 0%, #000000 100%);
-  background-size: 0 1px;
-  background-repeat: no-repeat;
-  background-position: left 100%;
-  transition: all 0.7s;
-  
-}
-.back-hero-area .back-hero-bottom li .back-btm-content h3 a:hover {
-  
-  background-color: var(--theme);
-  background-size: 100% 1px;
-}
-
-/* Universal grow-on-hover class */
-.grow-on-hover {
-  display: inline-block;               /* ensures transform works properly */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.grow-on-hover:hover {
-  transform: scale(1.1);               /* grows 10% */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* optional subtle shadow */
-}
-
-
-.back-hero-area .back-hero-bottom li .back-btm-content ul li {
-  font-size: 14px;
-  color: var(--theme);
-}
-.back-hero-area .back-hero-bottom li .back-btm-content ul li svg {
-  width: 17px;
-  position: relative;
-  top: -2px;
-  margin-right: 8px;
-}
-.back-hero-area .back-hero-bottom li .back-btm-content ul li a {
-  color: var(--theme);
-}
-.back-hero-area .owl-nav {
-  position: absolute;
-  display: block;
-  top: 30%;
-  left: 0;
-  width: 100%;
-  opacity: 1;
-  transition: all 0.5s ease 0s;
-}
-
-
-.back-hero-area .owl-nav [class*="owl-"] {
-  position: absolute;
-  left: 20px;
-  display: inline-block;
-  font-size: 0 !important;
-  width: 60px;
-  height: 60px;
-  line-height: 57px;
-  color: #0a0a0a;
-  background: #e5e5e5 !important;
-  border-radius: 100%;
-  transition: all 0.5s ease 0s;
-}
-.back-hero-area .owl-nav [class*="owl-"]:before {
-
-
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 3px;
-}
-
-
-.back-hero-area .owl-nav [class*="owl-"].owl-next {
-  left: 100px;
-   background: var(--theme) !important;
-}
-.back-hero-area .owl-nav [class*="owl-"].owl-prev {
-  left: 20px;
-   background: var(--theme) !important;
-}
-
-.back-hero-area .owl-nav [class*="owl-"] {
-  transition: all 0.3s ease; /* smooth animation */
-}
-
-.back-hero-area .owl-nav [class*="owl-"]:hover {
-  color: #ffffff;
-  background: var(--theme) !important;
-  transform: scale(1.2); /* grow 20% */
-}
-.back-hero-area.footer-top-area ul .image-area .back-btm-content h3 {
-  font-size: 20px;
-  line-height: 30px;
-}
-.back-hero-area.footer-top-area ul .image-area .back-btm-content ul li svg {
-  position: relative;
-  top: -3px;
-}
-.back-hero-area.footer-top-area ul .image-area .back-btm-content ul li.back-author img {
-  width: 35px;
-  height: 35px;
-}
-.back-hero-area.back-hero-area2 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.back-hero-area.back-hero-area2 .back-hero-bottom.back-hero-bottom2 li .back-btm-content h3 {
-  font-size: 14px;
-  line-height: 24px;
-}
-.back-hero-area.back-hero-area2 .back-hero-bottom.back-hero-bottom2.back-hero-rights li .image-areas {
-  order: 2;
-  padding-left: 20px;
-  padding-right: 0;
-}
-.back-hero-area.back-hero-area2 .back-hero-bottom.back-hero-bottom2 li .back-btm-content .back-cates {
-  font-size: 11px;
-}
-.back-hero-area.back-hero-area2 .back-hero-bottom.back-hero-bottom2 li .image-areas img,
-.back-hero-area.back-hero-area2.back-whats-posts ul.back-whats-btm li .image-areas img {
-  border-radius: 4px;
-}
-.back-hero-area.back-hero-home2 .back-hero-right ul .image-area .back-btm-content h3 {
-  font-size: 16px;
-  line-height: 26px;
-}
-.back-hero-area.back-hero-home2 ul.back-hero-slider .image-area .back-btm-content h3 {
-  font-size: 30px;
-  line-height: 40px;
-}
-.back-hero-area.back-hero-home2 ul .image-area img {
-  border-radius: 5px;
-}
-.back-hero-area.back-hero-home2 ul .image-area:before {
-  border-radius: 5px;
-}
-.back-home2-slider-area {
-  background: #f5f5f5;
-  padding: 50px 0;
-}
-.back-home2-slider-area .back-hero-bottom-two li {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.back-home2-slider-area .back-hero-bottom-two li .image-areas {
-  flex: 0 0 35%;
-  max-width: 35%;
-  padding-right: 20px;
-}
-.back-home2-slider-area .back-hero-bottom-two li .image-areas img {
-  border-radius: 50%;
-}
-.back-home2-slider-area .back-hero-bottom-two li .back-btm-content {
-  flex: 0 0 65%;
-  max-width: 65%;
-  padding-right: 20px;
-}
-.back-home2-slider-area .back-hero-bottom-two li .back-btm-content .back-cates {
-  display: inline-block;
-  font-size: 11px;
-  text-transform: uppercase;
-
-  color: #777;
-}
-.back-home2-slider-area .back-hero-bottom-two li .back-btm-content h3 {
-  font-size: 14px;
-  line-height: 24px;
-  margin: 4px 0 7px;
-}
-.back-home2-slider-area .back-hero-bottom-two li .back-btm-content h3 a {
-  color: #000;
-  text-decoration: none;
-  display: inline;
-  background-image: linear-gradient(to bottom, #000000 0%, #000000 100%);
-  background-size: 0 1px;
-  background-repeat: no-repeat;
-  background-position: left 100%;
-  transition: all 0.7s;
-}
-.back-home2-slider-area .back-hero-bottom-two li .back-btm-content h3 a:hover {
-  color: #000;
-  background-size: 100% 1px;
-}
-.back-home2-slider-area .back-hero-bottom-two li .back-btm-content ul li {
-  font-size: 12px;
-  color: #777;
-}
-.back-home2-slider-area .back-hero-bottom-two li .back-btm-content ul li svg {
-  width: 17px;
-  position: relative;
-  top: -2px;
-  margin-right: 8px;
-}
-.back-home2-slider-area .back-hero-bottom-two li .back-btm-content ul li a {
-  color: #000;
-}
-.back-home2-slider-area.back-home3-slider-area .back-hero-bottom-two li .image-areas img {
-  border-radius: 4px;
-}
 /*****************************************************
     06. Back Trending Stories CSS Here 
 ****************************/
@@ -2041,15 +1402,38 @@ background-color: var(--theme);
   flex-wrap: wrap;
   margin-right: -10px;
 }
+
 .back-instragram li {
   flex: 0 0 50%;
   max-width: 50%;
 }
+
 .back-instragram li a {
   display: inline-block;
   position: relative;
   margin: 0 10px 10px 0;
+  overflow: visible; /* allow image to grow outside box */
+  z-index: 1; /* base z-index */
 }
+
+.back-instragram li a img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+  transform-origin: center center;
+  
+}
+
+.back-instragram li a:hover {
+  z-index: 10; /* raise hovered image above others */
+}
+
+.back-instragram li a:hover img {
+  transform: scale(1.2); /* enlarge image */
+}
+
+/* Keep your icon fade-in behavior */
 .back-instragram li a i {
   position: absolute;
   left: 50%;
@@ -2057,32 +1441,21 @@ background-color: var(--theme);
   font-size: 30px;
   transform: translate(-50%, -50%);
   color: var(--white);
+
   opacity: 0;
   transition: all .3s ease;
-}
-
-
-
-.back-instragram li a:before {
-  content: "";
-  position: absolute;
-  background: var(--theme);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all .5s ease;
-  transform: scale(0);
 }
 
 .back-instragram li a:hover i {
   opacity: 1;
 }
-.back-instragram li a:hover:before {
-  opacity: .5;
-  transform: scale(1);
+
+/* Remove the color overlay hover effect */
+.back-instragram li a:before {
+  content: "";
+  display: none;
 }
+
 /*****************************************************
     11. Back Category Section CSS Here 
 ****************************/
@@ -4335,6 +3708,7 @@ background-size: cover;
 background-position: center;
     z-index: 100;
 }
+
 #man{
     top: inherit;
     bottom: 0;

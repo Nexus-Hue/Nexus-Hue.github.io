@@ -210,6 +210,17 @@ font-size: clamp(0.20rem, 0.4rem + 1vw, 2rem);
 
 }
 
+
+.STRONG-Green-Glow {
+  color: #FFFF;
+  text-shadow: 
+    0 0 5px #00ffaa,
+    0 0 10px #00ffaa,
+    0 0 20px #00ffaa,
+    0 0 40px #00ffaa;
+
+}
+
 .text-indent {
   text-indent: 2em;
 }

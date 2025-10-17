@@ -20,7 +20,7 @@ function draw() {
   const width = window.innerWidth;
   const height = window.innerHeight;
   // transparentish dark mask type shih
-  if (frameCount % 50 === 0) {
+  if (frameCount % 97 === 0) {
     context.fillStyle = "rgba(4, 9, 18, 0.5)";
     context.fillRect(0, 0, width, height);
   }

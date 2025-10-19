@@ -10088,7 +10088,7 @@ input.main-search-input::placeholder {
 
 .NexusProduct-product-rating span {
     font-weight: 900;
-    color: #ffffff;
+    color: var(--theme);
 }
 
 .NexusProduct-product-price {
@@ -10128,9 +10128,11 @@ input.main-search-input::placeholder {
 
 
 
+
+
 .NexusProduct-product-detail ul li span {
     font-weight: 700;
-    -webkit-text-fill-color:rgb(255, 255, 255) ;
+   color: var(--blackbg) ;
     
 }
 

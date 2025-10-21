@@ -211,6 +211,16 @@ font-size: clamp(0.20rem, 0.4rem + 1vw, 2rem);
 
 }
 
+.STRONG-Blue-Glow {
+  color: #FFFF;
+  text-shadow: 
+ 0 0 5px #FF006A,
+    0 0 10px #FF006A,
+    0 0 20px #FF006A,
+    0 0 40px #FF006A;
+
+}
+
 
 .STRONG-Green-Glow {
   color: #FFFF;
@@ -237,7 +247,7 @@ font-size: clamp(0.20rem, 0.4rem + 1vw, 2rem);
   padding: 20px;              
 z-index: 3 !important;
   border-left: 11px solid var(--theme); 
-  user-select: none;
+  
   -webkit-user-drag: none;
   cursor: grab;   
   position: relative; 
@@ -9152,19 +9162,19 @@ input.main-search-input::placeholder {
 
 
 
-.nh-codepen-widget * {
+.nh-webprice-widget * {
   box-sizing: border-box;
 }
 
-.nh-codepen-widget img {
+.nh-webprice-widget img {
   max-width: 100%;
 }
 
-.nh-codepen-widget a {
+.nh-webprice-widget a {
   text-decoration: none;
 }
 
-.nh-codepen-widget .icon {
+.nh-webprice-widget .icon {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -9189,25 +9199,69 @@ input.main-search-input::placeholder {
     min-height: 100vh;
   }
 }
+.nh-product-bullets {
+  list-style: none;
+
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.nh-product-bullets li {
+
+  padding: 2px 6px;
+
+  font-size: 0.11rem;
+  line-height: 1;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.nh-product-bullets li:hover {
+  transform: translateY(-5px);           
+  background:var(--theme); 
+  box-shadow: 0 0 16px 6px var(--theme); 
+  transition: all 0.25s ease-in-out;    
+}
+
+
+.nh-product-bullets li::before {
+
+  color: #ffffff;
+  position: absolute;
+  left: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  text-shadow: 0 0 6px #ffffff, 0 0 12px #ffffff; /* white glow */
+  transition: all 0.25s ease-in-out;
+}
+
+.nh-product-bullets li:hover::before {
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; /* stronger glow on hover */
+}
+
+
+.nh-product-bullets li span {
+  display: block;
+  
+}
 
 .nh-content {
-  height: 600px;
+  height: 800px;
   margin: auto;
   width: 100%;
-  max-width: 1050px;
+ 
   display: flex;
   align-items: center;
   position: relative;
 }
-@media screen and (max-width: 1200px) {
-  .nh-content {
-    max-width: 920px;
-  }
-}
+
 @media screen and (max-width: 992px) {
   .nh-content {
     max-width: 920px;
-    margin-top: 100px;
+    margin-top: 80px;
     height: auto;
     min-height: 100vh;
   }
@@ -9226,11 +9280,11 @@ input.main-search-input::placeholder {
 
 .nh-bg-shape {
   height: 100%;
-  background-image: linear-gradient(-45deg, var(--theme) 0%, var(--theme) 100%);
-  box-shadow: 0px 30px 139px 0px rgba(10, 22, 31, 0.26);
+  background-image: linear-gradient(-45deg, var(--white) 0%, var(--white) 100%);
+
   border-radius: 30px;
   padding: 45px 40px;
-  width: 50%;
+  width: 45%;
   position: absolute;
   top: 0;
   left: 0;
@@ -9270,7 +9324,7 @@ input.main-search-input::placeholder {
   width: 510px;
   display: block;
   object-position: left center;
-  opacity: 0.2;
+
   transform: rotate(-90deg) translateY(-50%);
   max-width: inherit;
   left: 10px;
@@ -9297,8 +9351,8 @@ input.main-search-input::placeholder {
 }
 
 .nh-prev, .nh-next {
-  z-index: 22;
-  display: flex; /* better than inline-flex for SVG scaling */
+  z-index: 11;
+  display: flex;
   border: none;
   width: 60px;
   height: 60px;
@@ -9310,7 +9364,7 @@ input.main-search-input::placeholder {
   top: 92.50%;
   transform: translateY(-50%);
   cursor: pointer;
-  background-color: var(--theme); /* optional for visibility */
+  background-color: var(--theme);
  
 }
 .nh-prev.disabled, .nh-next.disabled {
@@ -9357,6 +9411,11 @@ input.main-search-input::placeholder {
   .nh-next {
     transform: translate(-20%, -50%);
   }
+}
+.nh-scrollable {
+  max-height: 250px;  /* adjust to fit your card height */
+  overflow-y: auto;   /* adds scroll if content exceeds max height */
+  padding-right: 5px; /* prevents scrollbar overlap with text */
 }
 
 .nh-product-slider {
@@ -9579,7 +9638,7 @@ input.main-search-input::placeholder {
 }
 .nh-product-slider__price {
   display: block;
-  font-size: 42px;
+  font-size: 27px;
   opacity: 0;
   transform: translateY(55px);
   transition: all 0.5s;
@@ -9667,7 +9726,7 @@ input.main-search-input::placeholder {
   display: flex;
   align-items: center;
   min-height: 150px;
-  margin-top: 40px;
+  margin-top: 20px;
   opacity: 0;
   transform: translateY(55px);
   transition: all 0.5s;
@@ -9862,7 +9921,7 @@ input.main-search-input::placeholder {
   width: 500px;
   left: 25%;
   transform: translateX(-45%);
-  max-height: 500px;
+  max-height: 700px;
   height: 100%;
   pointer-events: none;
 }

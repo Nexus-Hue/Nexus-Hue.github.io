@@ -247,7 +247,7 @@ font-size: clamp(0.20rem, 0.4rem + 1vw, 2rem);
   padding: 20px;              
 z-index: 3 !important;
   border-left: 11px solid var(--theme); 
-  
+  user-select: none;
   -webkit-user-drag: none;
   cursor: grab;   
   position: relative; 

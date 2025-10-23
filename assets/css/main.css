@@ -9960,7 +9960,7 @@ input.main-search-input::placeholder {
   position: absolute;
   pointer-events: none;
   user-select: none;
-  top: 50%;
+  top: 60%;
   right: 0;
   transform: translateY(-50%) translateX(-130px);
   opacity: 0;

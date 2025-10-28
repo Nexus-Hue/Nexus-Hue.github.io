@@ -359,30 +359,29 @@ z-index: 3 !important;
     }
   }
   
-  .scrollbar-track {
-    fill: none;
-    stroke: var(--track-color);
-    stroke-width: var(--track-width);
-    stroke-linecap: round;
-    transition: stroke-width,stroke;
-    transiton-duration: 150ms;
-    transition-timing-function:ease-in-out;
-  }
-  .scrollbar-thumb {
-    fill: none;
-    stroke: var(--thumb-color);
-    stroke-width: var(--thumb-width);
-    stroke-linecap: round;
-    pointer-events: auto;
-    cursor: grab;
-    transition: stroke-width,stroke;
-    transiton-duration: 150ms;
-    transition-timing-function:ease-in-out;
-    &:active {
-      stroke: var(--thumb-color-active);
-      cursor: grabbing;
-    }
-  }
+.scrollbar-track {
+  fill: none;
+  stroke: var(--track-color);
+  stroke-width: var(--track-width);
+  stroke-linecap: round;
+  transition: stroke-width 150ms ease-in-out, stroke 150ms ease-in-out;
+}
+
+.scrollbar-thumb {
+  fill: none;
+  stroke: var(--thumb-color);
+  stroke-width: var(--thumb-width);
+  stroke-linecap: round;
+  pointer-events: auto;
+  cursor: grab;
+  transition: stroke-width 150ms ease-in-out, stroke 150ms ease-in-out;
+}
+
+.scrollbar-thumb:active {
+  stroke: var(--thumb-color-active);
+  cursor: grabbing;
+}
+
   
 
 

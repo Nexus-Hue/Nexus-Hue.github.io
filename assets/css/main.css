@@ -9247,7 +9247,9 @@ input.main-search-input::placeholder {
 
 
 
-
+[data-aos] {
+  will-change: transform, opacity;
+}
 
 
 

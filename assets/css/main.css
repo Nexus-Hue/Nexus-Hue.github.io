@@ -10148,13 +10148,13 @@ input.main-search-input::placeholder {
   box-shadow: 0 4px 12px var(--theme);
 }
 
-/* Hover behavior (desktop) */
+/* Hover */
 .nh-tooltip:hover .nh-tooltip__text {
   visibility: visible;
   opacity: 1;
 }
 
-/* Touch-safe behavior (optional, mobile hover fallback using focus) */
+/* Touch-safe behavior */
 .nh-tooltip:focus-within .nh-tooltip__text {
   visibility: visible;
   opacity: 1;
@@ -10532,6 +10532,8 @@ background-color: var(--theme);
   border-radius: 0.25em; 
   font-weight: bold;     
 }
+
+
 
 .GAP40 {
 padding-top: 40px;

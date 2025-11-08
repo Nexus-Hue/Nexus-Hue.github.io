@@ -14,7 +14,7 @@ function initProductSwiper() {
                 $('.nh-product-img__item').removeClass('active');
                 $('.nh-product-img__item#' + target).addClass('active');
             },
-            imagesReady: function() { // this ensures Swiper recalculates sizes after images load
+            imagesReady: function() { 
                 this.update();
             }
         }

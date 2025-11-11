@@ -384,13 +384,28 @@ z-index: 3 !important;
 }
 
   
+/* Container styles */
+.NH_Profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styles */
+.NH_Profile-img {
+    width: 530px;
+    height: 480px;
+    object-fit: contain;
+
+}
 
 
-
-
-
-
-  
+  .ChunkyWhite {
+    font-weight: bold;
+    -webkit-text-fill-color: #ffffff;
+    text-align: center;
+    
+}
 
 
 .z-above {
@@ -818,7 +833,7 @@ span {
 }
 
 .blackbg {
-  background: var(--bg1);
+  background: var(--white);
   
 }
 

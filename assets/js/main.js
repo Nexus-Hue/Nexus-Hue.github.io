@@ -1,16 +1,5 @@
 /*-------------------
 
-Template Name: <
-Author:  pixel-drop
-Author URI: https://themeforest.net/user/pixel-drop/portfolio
-Developer: Gramentheme Team
-Version: 1.0.0
-Description: 
-
---------------------
-CSS TABLE OF CONTENTS
---------------------
-
 01. preloader
 02. header
 03. swiper slider

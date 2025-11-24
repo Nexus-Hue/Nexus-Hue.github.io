@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="assets/css/nice-select.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="assets/css/swiper.min.css" media="print" onload="this.media='all'">
    
-    <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" media="print" onload="this.media='all'">
+
   
    
     <!-- Fallback for CSS if JavaScript is disabled -->
@@ -51,9 +51,7 @@
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <link rel="stylesheet" href="assets/css/swiper.min.css">
-       
-        <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
-    
+  
     </noscript>
  
     <!-- Favicon -->
@@ -565,8 +563,10 @@ Resulting in the kind of execution that's only possible when one person sees the
 <a 
   href="#" 
   class="btn CTATypeShih yaytext-style text-contrast glow text-uppercase"
-  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bookings-nexushue/30min?hide_event_type_details=1&background_color=070d1c&text_color=ffffff&primary_color=ff006a'}); return false;">
-Book a call
+  data-cal-link="nexushue/30min"
+  data-cal-namespace="30min"
+  data-cal-config='{"layout":"week_view","theme":"dark"}'>
+  Book a call
   <span class="sparkle" style="--tx: -50px; --ty: -50px;"></span>
   <span class="sparkle" style="--tx: 60px; --ty: -40px;"></span>
   <span class="sparkle" style="--tx: -40px; --ty: 85px;"></span>
@@ -576,16 +576,16 @@ Book a call
   <span class="sparkle" style="--tx: 45px; --ty: 69px;"></span>
   <span class="sparkle" style="--tx: -45px; --ty: -30px;"></span>
 </a>
- 
+
 </div>
 
 
 <div class="container ">
-         <p class="yaytext-style fs-6 ChunkyWhite text-decoration-underline " >
+<p class="yaytext-style fs-6 ChunkyWhite text-decoration-underline " >
     <a href="/contact">
- NEXUS★HUE CONTACT PAGE
+    NEXUS★HUE CONTACT PAGE
     </a>
-  </p>    
+    </p>    
            
             <!-- Social -->
             <div class="spilit-socail d-flex align-items-center gap-xxl-8 gap-xl-7 gap-5 ">
@@ -2179,9 +2179,12 @@ MORE DETAILS
 <button 
   class="nh-product-slider__cart yaytext-style" 
   type="button"
-  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bookings-nexushue/30min?hide_event_type_details=1&background_color=070d1c&text_color=ffffff&primary_color=ff006a'});return false;">
+  data-cal-link="nexushue/30min"
+  data-cal-namespace="30min"
+  data-cal-config='{"layout":"week_view","theme":"dark"}'>
   BOOK A CALL
 </button>
+
 <hr>
 
               <button class="nh-product-slider__fav js-fav yaytext-style"><span class="heart"></span> FULL OWNERSHIP </button>
@@ -2315,7 +2318,9 @@ SHOWCASES YOUR PRODUCTS & SERVICES WITH STYLE, BOOSTING ENGAGEMENT AND PREMIUM B
 <button 
   class="nh-product-slider__cart yaytext-style" 
   type="button"
-  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bookings-nexushue/30min?hide_event_type_details=1&background_color=070d1c&text_color=ffffff&primary_color=ff006a'});return false;">
+  data-cal-link="nexushue/30min"
+  data-cal-namespace="30min"
+  data-cal-config='{"layout":"week_view","theme":"dark"}'>
   BOOK A CALL
 </button>
 <hr>
@@ -3006,9 +3011,18 @@ Art and design fused for maximum visual impact !
     <script src="assets/js/BudgetRange.js" defer></script>
 
 
- <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
  <!-- Analytics type shit -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "eb4a0a7324af418884d740705ce0772c"}' async></script>
+
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", "30min", {origin:"https://app.cal.com"});
+
+ 
+
+  Cal.ns["30min"]("ui", {"theme":"dark","cssVarsPerTheme":{"light":{"cal-brand":"#FF006A"},"dark":{"cal-brand":"#FF006A"}},"hideEventTypeDetails":false,"layout":"month_view"});
+</script>
 
 
 </body>

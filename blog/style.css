@@ -506,7 +506,7 @@ ol {
   font-size: 12px;
   text-transform: uppercase;
 
-  color: aliceblue;
+  color: var(--theme);
 }
 .back-latest-posts .back-hero-bottom li .back-btm-content h3 {
   font-size: 16px;

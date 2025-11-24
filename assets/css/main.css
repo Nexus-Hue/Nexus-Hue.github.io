@@ -329,8 +329,8 @@ z-index: 3 !important;
 }
 
 .Reading-Card a:hover {
-  transform: scale(1.15); /* stronger zoom */
-  box-shadow: 0 0 15px 4px #FF006A; /* pink glow */
+  transform: scale(1.15); 
+  box-shadow: 0 0 15px 4px #FF006A; 
 }
 
 
@@ -358,8 +358,8 @@ z-index: 3 !important;
   .scroll-container {
 		--card-border-radius: 50px;
 		
-    --thumb-color: rgb(0, 188, 255);
-    --thumb-color-active: dodgerblue;
+    --thumb-color: #FF006A;
+    --thumb-color-active: #FF006A;
     --thumb-width: 4;
     --thumb-width-active: 6;
     
@@ -5391,36 +5391,20 @@ background-color: #021A30;
 .flink-items:hover {
   color: var(--bg2) !important;
 }
-.flink-items:hover .ani-icons {
-  transform: scale(1.75) translateY(-3px);
-  transition: transform .25s ease;
-}
 
-.flink-items:hover .ani-icons i {
-  color: var(--bg2) !important;
-}
 
 .ani-icons:hover {
   transform: scale(1.25) translateY(-3px);
   transition: transform .25s ease;
 }
 
+.Grande {
+  transition: transform .27s ease;
+}
 
---------
-.flink-items:hover .ani-words {
+.Grande:hover {
   transform: scale(1.75) translateY(-3px);
-  transition: transform .25s ease;
 }
-
-.flink-items:hover .ani-words i {
-  color: var(--bg2) !important;
-}
-
-.ani-words:hover {
-  transform: scale(1.25) translateY(-3px);
-  transition: transform .25s ease;
-}
-
 
 
 .star-icon {
@@ -5910,17 +5894,24 @@ background-color: #021A30;
   background-color: var(--theme);
   width: 50px;
   height: 50px;
-  line-height: 40px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   right: 20px;
-  z-index: 99;
-  display: none;
   bottom: 20px;
+  z-index: 99;
   border-radius: 50%;
-  transition: all 0.4s ease-in-out;
   border: 2px solid var(--white);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
+#progress svg {
+  width: 24px; 
+  height: 24px;
+  fill: var(--white);
+}
+
 #progress i {
   color: var(--black);
 }

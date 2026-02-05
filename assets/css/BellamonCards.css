@@ -5,7 +5,7 @@
   
   --NexusHue1: #ff006a;
   --NexusHue2:  #002981 ;
-  --NexusHuefront: url(/assets/img/CollectableCards/NexusHueCollectableCard.webp);
+  --NexusHuefront: url(https://assets.nexushue.com/images/CollectableCards/NexusHueCollectableCard.webp);
 
   --pika1: #54a29e;
   --pika2: #a79d66;
@@ -106,7 +106,7 @@
 
 .card:after {
   opacity: 1;
-  background-image: url("/assets/img/CollectableCards/sparkles.gif"),  linear-gradient(125deg, #ff008450 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #cc4cfa50 85%);
+  background-image: url("/assets/gif/sparkles.gif"),  linear-gradient(125deg, #ff006a 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #ff006a 85%);
   background-position: 50% 50%;
   background-size: 160%;
   background-blend-mode: overlay;

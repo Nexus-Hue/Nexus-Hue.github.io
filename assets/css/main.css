@@ -9275,15 +9275,15 @@ input.main-search-input::placeholder {
 
 @media screen and (min-width: 3000px) {
   .watch-version01 {
-    margin-top: -27% !important;
-     padding: 700px;
+    margin-top: -20% !important;
+     padding: 550px;
   }
 }
 
 @media screen and (min-width: 3500px) {
   .watch-version01 {
-    margin-top: -17% !important;
-     padding: 700px;
+    margin-top: -20% !important;
+     padding: 550px;
   }
 }
 

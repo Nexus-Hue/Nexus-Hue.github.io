@@ -1,88 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.nexushue.com</loc>
-    <lastmod>2025-11-27T01:19:06Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/Espanol</loc>
-    <lastmod>2025-11-27T01:19:06Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/about</loc>
-    <lastmod>2025-11-27T01:36:19Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/biography</loc>
-    <lastmod>2025-11-27T01:36:20Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/services/web-design-branding-advertising</loc>
-    <lastmod>2025-11-27T01:36:20Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/services/branding</loc>
-    <lastmod>2025-11-27T01:36:20Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/services/web-design</loc>
-    <lastmod>2025-11-27T01:36:20Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/services/advertising</loc>
-    <lastmod>2025-11-27T01:36:20Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/blog/all-posts</loc>
-    <lastmod>2025-11-27T01:36:21Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/blog/advertising-strategies/all-posts</loc>
-    <lastmod>2025-11-27T01:36:21Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/blog/website-strategies/all-posts</loc>
-    <lastmod>2025-11-27T01:36:21Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/blog/brand-strategies/all-posts</loc>
-    <lastmod>2025-11-27T01:36:21Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/blog/from-the-founder/all-posts</loc>
-    <lastmod>2025-11-27T01:36:21Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/contact</loc>
-    <lastmod>2025-11-27T01:36:21Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/blog/advertising-strategies/kraken-gold-spiced-rum-ad-artistic-process</loc>
-    <lastmod>2025-11-27T01:36:21Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/blog/advertising-strategies/santa-catrina-cabernet-sauvignon-brand-story</loc>
-    <lastmod>2025-11-27T01:36:22Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/blog/advertising-strategies/doritos-dinamita-ad</loc>
-    <lastmod>2025-11-27T01:36:22Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/blog/from-the-founder/duolingo-ai-shift-backfires</loc>
-    <lastmod>2025-09-26T19:31:11+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/blog/from-the-founder/the-ai-bubble</loc>
-    <lastmod>2025-11-27T01:36:22Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/blog/from-the-founder/is-aws-down-again</loc>
-    <lastmod>2025-11-27T01:36:22Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nexushue.com/blog/from-the-founder/ai-hypocrisy-trailblazers-or-outlaws</loc>
-    <lastmod>2025-11-27T01:36:22Z</lastmod>
-  </url>
- 
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.nexushue.com/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/about</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/biography</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/services/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/services/branding/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/services/web-design/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/services/ads/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/blog/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/blog/ads/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/blog/web-design/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/blog/branding/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/blog/opinions/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/contact</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/blog/ads/kraken-gold-spiced-rum</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/blog/ads/santa-catrina</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/blog/ads/doritos-dinamita-ad</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/blog/opinions/the-ai-bubble</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/blog/opinions/ai-hypocrisy-trailblazers-or-outlaws</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/sobre</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/biograhia</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/servicios/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/servicios/branding/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/servicios/diseno-web/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/servicios/publicidad/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/blog/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/blog/publicidad/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/blog/diseno-web/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/blog/branding/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/blog/opiniones/</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/contacto</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/blog/opinions/duolingo-ai-shift-backfires</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/blog/publicidad/kraken-gold-spiced-rum</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/blog/publicidad/santa-catrina</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nexushue.com/es/blog/publicidad/doritos-dinamita</loc>
+  <lastmod>2026-02-16T17:25:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>

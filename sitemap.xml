@@ -3,11 +3,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url>
-    <loc>https://www.nexushue.com/404/</loc>
-    <lastmod>2026-02-16T09:52:55+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
+
   <url>
     <loc>https://www.nexushue.com/about/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
@@ -24,7 +20,7 @@
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/blog/ads//</loc>
+    <loc>https://www.nexushue.com/blog/ads/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
@@ -39,12 +35,12 @@
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/blog/branding//</loc>
+    <loc>https://www.nexushue.com/blog/branding/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/blog//</loc>
+    <loc>https://www.nexushue.com/blog/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
@@ -59,7 +55,7 @@
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/blog/opinions//</loc>
+    <loc>https://www.nexushue.com/blog/opinions/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
@@ -74,7 +70,7 @@
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/blog/web-design//</loc>
+    <loc>https://www.nexushue.com/blog/web-design/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
@@ -84,27 +80,22 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/es/404/</loc>
-    <lastmod>2026-02-16T09:52:55+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://www.nexushue.com/es/biografia/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/es/blog/branding//</loc>
+    <loc>https://www.nexushue.com/es/blog/branding/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/es/blog/diseno-web//</loc>
+    <loc>https://www.nexushue.com/es/blog/diseno-web/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/es/blog//</loc>
+    <loc>https://www.nexushue.com/es/blog/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
@@ -124,7 +115,7 @@
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/es/blog/opiniones//</loc>
+    <loc>https://www.nexushue.com/es/blog/opiniones/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
@@ -139,7 +130,7 @@
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/es/blog/publicidad//</loc>
+    <loc>https://www.nexushue.com/es/blog/publicidad/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
@@ -159,12 +150,12 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/es//</loc>
+    <loc>https://www.nexushue.com/es/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/es/servicios/branding//</loc>
+    <loc>https://www.nexushue.com/es/servicios/branding/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
@@ -174,17 +165,17 @@
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/es/servicios/diseno-web//</loc>
+    <loc>https://www.nexushue.com/es/servicios/diseno-web/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/es/servicios//</loc>
+    <loc>https://www.nexushue.com/es/servicios/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/es/servicios/publicidad//</loc>
+    <loc>https://www.nexushue.com/es/servicios/publicidad/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
@@ -204,22 +195,22 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/services/ads//</loc>
+    <loc>https://www.nexushue.com/services/ads/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/services/branding//</loc>
+    <loc>https://www.nexushue.com/services/branding/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/services//</loc>
+    <loc>https://www.nexushue.com/services/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.nexushue.com/services/web-design//</loc>
+    <loc>https://www.nexushue.com/services/web-design/</loc>
     <lastmod>2026-02-16T09:52:55+00:00</lastmod>
     <priority>0.64</priority>
   </url>
